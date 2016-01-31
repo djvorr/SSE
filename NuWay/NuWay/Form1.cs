@@ -1,40 +1,41 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.OleDb;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace NuWay
 {
     public partial class NuWayOrderForm : Form
     {
-
+        //collection holding items from db
         List<String> items = new List<String>();
+        //collection for calculating the total using just the prices
         List<double> prices = new List<double>();
+
+        OleDbConnection conn;
+        OleDbCommand cmd;
+        OleDbDataReader reader;
+        Tokenizer token;
+
+        string selectString = "SELECT Item, Description, Price FROM NuWay";
 
         public NuWayOrderForm()
         {
             InitializeComponent();
         }
 
+        //get all the items from the db
         public void ConnectToAccess()
         {
-            OleDbConnection conn = new OleDbConnection();
+            conn = new OleDbConnection();
             conn.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;" + @"Data source= nuwaymenu.mdb;";
 
             try
             {
                 conn.Open();
 
-                string selectString = "SELECT Item, Description, Price FROM NuWay";
-
-                OleDbCommand cmd = new OleDbCommand(selectString, conn);
-                OleDbDataReader reader = cmd.ExecuteReader();
+                cmd = new OleDbCommand(selectString, conn);
+                reader = cmd.ExecuteReader();
 
                 while (reader.Read())
                 {
@@ -42,18 +43,7 @@ namespace NuWay
                     items.Add(st);
                 }
 
-                foreach (String item in items)
-                {
-                    if (items.IndexOf(item) < 31)
-                        lbBreakfast.Items.Add(item);
-                    else if (items.IndexOf(item) < 86)
-                        lbLD.Items.Add(item);
-                    else if (items.IndexOf(item) < 102)
-                        lbDrinks.Items.Add(item);
-                    else
-                        lbDessert.Items.Add(item);
-                }
-
+                fillBoxes();
             }
             catch (Exception ex)
             {
@@ -65,6 +55,23 @@ namespace NuWay
             }
         }
 
+        //filter the items from the db collection and assign to corresponding listbox
+        public void fillBoxes()
+        {
+            foreach (String item in items)
+            {
+                if (items.IndexOf(item) < 31)
+                    lbBreakfast.Items.Add(item);
+                else if (items.IndexOf(item) < 86)
+                    lbLD.Items.Add(item);
+                else if (items.IndexOf(item) < 102)
+                    lbDrinks.Items.Add(item);
+                else
+                    lbDessert.Items.Add(item);
+            }
+        }
+
+        //get the total cost by adding up all the prices in the price collection
         public double getTotal()
         {
             double total = 0.00;
@@ -75,6 +82,7 @@ namespace NuWay
             return total;
         }
 
+        //set the default selected item in each listbos to the first item in each one
         public void SelectedItems()
         {
             if (lbBreakfast.Items.Count > 0)
@@ -89,6 +97,7 @@ namespace NuWay
             zeroOut();
         }
 
+        //govern the values for the totals boxes in the bottom right of the window
         public void Total()
         {
             if (lbOrder.Items.Count < 1)
@@ -98,7 +107,6 @@ namespace NuWay
             else
             {
                 lbOrder.SelectedIndex = 0;
-                Tokenizer token;
                 prices.Clear();
 
                 foreach (String item in lbOrder.Items)
@@ -113,10 +121,10 @@ namespace NuWay
                 tbSubtotal.Text = format(total.ToString());
                 total = total + Math.Round(total * Double.Parse(tbTax.Text), 2);
                 tbTotal.Text = format(total.ToString());
-
             }
         }
 
+        //format the final values to look like prices: XXX.XX
         public String format(String amount)
         {
             //if amount not blank
@@ -139,6 +147,7 @@ namespace NuWay
             return amount;
         }
 
+        //set the totals boxes in the bottom right of the window to 0.00
         public void zeroOut()
         {
             tbSubtotal.Text = "0.00";
@@ -146,12 +155,14 @@ namespace NuWay
             tbTotal.Text = "0.00";
         }
 
+        //on Add Breakfast Button click, add selected breakfast item to Order list
         private void bBreakfast_Click(object sender, EventArgs e)
         {
             lbOrder.Items.Add(lbBreakfast.SelectedItem);
             Total();
         }
 
+        //on Clear Button click, empty the contents of the Order list
         private void bClear_Click(object sender, EventArgs e)
         {
             if (lbOrder.Items.Count > 0)
@@ -159,24 +170,28 @@ namespace NuWay
             Total();
         }
 
+        //on Add Dessert Button click, add selected dessert item to Order list
         private void bDessert_Click(object sender, EventArgs e)
         {
             lbOrder.Items.Add(lbDessert.SelectedItem);
             Total();
         }
 
+        //on Add Drink Button click, add selected drink item to Order list
         private void bDrinks_Click(object sender, EventArgs e)
         {
             lbOrder.Items.Add(lbDrinks.SelectedItem);
             Total();
         }
 
+        //on Add Lunch/Dinner Button click, add selected Lunch/Dinner item to Order list
         private void bLD_Click(object sender, EventArgs e)
         {
             lbOrder.Items.Add(lbLD.SelectedItem);
             Total();
         }
 
+        //on Remove Button click, remove selected item from Order List
         private void bRemove_Click(object sender, EventArgs e)
         {
             if (lbOrder.Items.Count > 0)
@@ -184,16 +199,18 @@ namespace NuWay
             Total();
         }
 
+        //on Total button click, show message box with final cost
         private void bTotal_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Your total comes to $" + tbTotal.Text);
         }
 
+        //on First load of order form window
         private void NuWayOrderForm_Load(object sender, EventArgs e)
         {
             ConnectToAccess();
             SelectedItems();
-            tbTax.Text = "0.06";
+            zeroOut();
         }
     }
 }
