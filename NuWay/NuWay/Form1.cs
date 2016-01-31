@@ -212,5 +212,33 @@ namespace NuWay
             SelectedItems();
             zeroOut();
         }
+
+        public ListBox getListBox(String listBox)
+        {
+            if (listBox == "lbOrder")
+                return lbOrder;
+            else if (listBox == "lbBreakfast")
+                return lbBreakfast;
+            else if (listBox == "lbLD")
+                return lbLD;
+            else if (listBox == "lbDrinks")
+                return lbDrinks;
+            else if (listBox == "lbDessert")
+                return lbDessert;
+            else
+                return null;
+        }
+
+        public TextBox getTextBox(String textBox)
+        {
+            if (textBox == "tbSubtotal")
+                return tbSubtotal;
+            else if (textBox == "tbTax")
+                return tbTax;
+            else if (textBox == "tbTotal")
+                return tbTotal;
+            else
+                return null;
+        }
     }
 }

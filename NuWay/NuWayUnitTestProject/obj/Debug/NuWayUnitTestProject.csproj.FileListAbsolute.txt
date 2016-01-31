@@ -1,0 +1,9 @@
+C:\Users\Dave\Dropbox\NuWay\NuWayUnitTestProject\obj\Debug\NuWayUnitTestProject.csprojResolveAssemblyReference.cache
+C:\Users\Dave\Dropbox\NuWay\NuWayUnitTestProject\bin\Debug\nuwaymenu.mdb
+C:\Users\Dave\Dropbox\NuWay\NuWayUnitTestProject\bin\Debug\NuWayUnitTestProject.dll
+C:\Users\Dave\Dropbox\NuWay\NuWayUnitTestProject\bin\Debug\NuWayUnitTestProject.pdb
+C:\Users\Dave\Dropbox\NuWay\NuWayUnitTestProject\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Dave\Dropbox\NuWay\NuWayUnitTestProject\bin\Debug\NuWay.exe
+C:\Users\Dave\Dropbox\NuWay\NuWayUnitTestProject\bin\Debug\NuWay.pdb
+C:\Users\Dave\Dropbox\NuWay\NuWayUnitTestProject\obj\Debug\NuWayUnitTestProject.dll
+C:\Users\Dave\Dropbox\NuWay\NuWayUnitTestProject\obj\Debug\NuWayUnitTestProject.pdb
