@@ -1,0 +1,13 @@
+c:\users\dave\documents\visual studio 2015\Projects\NuWay\NuWay\bin\Debug\NuWay.exe.config
+C:\Users\Dave\Documents\Visual Studio 2015\Projects\NuWay\NuWay\bin\Debug\NuWay.exe
+C:\Users\Dave\Documents\Visual Studio 2015\Projects\NuWay\NuWay\bin\Debug\NuWay.pdb
+C:\Users\Dave\Documents\Visual Studio 2015\Projects\NuWay\NuWay\obj\Debug\NuWay.csprojResolveAssemblyReference.cache
+C:\Users\Dave\Documents\Visual Studio 2015\Projects\NuWay\NuWay\obj\Debug\NuWay.NuWayOrderForm.resources
+C:\Users\Dave\Documents\Visual Studio 2015\Projects\NuWay\NuWay\obj\Debug\NuWay.Properties.Resources.resources
+C:\Users\Dave\Documents\Visual Studio 2015\Projects\NuWay\NuWay\obj\Debug\NuWay.csproj.GenerateResource.Cache
+C:\Users\Dave\Documents\Visual Studio 2015\Projects\NuWay\NuWay\obj\Debug\NuWay.exe
+C:\Users\Dave\Documents\Visual Studio 2015\Projects\NuWay\NuWay\obj\Debug\NuWay.pdb
+C:\Users\Dave\Documents\Visual Studio 2015\Projects\NuWay\NuWay\bin\Debug\nuwaymenu.mdb
+C:\Users\Dave\Dropbox\NuWay\NuWay\bin\Debug\NuWay.exe.config
+C:\Users\Dave\Dropbox\NuWay\NuWay\obj\Debug\NuWay.exe
+C:\Users\Dave\Dropbox\NuWay\NuWay\obj\Debug\NuWay.pdb
