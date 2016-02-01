@@ -8,9 +8,9 @@ namespace NuWay
     public partial class NuWayOrderForm : Form
     {
         //collection holding items from db
-        List<String> items = new List<String>();
+        public List<String> items = new List<String>();
         //collection for calculating the total using just the prices
-        List<double> prices = new List<double>();
+        public List<double> prices = new List<double>();
 
         public OleDbConnection conn;
         public OleDbCommand cmd;
@@ -118,18 +118,23 @@ namespace NuWay
                 lbOrder.SelectedIndex = 0;
                 prices.Clear();
 
-                foreach (String item in lbOrder.Items)
-                {
-                    token = new Tokenizer(item);
-                    string value = token.tokenize('$');
-                    prices.Add(Double.Parse(value));
-                }
+                tokenizePrices();
 
                 double total = getTotal();
 
                 tbSubtotal.Text = format(total.ToString());
                 total = total + Math.Round(total * Double.Parse(tbTax.Text), 2);
                 tbTotal.Text = format(total.ToString());
+            }
+        }
+
+        public void tokenizePrices()
+        {
+            foreach (String item in lbOrder.Items)
+            {
+                token = new Tokenizer(item);
+                string value = token.tokenize('$');
+                prices.Add(Double.Parse(value));
             }
         }
 
@@ -191,6 +196,7 @@ namespace NuWay
             if (lbOrder.Items.Count > 0)
                 lbOrder.Items.Clear();
             Total();
+            prices.Clear();
         }
 
         /// <summary>
