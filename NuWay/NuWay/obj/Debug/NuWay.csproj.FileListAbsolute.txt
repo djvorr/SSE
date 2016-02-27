@@ -18,3 +18,16 @@ C:\Users\Dave\Dropbox\NuWay\NuWay\obj\Debug\NuWay.csprojResolveAssemblyReference
 C:\Users\Dave\Dropbox\NuWay\NuWay\obj\Debug\NuWay.NuWayOrderForm.resources
 C:\Users\Dave\Dropbox\NuWay\NuWay\obj\Debug\NuWay.Properties.Resources.resources
 C:\Users\Dave\Dropbox\NuWay\NuWay\obj\Debug\NuWay.csproj.GenerateResource.Cache
+C:\Users\Dave\Documents\Git\SSE\NuWay\NuWay\bin\Debug\NuWay.exe.config
+C:\Users\Dave\Documents\Git\SSE\NuWay\NuWay\obj\Debug\NuWay.exe
+C:\Users\Dave\Documents\Git\SSE\NuWay\NuWay\obj\Debug\NuWay.pdb
+C:\Users\Dave\Documents\Git\SSE\NuWay\NuWay\bin\Debug\nuwaymenu.mdb
+C:\Users\Dave\Documents\Git\SSE\NuWay\NuWay\bin\Debug\NuWay.exe
+C:\Users\Dave\Documents\Git\SSE\NuWay\NuWay\bin\Debug\NuWay.pdb
+C:\Users\Dave\Documents\Git\SSE\NuWay\NuWay\obj\Debug\NuWay.csprojResolveAssemblyReference.cache
+C:\Users\Dave\Documents\Git\SSE\NuWay\NuWay\obj\Debug\NuWay.NuWayOrderForm.resources
+C:\Users\Dave\Documents\Git\SSE\NuWay\NuWay\obj\Debug\NuWay.Properties.Resources.resources
+C:\Users\Dave\Documents\Git\SSE\NuWay\NuWay\obj\Debug\NuWay.csproj.GenerateResource.Cache
+C:\Users\Dave\Documents\Git\SSE\NuWay\NuWay\obj\Debug\NuWay.LoginForm.resources
+C:\Users\Dave\Documents\Git\SSE\NuWay\NuWay\bin\Debug\users.mdb
+C:\Users\Dave\Documents\Git\SSE\NuWay\NuWay\obj\Debug\NuWay.AddUser.resources

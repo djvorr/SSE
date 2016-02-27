@@ -33,5 +33,16 @@ namespace NuWay.Properties {
                 return ((string)(this["nuwaymenuConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\\users.mdb;Persist Se" +
+            "curity Info=True")]
+        public string usersConnectionString {
+            get {
+                return ((string)(this["usersConnectionString"]));
+            }
+        }
     }
 }

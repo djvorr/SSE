@@ -128,6 +128,9 @@ namespace NuWay
             }
         }
 
+        /// <summary>
+        /// Tokenize all prices into a collection
+        /// </summary>
         public void tokenizePrices()
         {
             foreach (String item in lbOrder.Items)
@@ -261,10 +264,7 @@ namespace NuWay
         /// <param name="e"></param>
         public void NuWayOrderForm_Load(object sender, EventArgs e)
         {
-            ConnectToAccess();
-            fillBoxes();
-            SelectedItems();
-            zeroOut();
+            disableButtons();
         }
 
         /// <summary>
@@ -303,6 +303,71 @@ namespace NuWay
                 return tbTotal;
             else
                 return null;
+        }
+
+        /// <summary>
+        /// Click to Sign in
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void signInToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LoginForm login = new LoginForm();
+            login.ShowDialog();
+
+            if (login.isAdministrator)
+            {
+                //MessageBox.Show("is Admin");
+                adminToolStripMenuItem.Enabled = true;
+            }
+            else if (login.isAuthentic)
+            {
+                MessageBox.Show("is Authentic");
+                enableButtons();
+                ConnectToAccess();
+                fillBoxes();
+                SelectedItems();
+                zeroOut();
+            }
+        }
+
+        /// <summary>
+        /// Disable App functionality
+        /// </summary>
+        public void disableButtons()
+        {
+            bBreakfast.Enabled = false;
+            bLD.Enabled = false;
+            bDessert.Enabled = false;
+            bDrinks.Enabled = false;
+            bClear.Enabled = false;
+            bRemove.Enabled = false;
+            bTotal.Enabled = false;
+        }
+
+        /// <summary>
+        /// Enable App Functionality
+        /// </summary>
+        public void enableButtons()
+        {
+            bBreakfast.Enabled = true;
+            bLD.Enabled = true;
+            bDessert.Enabled = true;
+            bDrinks.Enabled = true;
+            bClear.Enabled = true;
+            bRemove.Enabled = true;
+            bTotal.Enabled = true;
+        }
+
+        /// <summary>
+        /// CLick add user under the admin tab on the menu ribbon
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void addUserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddUser add = new AddUser("Kentucky");
+            add.ShowDialog();
         }
     }
 }
