@@ -30,7 +30,9 @@ namespace NuWay
 
         private void AddUser_Load(object sender, EventArgs e)
         {
-
+            tbUser.Text = "jrob";
+            tbPass.Text = "rob1";
+            tbRole.Text = "freeuser";
         }
 
         /// <summary>

@@ -15,6 +15,8 @@ namespace NuWay
 
         En_De_cryption cryptographer = new En_De_cryption();
 
+        
+
         /// <summary>
         /// On Creation of Login Form
         /// </summary>
@@ -53,34 +55,7 @@ namespace NuWay
         /// <returns></returns>
         public string getRole(string user, string password)
         {
-            string role = "";
-            string selectString = "SELECT User, Password, Role FROM Roles WHERE User = '" + user + "' and Password = '" + password + "'";
-
-            conn = new OleDbConnection();
-            conn.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;" + @"Data source= users.mdb;";
-
-            try
-            {
-                conn.Open();
-
-                cmd = new OleDbCommand(selectString, conn);
-                reader = cmd.ExecuteReader();
-
-                if (reader.Read())
-                {
-                    role = reader["Role"].ToString();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Failed to connect to data source");
-            }
-            finally
-            {
-                conn.Close();
-            }
-
-            return role;
+            return "";
         }
 
         /// <summary>
@@ -123,8 +98,8 @@ namespace NuWay
         {
             isAuthentic = false;
             isAdministrator = false;
-            //AddUser au = new AddUser("Kentucky");
-            //au.ShowDialog();        
+            AddUser au = new AddUser("Kentucky");
+            au.ShowDialog();        
         }
 
         /// <summary>
