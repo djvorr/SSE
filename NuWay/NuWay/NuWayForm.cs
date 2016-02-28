@@ -16,6 +16,12 @@ namespace NuWay
         public OleDbCommand cmd;
         public OleDbDataReader reader;
         Tokenizer token;
+        LoginForm login = new LoginForm();
+
+        UserDB db;
+        Key key = new Key();
+        protected string sharedPrivateKey = "Louisville";
+        En_De_cryption cryptographer = new En_De_cryption();
 
         public static string selectString = "SELECT Item, Description, Price FROM NuWay";
 
@@ -248,13 +254,27 @@ namespace NuWay
         }
 
         /// <summary>
-        /// on Total button click, show message box with final cost
+        /// on Total button click, show order form
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         public void bTotal_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Your total comes to $" + tbTotal.Text);
+            string encryptedAdminrole = cryptographer.EncryptString("administrator", cryptographer.DecryptString(key.EncryptedKey(), sharedPrivateKey));
+            string encryptedSubrole = cryptographer.EncryptString("subscriber", cryptographer.DecryptString(key.EncryptedKey(), sharedPrivateKey));
+
+            if (login.currentRole != null && login.currentRole != "")
+            {
+                if (encryptedAdminrole == login.currentRole || encryptedSubrole == login.currentRole)
+                {
+                    PlaceOrderForm place = new PlaceOrderForm(tbTotal.Text);
+                    place.ShowDialog();
+                }
+                else
+                    MessageBox.Show("Free Users do not have access to this service. Subscribe today!");
+            }
+            else
+                MessageBox.Show("Must be signed in as a subscriber to use this function.");
         }
 
         /// <summary>
@@ -312,7 +332,6 @@ namespace NuWay
         /// <param name="e"></param>
         private void signInToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            LoginForm login = new LoginForm();
             login.ShowDialog();
 
             if (login.isAdministrator)
@@ -322,7 +341,8 @@ namespace NuWay
             }
             else if (login.isAuthentic)
             {
-                MessageBox.Show("is Authentic");
+                //MessageBox.Show("is Authentic");
+                adminToolStripMenuItem.Enabled = false;
                 enableButtons();
                 ConnectToAccess();
                 fillBoxes();
@@ -366,7 +386,7 @@ namespace NuWay
         /// <param name="e"></param>
         private void addUserToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AddUser add = new AddUser("Kentucky");
+            AddUser add = new AddUser();
             add.ShowDialog();
         }
     }

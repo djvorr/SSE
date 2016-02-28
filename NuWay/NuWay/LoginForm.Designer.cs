@@ -108,7 +108,6 @@
             this.cbAdmin.Text = "Log in as Administrator";
             this.cbAdmin.UseMnemonic = false;
             this.cbAdmin.UseVisualStyleBackColor = true;
-            this.cbAdmin.CheckedChanged += new System.EventHandler(this.cbAdmin_Click);
             // 
             // LoginForm
             // 

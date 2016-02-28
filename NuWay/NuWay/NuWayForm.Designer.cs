@@ -75,7 +75,7 @@
             this.bTotal.Name = "bTotal";
             this.bTotal.Size = new System.Drawing.Size(89, 20);
             this.bTotal.TabIndex = 44;
-            this.bTotal.Text = "Finish";
+            this.bTotal.Text = "Order";
             this.bTotal.UseVisualStyleBackColor = true;
             this.bTotal.Click += new System.EventHandler(this.bTotal_Click);
             // 
@@ -287,7 +287,7 @@
             // signInToolStripMenuItem
             // 
             this.signInToolStripMenuItem.Name = "signInToolStripMenuItem";
-            this.signInToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.signInToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.signInToolStripMenuItem.Text = "Sign In";
             this.signInToolStripMenuItem.Click += new System.EventHandler(this.signInToolStripMenuItem_Click);
             // 
@@ -303,7 +303,7 @@
             // addUserToolStripMenuItem
             // 
             this.addUserToolStripMenuItem.Name = "addUserToolStripMenuItem";
-            this.addUserToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.addUserToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.addUserToolStripMenuItem.Text = "Add User";
             this.addUserToolStripMenuItem.Click += new System.EventHandler(this.addUserToolStripMenuItem_Click);
             // 

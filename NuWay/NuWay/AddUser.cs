@@ -17,22 +17,22 @@ namespace NuWay
         public OleDbCommand cmd;
         public OleDbDataReader reader;
 
-        private string key;
+        Key key;
+        protected string sharedPrivateKey = "Louisville";
 
-        UserDB db = new UserDB();
-        En_De_cryption crypter = new En_De_cryption();
+        UserDB db;
+        En_De_cryption crypter;
 
-        public AddUser(string key)
+        public AddUser()
         {
-            this.key = key;
             InitializeComponent();
         }
 
         private void AddUser_Load(object sender, EventArgs e)
         {
-            tbUser.Text = "jrob";
-            tbPass.Text = "rob1";
-            tbRole.Text = "freeuser";
+            db = new UserDB();
+            crypter = new En_De_cryption();
+            key = new Key();
         }
 
         /// <summary>
@@ -44,7 +44,10 @@ namespace NuWay
         public void Save(string encuser, string encpass, string encrole)
         {
             if (!db.userExists(encuser, encpass))
+            {
                 db.addUser(encuser, encpass, encrole);
+                MessageBox.Show("Addition Successful");
+            }
             else if (db.userExists(encuser, encpass))
                 MessageBox.Show("You already have an account.");
             else if (db.userTaken(encuser))
@@ -60,7 +63,11 @@ namespace NuWay
         /// <param name="e"></param>
         private void bSave_Click(object sender, EventArgs e)
         {
-            Save(crypter.EncryptString(tbUser.Text, key), crypter.EncryptString(tbPass.Text, key), crypter.EncryptString(tbRole.Text, key));
+            //It is important to note that only encrypted vales are stored in variables. The unencrypted values are not stored anywhere.
+            string enuser = crypter.EncryptString(tbUser.Text, crypter.DecryptString(key.EncryptedKey(), sharedPrivateKey));
+            string enpass = crypter.EncryptString(tbPass.Text, crypter.DecryptString(key.EncryptedKey(), sharedPrivateKey));
+            string enrole = crypter.EncryptString(tbRole.Text, crypter.DecryptString(key.EncryptedKey(), sharedPrivateKey));
+            Save(enuser, enpass, enrole);
         }
 
         /// <summary>

@@ -10,9 +10,13 @@ namespace NuWay
     {
         private List<User> users;
 
+        /// <summary>
+        /// creates a db object
+        /// </summary>
         public UserDB()
         {
             users = new List<User>();
+            getUsers();
         }
 
         /// <summary>
@@ -32,7 +36,7 @@ namespace NuWay
             string line;
 
             // Read the file and display it line by line.
-            System.IO.StreamReader file = new System.IO.StreamReader("c:\\test.txt");
+            System.IO.StreamReader file = new System.IO.StreamReader(@"Users.txt");
             while ((line = file.ReadLine()) != null)
             {
                 string[] strings = line.Split('.');
@@ -52,14 +56,15 @@ namespace NuWay
         /// <param name="user"></param>
         /// <param name="password"></param>
         /// <param name="role"></param>
-        public void addUser(string user, string password, string role)
+        public void addUser(string encrypteruser, string encryptedpassword, string encryptedrole)
         {
             User temp = new User();
-            temp.username = user;
-            temp.password = password;
-            temp.role = role;
+            temp.username = encrypteruser;
+            temp.password = encryptedpassword;
+            temp.role = encryptedrole;
             users.Add(temp);
-
+            writeDb();
+            Refresh();
         }
 
         /// <summary>
@@ -67,25 +72,25 @@ namespace NuWay
         /// </summary>
         /// <param name="username"></param>
         /// <param name="password"></param>
-        /// <returns></returns>
-        public bool userExists(string username, string password)
+        /// <returns>True if found, false if not</returns>
+        public bool userExists(string encryptedusername, string encryptedpassword)
         {
-            return getRole(username, password) != "";
+            return getRole(encryptedusername, encryptedpassword) != "";
         }
 
         /// <summary>
-        /// Return the role of a user
+        /// Return the encrypted role of a user
         /// </summary>
         /// <param name="username"></param>
         /// <param name="password"></param>
-        /// <returns></returns>
-        public string getRole(string username, string password)
+        /// <returns>Role if found, "" if not.</returns>
+        public string getRole(string encryptedusername, string encryptedpassword)
         {
             try
             {
                 foreach (User user in users)
                 {
-                    if (user.username == username && user.password == password)
+                    if (user.username == encryptedusername && user.password == encryptedpassword)
                         return user.role;
                 }
                 return "";
@@ -101,13 +106,13 @@ namespace NuWay
         /// </summary>
         /// <param name="username"></param>
         /// <returns></returns>
-        public bool userTaken(string username)
+        public bool userTaken(string encryptedusername)
         {
             try
             {
                 foreach (User user in users)
                 {
-                    if (user.username == username)
+                    if (user.username == encryptedusername)
                         return true;
                 }
                 return false;
