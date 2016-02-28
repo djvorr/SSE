@@ -130,7 +130,7 @@ namespace NuWay
         }
 
         /// <summary>
-        /// Clicking the Sign in button
+        /// Clicking the Sign in button and authenticate
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
