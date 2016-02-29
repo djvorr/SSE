@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.OleDb;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace NuWay
 {
+
     public partial class NuWayOrderForm : Form
     {
         //collection holding items from db
-        public List<String> items = new List<String>();
+        public List<NuWayMenuItem> items = new List<NuWayMenuItem>();
         //collection for calculating the total using just the prices
         public List<double> prices = new List<double>();
 
@@ -17,6 +19,7 @@ namespace NuWay
         public OleDbDataReader reader;
         Tokenizer token;
         LoginForm login = new LoginForm();
+        MyMealForm mealform = new MyMealForm();
 
         UserDB db;
         Key key = new Key();
@@ -47,8 +50,9 @@ namespace NuWay
 
                 while (reader.Read())
                 {
-                    string st = reader["Item"].ToString() + "-" + reader["Description"] + "  $" + reader["Price"];
-                    items.Add(st);
+                    //string st = reader["Item"].ToString() + "-" + reader["Description"] + "  $" + reader["Price"];
+                    NuWayMenuItem nwmi = new NuWayMenuItem(reader["Item"].ToString(), reader["Description"].ToString(), "$" + reader["Price"]);
+                    items.Add(nwmi);
                 }
             }
             catch (Exception ex)
@@ -66,7 +70,7 @@ namespace NuWay
         /// </summary>
         public void fillBoxes()
         {
-            foreach (String item in items)
+            foreach (NuWayMenuItem item in items)
             {
                 if (items.IndexOf(item) < 31)
                     lbBreakfast.Items.Add(item);
@@ -99,13 +103,25 @@ namespace NuWay
         public void SelectedItems()
         {
             if (lbBreakfast.Items.Count > 0)
+            {
                 lbBreakfast.SelectedIndex = 0;
+                tbBreakfast.Text = (lbBreakfast.SelectedItem as NuWayMenuItem).ItemDesc;
+            }
             if (lbLD.Items.Count > 0)
+            {
                 lbLD.SelectedIndex = 0;
+                tbLD.Text = (lbLD.SelectedItem as NuWayMenuItem).ItemDesc;
+            }
             if (lbDrinks.Items.Count > 0)
+            { 
                 lbDrinks.SelectedIndex = 0;
+                tbDrink.Text = (lbDrinks.SelectedItem as NuWayMenuItem).ItemDesc;
+            }
             if (lbDessert.Items.Count > 0)
+            {
                 lbDessert.SelectedIndex = 0;
+                tbDessert.Text = (lbDessert.SelectedItem as NuWayMenuItem).ItemDesc;
+            }
 
             zeroOut();
         }
@@ -139,9 +155,9 @@ namespace NuWay
         /// </summary>
         public void tokenizePrices()
         {
-            foreach (String item in lbOrder.Items)
+            foreach (NuWayMenuItem item in lbOrder.Items)
             {
-                token = new Tokenizer(item);
+                token = new Tokenizer(item.ToString());
                 string value = token.tokenize('$');
                 prices.Add(Double.Parse(value));
             }
@@ -338,6 +354,8 @@ namespace NuWay
             {
                 //MessageBox.Show("is Admin");
                 adminToolStripMenuItem.Enabled = true;
+                LoginLabel.Text = "Logged in as " + login.CurrentUser + " (Admin)";
+                mealform.CurrentUser = login.CurrentUser;
             }
             else if (login.isAuthentic)
             {
@@ -348,6 +366,9 @@ namespace NuWay
                 fillBoxes();
                 SelectedItems();
                 zeroOut();
+                LoginLabel.Text = "Logged in as " + login.CurrentUser;
+                mealform.CurrentUser = login.CurrentUser;
+                bMyMeals.Enabled = true;
             }
         }
 
@@ -389,5 +410,93 @@ namespace NuWay
             AddUser add = new AddUser();
             add.ShowDialog();
         }
+
+        private void lbBreakfast_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            lbOrder.Items.Add(lbBreakfast.SelectedItem);
+            Total();
+        }
+
+        private void lbLD_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            lbOrder.Items.Add(lbLD.SelectedItem);
+            Total();
+        }
+
+        private void lbDrinks_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            lbOrder.Items.Add(lbDrinks.SelectedItem);
+            Total();
+        }
+
+        private void lbDessert_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            lbOrder.Items.Add(lbDessert.SelectedItem);
+            Total();
+        }
+
+        private void lb_SelectedIndexChanged(object sender, EventArgs e )
+        {
+            if (sender.Equals(lbDessert))
+            {
+                tbDessert.Text = (lbDessert.SelectedItem as NuWayMenuItem).ItemDesc;
+            }
+            else if (sender.Equals(lbBreakfast))
+            {
+                tbBreakfast.Text = (lbBreakfast.SelectedItem as NuWayMenuItem).ItemDesc;
+            }
+            else if (sender.Equals(lbLD))
+            {
+                tbLD.Text = (lbLD.SelectedItem as NuWayMenuItem).ItemDesc;
+            }
+            else if (sender.Equals(lbDrinks))
+            {
+                tbDrink.Text = (lbDrinks.SelectedItem as NuWayMenuItem).ItemDesc;
+            }
+        }
+
+        private void bMyMeals_Click(object sender, EventArgs e)
+        {
+            mealform.ShowDialog();
+            Regex regex = new Regex(";");
+            if (mealform.MealSelect.CompareTo("") != 0)
+            {
+                string[] foodItems = regex.Split(mealform.MealSelect);
+                foreach (string item in foodItems)
+                {
+                    foreach (NuWayMenuItem menuItem in items)
+                    {
+                        if (menuItem.ToString().Equals(item))
+                        {
+                            lbOrder.Items.Add(menuItem);
+                            break;
+                        }
+                    }
+                }
+            }
+            Total();
+        }
+    }
+
+    public class NuWayMenuItem
+    {
+        string itemName;
+        string itemDesc;
+        string itemPrice;
+
+        public NuWayMenuItem(string itemName, string itemDesc, string itemPrice)
+        {
+            this.itemName = itemName;
+            this.itemDesc = itemDesc;
+            this.itemPrice = itemPrice;
+        }
+
+        public override string ToString()
+        {
+            return itemName + " " + itemPrice;
+        }
+
+        public string ItemDesc { get { return itemDesc; } }
+        public string ItemName { get { return itemName; } }
     }
 }

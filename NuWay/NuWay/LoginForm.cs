@@ -21,6 +21,8 @@ namespace NuWay
         /// </summary>
         public string currentRole { get; set; }
 
+        public string CurrentUser { get; set; }
+
         public OleDbConnection conn;
         public OleDbCommand cmd;
         public OleDbDataReader reader;
@@ -138,6 +140,7 @@ namespace NuWay
         {
             string encrypteduser = cryptographer.EncryptString(tbUser.Text, cryptographer.DecryptString(key.EncryptedKey(), sharedPrivateKey));
             string encryptedpass = cryptographer.EncryptString(tbPass.Text, cryptographer.DecryptString(key.EncryptedKey(), sharedPrivateKey));
+            CurrentUser = tbUser.Text;
 
             //normal user
             if (!cbAdmin.Checked)
@@ -152,6 +155,7 @@ namespace NuWay
                 else
                 {
                     MessageBox.Show("Invalid Credentials");
+                    CurrentUser = "";
                 }
             }
             //admin user
@@ -168,6 +172,7 @@ namespace NuWay
                 else
                 {
                     MessageBox.Show("Invalid Admin Credentials");
+                    CurrentUser = "";
                 }
             }
         }
