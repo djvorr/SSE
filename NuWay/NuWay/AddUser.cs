@@ -43,7 +43,7 @@ namespace NuWay
         /// <param name="encrole"></param>
         public void Save(string encuser, string encpass, string encrole)
         {
-            if (!db.userExists(encuser, encpass))
+            if (!db.userExists(encuser, encpass) && !db.userTaken(encuser))
             {
                 db.addUser(encuser, encpass, encrole);
                 MessageBox.Show("Addition Successful");

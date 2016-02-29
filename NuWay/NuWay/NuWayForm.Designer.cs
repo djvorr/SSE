@@ -56,6 +56,13 @@
             this.signInToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tbBreakfast = new System.Windows.Forms.TextBox();
+            this.tbDessert = new System.Windows.Forms.TextBox();
+            this.tbDrink = new System.Windows.Forms.TextBox();
+            this.tbLD = new System.Windows.Forms.TextBox();
+            this.LoginLabel = new System.Windows.Forms.Label();
+            this.bMyMeals = new System.Windows.Forms.Button();
+            this.bSaveMeal = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -132,7 +139,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(416, 549);
+            this.label8.Location = new System.Drawing.Point(416, 569);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(31, 13);
             this.label8.TabIndex = 38;
@@ -141,7 +148,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(416, 508);
+            this.label7.Location = new System.Drawing.Point(416, 528);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(25, 13);
             this.label7.TabIndex = 37;
@@ -150,7 +157,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(416, 468);
+            this.label6.Location = new System.Drawing.Point(416, 488);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(46, 13);
             this.label6.TabIndex = 36;
@@ -158,7 +165,7 @@
             // 
             // tbTotal
             // 
-            this.tbTotal.Location = new System.Drawing.Point(507, 546);
+            this.tbTotal.Location = new System.Drawing.Point(507, 566);
             this.tbTotal.Name = "tbTotal";
             this.tbTotal.Size = new System.Drawing.Size(150, 20);
             this.tbTotal.TabIndex = 35;
@@ -166,7 +173,7 @@
             // 
             // tbTax
             // 
-            this.tbTax.Location = new System.Drawing.Point(507, 505);
+            this.tbTax.Location = new System.Drawing.Point(507, 525);
             this.tbTax.Name = "tbTax";
             this.tbTax.Size = new System.Drawing.Size(150, 20);
             this.tbTax.TabIndex = 34;
@@ -174,7 +181,7 @@
             // 
             // tbSubtotal
             // 
-            this.tbSubtotal.Location = new System.Drawing.Point(507, 465);
+            this.tbSubtotal.Location = new System.Drawing.Point(507, 485);
             this.tbSubtotal.Name = "tbSubtotal";
             this.tbSubtotal.Size = new System.Drawing.Size(150, 20);
             this.tbSubtotal.TabIndex = 33;
@@ -194,7 +201,7 @@
             this.lbOrder.FormattingEnabled = true;
             this.lbOrder.Location = new System.Drawing.Point(378, 169);
             this.lbOrder.Name = "lbOrder";
-            this.lbOrder.Size = new System.Drawing.Size(279, 238);
+            this.lbOrder.Size = new System.Drawing.Size(279, 251);
             this.lbOrder.TabIndex = 31;
             // 
             // label4
@@ -220,9 +227,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(10, 205);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 13);
+            this.label2.Size = new System.Drawing.Size(73, 13);
             this.label2.TabIndex = 28;
-            this.label2.Text = "Luch/Dinner";
+            this.label2.Text = "Lunch/Dinner";
             // 
             // label1
             // 
@@ -238,32 +245,40 @@
             this.lbDessert.FormattingEnabled = true;
             this.lbDessert.Location = new System.Drawing.Point(378, 58);
             this.lbDessert.Name = "lbDessert";
-            this.lbDessert.Size = new System.Drawing.Size(279, 82);
+            this.lbDessert.Size = new System.Drawing.Size(279, 56);
             this.lbDessert.TabIndex = 26;
+            this.lbDessert.SelectedIndexChanged += new System.EventHandler(this.lb_SelectedIndexChanged);
+            this.lbDessert.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbDessert_MouseDoubleClick);
             // 
             // lbDrinks
             // 
             this.lbDrinks.FormattingEnabled = true;
             this.lbDrinks.Location = new System.Drawing.Point(14, 452);
             this.lbDrinks.Name = "lbDrinks";
-            this.lbDrinks.Size = new System.Drawing.Size(318, 95);
+            this.lbDrinks.Size = new System.Drawing.Size(318, 69);
             this.lbDrinks.TabIndex = 25;
+            this.lbDrinks.SelectedIndexChanged += new System.EventHandler(this.lb_SelectedIndexChanged);
+            this.lbDrinks.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbDrinks_MouseDoubleClick);
             // 
             // lbLD
             // 
             this.lbLD.FormattingEnabled = true;
             this.lbLD.Location = new System.Drawing.Point(14, 221);
             this.lbLD.Name = "lbLD";
-            this.lbLD.Size = new System.Drawing.Size(318, 199);
+            this.lbLD.Size = new System.Drawing.Size(318, 173);
             this.lbLD.TabIndex = 24;
+            this.lbLD.SelectedIndexChanged += new System.EventHandler(this.lb_SelectedIndexChanged);
+            this.lbLD.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbLD_MouseDoubleClick);
             // 
             // lbBreakfast
             // 
             this.lbBreakfast.FormattingEnabled = true;
             this.lbBreakfast.Location = new System.Drawing.Point(14, 58);
             this.lbBreakfast.Name = "lbBreakfast";
-            this.lbBreakfast.Size = new System.Drawing.Size(318, 134);
+            this.lbBreakfast.Size = new System.Drawing.Size(318, 108);
             this.lbBreakfast.TabIndex = 23;
+            this.lbBreakfast.SelectedIndexChanged += new System.EventHandler(this.lb_SelectedIndexChanged);
+            this.lbBreakfast.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbBreakfast_MouseDoubleClick);
             // 
             // menuStrip1
             // 
@@ -307,11 +322,81 @@
             this.addUserToolStripMenuItem.Text = "Add User";
             this.addUserToolStripMenuItem.Click += new System.EventHandler(this.addUserToolStripMenuItem_Click);
             // 
+            // tbBreakfast
+            // 
+            this.tbBreakfast.Location = new System.Drawing.Point(14, 169);
+            this.tbBreakfast.Name = "tbBreakfast";
+            this.tbBreakfast.ReadOnly = true;
+            this.tbBreakfast.Size = new System.Drawing.Size(318, 20);
+            this.tbBreakfast.TabIndex = 47;
+            // 
+            // tbDessert
+            // 
+            this.tbDessert.Location = new System.Drawing.Point(379, 117);
+            this.tbDessert.Name = "tbDessert";
+            this.tbDessert.ReadOnly = true;
+            this.tbDessert.Size = new System.Drawing.Size(278, 20);
+            this.tbDessert.TabIndex = 48;
+            // 
+            // tbDrink
+            // 
+            this.tbDrink.Location = new System.Drawing.Point(14, 527);
+            this.tbDrink.Name = "tbDrink";
+            this.tbDrink.ReadOnly = true;
+            this.tbDrink.Size = new System.Drawing.Size(317, 20);
+            this.tbDrink.TabIndex = 50;
+            // 
+            // tbLD
+            // 
+            this.tbLD.Location = new System.Drawing.Point(14, 398);
+            this.tbLD.Name = "tbLD";
+            this.tbLD.ReadOnly = true;
+            this.tbLD.Size = new System.Drawing.Size(317, 20);
+            this.tbLD.TabIndex = 51;
+            // 
+            // LoginLabel
+            // 
+            this.LoginLabel.AutoSize = true;
+            this.LoginLabel.Location = new System.Drawing.Point(451, 24);
+            this.LoginLabel.Name = "LoginLabel";
+            this.LoginLabel.Size = new System.Drawing.Size(75, 13);
+            this.LoginLabel.TabIndex = 52;
+            this.LoginLabel.Text = "Not Logged In";
+            // 
+            // bMyMeals
+            // 
+            this.bMyMeals.Enabled = false;
+            this.bMyMeals.Location = new System.Drawing.Point(582, 19);
+            this.bMyMeals.Name = "bMyMeals";
+            this.bMyMeals.Size = new System.Drawing.Size(75, 23);
+            this.bMyMeals.TabIndex = 53;
+            this.bMyMeals.Text = "My Meals";
+            this.bMyMeals.UseVisualStyleBackColor = true;
+            this.bMyMeals.Click += new System.EventHandler(this.bMyMeals_Click);
+            // 
+            // bSaveMeal
+            // 
+            this.bSaveMeal.Enabled = false;
+            this.bSaveMeal.Location = new System.Drawing.Point(379, 452);
+            this.bSaveMeal.Name = "bSaveMeal";
+            this.bSaveMeal.Size = new System.Drawing.Size(278, 23);
+            this.bSaveMeal.TabIndex = 54;
+            this.bSaveMeal.Text = "Save Meal";
+            this.bSaveMeal.UseVisualStyleBackColor = true;
+            this.bSaveMeal.Click += new System.EventHandler(this.bSaveMeal_Click);
+            // 
             // NuWayOrderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(677, 585);
+            this.ClientSize = new System.Drawing.Size(677, 598);
+            this.Controls.Add(this.bSaveMeal);
+            this.Controls.Add(this.bMyMeals);
+            this.Controls.Add(this.LoginLabel);
+            this.Controls.Add(this.tbLD);
+            this.Controls.Add(this.tbDrink);
+            this.Controls.Add(this.tbDessert);
+            this.Controls.Add(this.tbBreakfast);
             this.Controls.Add(this.bClear);
             this.Controls.Add(this.bTotal);
             this.Controls.Add(this.bRemove);
@@ -377,6 +462,13 @@
         private System.Windows.Forms.ToolStripMenuItem signInToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem adminToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addUserToolStripMenuItem;
+        private System.Windows.Forms.TextBox tbBreakfast;
+        private System.Windows.Forms.TextBox tbDessert;
+        private System.Windows.Forms.TextBox tbDrink;
+        private System.Windows.Forms.TextBox tbLD;
+        private System.Windows.Forms.Label LoginLabel;
+        private System.Windows.Forms.Button bMyMeals;
+        private System.Windows.Forms.Button bSaveMeal;
     }
 }
 

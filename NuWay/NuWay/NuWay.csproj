@@ -52,6 +52,7 @@
     <Compile Include="AddUser.Designer.cs">
       <DependentUpon>AddUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomMeals.cs" />
     <Compile Include="En%28De%29cryption.cs" />
     <Compile Include="Key.cs" />
     <Compile Include="LoginForm.cs">
@@ -59,6 +60,12 @@
     </Compile>
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyMealForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyMealForm.Designer.cs">
+      <DependentUpon>MyMealForm.cs</DependentUpon>
     </Compile>
     <Compile Include="NuWayForm.cs">
       <SubType>Form</SubType>
@@ -79,6 +86,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaveMealForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaveMealForm.Designer.cs">
+      <DependentUpon>SaveMealForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tokenizer.cs" />
     <Compile Include="User.cs" />
     <Compile Include="UserDB.cs" />
@@ -87,6 +100,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyMealForm.resx">
+      <DependentUpon>MyMealForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NuWayForm.resx">
       <DependentUpon>NuWayForm.cs</DependentUpon>
@@ -103,6 +119,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SaveMealForm.resx">
+      <DependentUpon>SaveMealForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="nuwaymenuDataSet.xsc">
       <DependentUpon>nuwaymenuDataSet.xsd</DependentUpon>
     </None>
@@ -130,6 +149,9 @@
   <ItemGroup>
     <Content Include="nuwaymenu.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="userMeals.mdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Users.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
