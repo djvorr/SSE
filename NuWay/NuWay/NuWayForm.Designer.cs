@@ -62,6 +62,7 @@
             this.tbLD = new System.Windows.Forms.TextBox();
             this.LoginLabel = new System.Windows.Forms.Label();
             this.bMyMeals = new System.Windows.Forms.Button();
+            this.bSaveMeal = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -138,7 +139,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(416, 549);
+            this.label8.Location = new System.Drawing.Point(416, 569);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(31, 13);
             this.label8.TabIndex = 38;
@@ -147,7 +148,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(416, 508);
+            this.label7.Location = new System.Drawing.Point(416, 528);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(25, 13);
             this.label7.TabIndex = 37;
@@ -156,7 +157,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(416, 468);
+            this.label6.Location = new System.Drawing.Point(416, 488);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(46, 13);
             this.label6.TabIndex = 36;
@@ -164,7 +165,7 @@
             // 
             // tbTotal
             // 
-            this.tbTotal.Location = new System.Drawing.Point(507, 546);
+            this.tbTotal.Location = new System.Drawing.Point(507, 566);
             this.tbTotal.Name = "tbTotal";
             this.tbTotal.Size = new System.Drawing.Size(150, 20);
             this.tbTotal.TabIndex = 35;
@@ -172,7 +173,7 @@
             // 
             // tbTax
             // 
-            this.tbTax.Location = new System.Drawing.Point(507, 505);
+            this.tbTax.Location = new System.Drawing.Point(507, 525);
             this.tbTax.Name = "tbTax";
             this.tbTax.Size = new System.Drawing.Size(150, 20);
             this.tbTax.TabIndex = 34;
@@ -180,7 +181,7 @@
             // 
             // tbSubtotal
             // 
-            this.tbSubtotal.Location = new System.Drawing.Point(507, 465);
+            this.tbSubtotal.Location = new System.Drawing.Point(507, 485);
             this.tbSubtotal.Name = "tbSubtotal";
             this.tbSubtotal.Size = new System.Drawing.Size(150, 20);
             this.tbSubtotal.TabIndex = 33;
@@ -373,11 +374,23 @@
             this.bMyMeals.UseVisualStyleBackColor = true;
             this.bMyMeals.Click += new System.EventHandler(this.bMyMeals_Click);
             // 
+            // bSaveMeal
+            // 
+            this.bSaveMeal.Enabled = false;
+            this.bSaveMeal.Location = new System.Drawing.Point(379, 452);
+            this.bSaveMeal.Name = "bSaveMeal";
+            this.bSaveMeal.Size = new System.Drawing.Size(278, 23);
+            this.bSaveMeal.TabIndex = 54;
+            this.bSaveMeal.Text = "Save Meal";
+            this.bSaveMeal.UseVisualStyleBackColor = true;
+            this.bSaveMeal.Click += new System.EventHandler(this.bSaveMeal_Click);
+            // 
             // NuWayOrderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(677, 585);
+            this.ClientSize = new System.Drawing.Size(677, 598);
+            this.Controls.Add(this.bSaveMeal);
             this.Controls.Add(this.bMyMeals);
             this.Controls.Add(this.LoginLabel);
             this.Controls.Add(this.tbLD);
@@ -455,6 +468,7 @@
         private System.Windows.Forms.TextBox tbLD;
         private System.Windows.Forms.Label LoginLabel;
         private System.Windows.Forms.Button bMyMeals;
+        private System.Windows.Forms.Button bSaveMeal;
     }
 }
 

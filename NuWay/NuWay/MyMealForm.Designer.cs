@@ -47,6 +47,7 @@
             this.tbMeal.Location = new System.Drawing.Point(106, 10);
             this.tbMeal.Multiline = true;
             this.tbMeal.Name = "tbMeal";
+            this.tbMeal.ReadOnly = true;
             this.tbMeal.Size = new System.Drawing.Size(251, 160);
             this.tbMeal.TabIndex = 1;
             // 

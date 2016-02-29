@@ -11,36 +11,38 @@ using System.Windows.Forms;
 
 namespace NuWay
 {
-    public partial class MyMealForm : Form
+    public partial class SaveMealForm : Form
     {
-        List<string> meals = new List<string>();
-        public string MealSelect{ get; set; }
+
+        
+        public string MealSelect { get; set; }
         public string CurrentUser { get; set; }
         List<CustomMeals> customMeals = new List<CustomMeals>();
         List<string> customMealProfiles = new List<string>();
+        List<string> meals = new List<string>();
 
-        //Database variables
+        //Database Variables.
         public OleDbConnection conn;
         public OleDbCommand cmd;
         public OleDbDataReader reader;
         public static string selectString = "SELECT UserName, [Meal 1], [Meal 2], [Meal 3], [Meal 4], [Meal 5], [Meal 6], [Meal 7], [Meal 8], [Meal 9], [Meal 10] FROM userMeals";
 
+
         /// <summary>
-        /// Creates the MyMealForm()
+        /// Initializes the Save Meal Form
         /// </summary>
-        public MyMealForm()
+        public SaveMealForm()
         {
             InitializeComponent();
             for (int i = 1; i <= 10; i++)
             {
-                lbMealNum.Items.Add("Meal " + i);
+                lbMealSelect.Items.Add("Meal " + i);
                 meals.Add("Combo #1 $5.29;Spicy Dog $1.99");
             }
         }
 
-
         /// <summary>
-        /// Connect to user meal database and finds record for current user. If current user does not exist, creates a generic record for user in db.
+        /// Connects to the user meal db and populates the form with the current users meals.
         /// </summary>
         private void ConnectToDb()
         {
@@ -51,16 +53,17 @@ namespace NuWay
                 conn.Open();
                 cmd = new OleDbCommand(selectString, conn);
                 reader = cmd.ExecuteReader();
-                //Reads all records into two lists, one with users, the other with the user meals. Each index corresponds 1 to 1.
-                while(reader.Read())
+
+                while (reader.Read())
                 {
                     customMealProfiles.Add(reader["UserName"].ToString());
-                    customMeals.Add(new CustomMeals(reader["Meal 1"].ToString(), reader["Meal 2"].ToString(), 
+                    customMeals.Add(new CustomMeals(reader["Meal 1"].ToString(), reader["Meal 2"].ToString(),
                         reader["Meal 3"].ToString(), reader["Meal 4"].ToString(), reader["Meal 5"].ToString(), reader["Meal 6"].ToString(),
                         reader["Meal 7"].ToString(), reader["Meal 8"].ToString(), reader["Meal 9"].ToString(), reader["Meal 10"].ToString()));
                 }
-                //Is user does not exist, creates generic record for user in db.
-                if(!customMealProfiles.Contains(CurrentUser))
+
+                // If the current user does not have a profile on the user meal db, creates a generic default record.
+                if (!customMealProfiles.Contains(CurrentUser))
                 {
                     string insertString = "INSERT INTO userMeals ([UserName],[Meal 1],[Meal 2],[Meal 3],[Meal 4],[Meal 5],[Meal 6],[Meal 7],[Meal 8],[Meal 9],[Meal 10]) VALUES (@User, @Meal1, @meal2, @meal3, @meal4, @meal5, @meal6, @meal7, @meal8, @meal9, @meal10)";
                     cmd = new OleDbCommand(insertString, conn);
@@ -77,6 +80,7 @@ namespace NuWay
                     cmd.Parameters.AddWithValue("@Meal10", "Combo #1 $5.29;Spicy Dog $1.99");
                     cmd.ExecuteNonQuery();
                 }
+                // If user has a record, rewrites the meals
                 else
                 {
                     int index = customMealProfiles.IndexOf(CurrentUser);
@@ -93,9 +97,9 @@ namespace NuWay
                     meals.Add(customMeals.ElementAt(index).Meal10);
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                MessageBox.Show("Error encounters. Error message as follows: " + ex.Message);
+                MessageBox.Show("Error encountered. Error message: " + ex.Message);
             }
             finally
             {
@@ -105,39 +109,58 @@ namespace NuWay
 
 
         /// <summary>
-        /// Loads the MyMealForm. Sets listbox to selected index, connects to db, and retrieves current users record.
+        /// On loading the meal form, sets the start index back to 0, reconnects to database to find any changes, and repopulates text boxes.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void MyMealForm_Load(object sender, EventArgs e)
+        private void SaveMealForm_Load(object sender, EventArgs e)
         {
-            lbMealNum.SelectedIndex = 0;
+            lbMealSelect.SelectedIndex = 0;
             ConnectToDb();
             tbMeal.Text = meals.ElementAt(0).Replace(";", "\r\n");
-            MealSelect = "";
+            tbCurrentMeal.Text = MealSelect.Replace(";", "\r\n");
         }
 
 
         /// <summary>
-        /// On changing an index, textbox updates.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void lbMealNum_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            tbMeal.Text = meals.ElementAt(lbMealNum.SelectedIndex).Replace(";", "\r\n");
-        }
-
-
-        /// <summary>
-        /// On pressing select, the selected meal is record to the property of the form.
+        /// On clicking select, replaces the selected meal with the current meal and updates the database record of the user
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void bSelect_Click(object sender, EventArgs e)
         {
-            MealSelect = meals.ElementAt(lbMealNum.SelectedIndex);
+            string selectedIndex = lbMealSelect.SelectedItem.ToString();
+            string updateString = "UPDATE userMeals SET [" + selectedIndex + "]=@MealSelect WHERE UserName=@UserName";
+            conn = new OleDbConnection();
+            conn.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;" + @"Data source= userMeals.mdb;";
+            try
+            {
+                conn.Open();
+                cmd = new OleDbCommand(updateString, conn);
+                cmd.Parameters.AddWithValue("@MealSelect", MealSelect);
+                cmd.Parameters.AddWithValue("@UserName", CurrentUser);
+                cmd.ExecuteNonQuery();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error encountered. Error message: " + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
             Close();
+        }
+
+
+        /// <summary>
+        /// On changing the lb index, rewrites the meal textbox.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void lbMealSelect_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbMeal.Text = meals.ElementAt(lbMealSelect.SelectedIndex).Replace(";", "\r\n");
         }
     }
 }

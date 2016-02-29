@@ -20,6 +20,7 @@ namespace NuWay
         Tokenizer token;
         LoginForm login = new LoginForm();
         MyMealForm mealform = new MyMealForm();
+        SaveMealForm saveMeal = new SaveMealForm();
 
         UserDB db;
         Key key = new Key();
@@ -356,6 +357,7 @@ namespace NuWay
                 adminToolStripMenuItem.Enabled = true;
                 LoginLabel.Text = "Logged in as " + login.CurrentUser + " (Admin)";
                 mealform.CurrentUser = login.CurrentUser;
+                saveMeal.CurrentUser = login.CurrentUser;
             }
             else if (login.isAuthentic)
             {
@@ -368,7 +370,9 @@ namespace NuWay
                 zeroOut();
                 LoginLabel.Text = "Logged in as " + login.CurrentUser;
                 mealform.CurrentUser = login.CurrentUser;
+                saveMeal.CurrentUser = login.CurrentUser;
                 bMyMeals.Enabled = true;
+                bSaveMeal.Enabled = true;
             }
         }
 
@@ -411,6 +415,12 @@ namespace NuWay
             add.ShowDialog();
         }
 
+
+        /// <summary>
+        /// Double clicking a record automatically adds the record to the order.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void lbBreakfast_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             lbOrder.Items.Add(lbBreakfast.SelectedItem);
@@ -435,6 +445,12 @@ namespace NuWay
             Total();
         }
 
+        
+        /// <summary>
+        /// If the lb changes for any meal, updates the description displayed below the lb.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void lb_SelectedIndexChanged(object sender, EventArgs e )
         {
             if (sender.Equals(lbDessert))
@@ -455,6 +471,12 @@ namespace NuWay
             }
         }
 
+
+        /// <summary>
+        /// Opens the my meal dialog
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void bMyMeals_Click(object sender, EventArgs e)
         {
             mealform.ShowDialog();
@@ -476,8 +498,38 @@ namespace NuWay
             }
             Total();
         }
+
+
+        /// <summary>
+        /// Opens the save meal dialog
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void bSaveMeal_Click(object sender, EventArgs e)
+        {
+            //Must have at least one item to create a savemeal.
+            if (lbOrder.Items.Count > 0)
+            {
+                string currentMeal = "";
+                foreach (NuWayMenuItem item in lbOrder.Items)
+                {
+                    currentMeal += item.ToString() + ";";
+                }
+                saveMeal.MealSelect = currentMeal;
+                saveMeal.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("No meal to save.");
+            }
+            
+        }
     }
 
+
+    /// <summary>
+    /// Helper class for displaying descriptions.
+    /// </summary>
     public class NuWayMenuItem
     {
         string itemName;
