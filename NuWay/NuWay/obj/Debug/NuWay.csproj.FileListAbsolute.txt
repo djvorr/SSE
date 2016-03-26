@@ -49,3 +49,22 @@ I:\Documents\Schoolwork\Senior 2015 2016\Spring 2016\SSE 554\Project 1\NuWay\NuW
 I:\Documents\Schoolwork\Senior 2015 2016\Spring 2016\SSE 554\Project 1\NuWay\NuWay\bin\Debug\userMeals.mdb
 I:\Documents\Schoolwork\Senior 2015 2016\Spring 2016\SSE 554\Project 1\NuWay\NuWay\obj\Debug\NuWay.MyMealForm.resources
 I:\Documents\Schoolwork\Senior 2015 2016\Spring 2016\SSE 554\Project 1\NuWay\NuWay\obj\Debug\NuWay.SaveMealForm.resources
+C:\Users\Dave\Documents\Git\SSE\NuWay\NuWay\bin\Debug\userMeals.mdb
+C:\Users\Dave\Documents\Git\SSE\NuWay\NuWay\obj\Debug\NuWay.MyMealForm.resources
+C:\Users\Dave\Documents\Git\SSE\NuWay\NuWay\obj\Debug\NuWay.SaveMealForm.resources
+C:\Users\Dave\Documents\Git\SSE\NuWay\NuWay\bin\Debug\IronPython.dll
+C:\Users\Dave\Documents\Git\SSE\NuWay\NuWay\bin\Debug\IronPython.Modules.dll
+C:\Users\Dave\Documents\Git\SSE\NuWay\NuWay\bin\Debug\IronPython.SQLite.dll
+C:\Users\Dave\Documents\Git\SSE\NuWay\NuWay\bin\Debug\IronPython.Wpf.dll
+C:\Users\Dave\Documents\Git\SSE\NuWay\NuWay\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\Dave\Documents\Git\SSE\NuWay\NuWay\bin\Debug\Microsoft.Scripting.AspNet.dll
+C:\Users\Dave\Documents\Git\SSE\NuWay\NuWay\bin\Debug\Microsoft.Scripting.dll
+C:\Users\Dave\Documents\Git\SSE\NuWay\NuWay\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\Dave\Documents\Git\SSE\NuWay\NuWay\bin\Debug\IronPython.xml
+C:\Users\Dave\Documents\Git\SSE\NuWay\NuWay\bin\Debug\IronPython.Modules.xml
+C:\Users\Dave\Documents\Git\SSE\NuWay\NuWay\bin\Debug\IronPython.SQLite.xml
+C:\Users\Dave\Documents\Git\SSE\NuWay\NuWay\bin\Debug\IronPython.Wpf.xml
+C:\Users\Dave\Documents\Git\SSE\NuWay\NuWay\bin\Debug\Microsoft.Dynamic.xml
+C:\Users\Dave\Documents\Git\SSE\NuWay\NuWay\bin\Debug\Microsoft.Scripting.xml
+C:\Users\Dave\Documents\Git\SSE\NuWay\NuWay\bin\Debug\Microsoft.Scripting.AspNet.xml
+C:\Users\Dave\Documents\Git\SSE\NuWay\NuWay\bin\Debug\Microsoft.Scripting.Metadata.xml
