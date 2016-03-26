@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IronPython.Hosting;
+using System;
 using System.Collections.Generic;
 using System.Data.OleDb;
 using System.Text.RegularExpressions;
@@ -28,6 +29,7 @@ namespace NuWay
         En_De_cryption cryptographer = new En_De_cryption();
 
         public static string selectString = "SELECT Item, Description, Price FROM NuWay";
+        public string currentLang = "en";
 
         public NuWayOrderForm()
         {
@@ -499,6 +501,102 @@ namespace NuWay
             Total();
         }
 
+        /// <summary>
+        /// used to get just the words half
+        /// </summary>
+        /// <param name="pairs"></param>
+        /// <returns></returns>
+        public List<String> getWords(List<Pair> pairs)
+        {
+            List<String> lefts = new List<string>();
+
+            foreach (Pair p in pairs)
+            {
+                lefts.Add(p.a);
+            }
+
+            return lefts;
+        }
+
+        public List<Pair> enPair(ListBox list)
+        {
+            List<Pair> ret = new List<Pair>();
+
+            for(int i=0; i<list.Items.Count; i++)
+            {
+                string s = list.Items[i].ToString();
+                int ind = s.IndexOf("$");
+                ret.Add(new Pair(s.Substring(0, ind), s.Substring(ind)));
+            }
+            return ret;
+        }
+
+        /// <summary>
+        /// Translate all text from the current language to the selected language.
+        /// </summary>
+        /// <param name="lang"></param>
+        public void goslate(string lang)
+        {
+            List<Pair> pairs = enPair(lbBreakfast);
+            List<String> lefts = getWords(pairs);
+            string script;
+
+            if (lang == "ge")
+                script = "toGerm.py";
+            else if (lang == "sp")
+                script = "toSpan.py";
+            else if (lang == "fr")
+                script = "toFren.py";
+            else
+                script = "toEng.py";
+
+
+            var scriptRuntime = Python.CreateRuntime();
+            var pythEng = scriptRuntime.GetEngine("Python");
+            var source = pythEng.CreateScriptSourceFromFile(script);
+            var scope = pythEng.CreateScope();
+
+
+            scope.SetVariable("l", lefts);
+            //scope.SetVariable("amt", Convert.ToDecimal(textBox2.Text));
+            source.Execute(scope);
+            lbBreakfast.Items.Clear();
+            foreach (string s in scope.GetVariable("ret"))
+                lbBreakfast.Items.Add(s);
+
+        }
+
+        public void translate(string lang, ListBox lb)
+        {
+            List<Pair> pairs = enPair(lb);
+            List<String> lefts = getWords(pairs);
+            string script;
+
+            if (lang == "sp")
+                script = "toSp.py";
+            else
+                script = "toEn.py";
+
+
+            var scriptRuntime = Python.CreateRuntime();
+            var pythEng = scriptRuntime.GetEngine("Python");
+            var source = pythEng.CreateScriptSourceFromFile(script);
+            var scope = pythEng.CreateScope();
+
+
+            scope.SetVariable("l", lefts);
+            //scope.SetVariable("amt", Convert.ToDecimal(textBox2.Text));
+            source.Execute(scope);
+            lb.Items.Clear();
+
+            List<string> spans = scope.GetVariable("l");
+
+            for(int i=0; i<spans.Count; i++)
+                lb.Items.Add(spans[i] + " " + pairs[i].b);
+
+
+            currentLang = lang;
+        }
 
         /// <summary>
         /// Opens the save meal dialog
@@ -523,6 +621,24 @@ namespace NuWay
                 MessageBox.Show("No meal to save.");
             }
             
+        }
+
+        private void spanishToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            translate("sp", lbBreakfast);
+            translate("sp", lbDessert);
+            translate("sp", lbDrinks);
+            translate("sp", lbLD);
+            translate("sp", lbOrder);
+        }
+
+        private void englishToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            translate("en", lbBreakfast);
+            translate("en", lbDessert);
+            translate("en", lbDrinks);
+            translate("en", lbLD);
+            translate("en", lbOrder);
         }
     }
 
@@ -551,4 +667,17 @@ namespace NuWay
         public string ItemDesc { get { return itemDesc; } }
         public string ItemName { get { return itemName; } }
     }
+
+    public class Pair
+    {
+        public string a { get; set; }
+        public string b { get; set; }
+
+        public Pair(string a, string b)
+        {
+            this.a = a;
+            this.b = b;
+        }
+    }
+
 }

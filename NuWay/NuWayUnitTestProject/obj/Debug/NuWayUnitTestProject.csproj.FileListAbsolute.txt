@@ -16,3 +16,4 @@ C:\Users\Dave\Documents\Git\SSE\NuWay\NuWayUnitTestProject\bin\Debug\NuWay.pdb
 C:\Users\Dave\Documents\Git\SSE\NuWay\NuWayUnitTestProject\obj\Debug\NuWayUnitTestProject.csprojResolveAssemblyReference.cache
 C:\Users\Dave\Documents\Git\SSE\NuWay\NuWayUnitTestProject\obj\Debug\NuWayUnitTestProject.dll
 C:\Users\Dave\Documents\Git\SSE\NuWay\NuWayUnitTestProject\obj\Debug\NuWayUnitTestProject.pdb
+C:\Users\Dave\Documents\Git\SSE\NuWay\NuWayUnitTestProject\bin\Debug\userMeals.mdb

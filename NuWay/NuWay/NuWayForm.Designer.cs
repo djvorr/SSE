@@ -56,6 +56,8 @@
             this.signInToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.translateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tbBreakfast = new System.Windows.Forms.TextBox();
             this.tbDessert = new System.Windows.Forms.TextBox();
             this.tbDrink = new System.Windows.Forms.TextBox();
@@ -63,6 +65,7 @@
             this.LoginLabel = new System.Windows.Forms.Label();
             this.bMyMeals = new System.Windows.Forms.Button();
             this.bSaveMeal = new System.Windows.Forms.Button();
+            this.spanishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -284,7 +287,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
-            this.adminToolStripMenuItem});
+            this.adminToolStripMenuItem,
+            this.translateToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(677, 24);
@@ -321,6 +325,22 @@
             this.addUserToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.addUserToolStripMenuItem.Text = "Add User";
             this.addUserToolStripMenuItem.Click += new System.EventHandler(this.addUserToolStripMenuItem_Click);
+            // 
+            // translateToolStripMenuItem
+            // 
+            this.translateToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.englishToolStripMenuItem,
+            this.spanishToolStripMenuItem});
+            this.translateToolStripMenuItem.Name = "translateToolStripMenuItem";
+            this.translateToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.translateToolStripMenuItem.Text = "Translate";
+            // 
+            // englishToolStripMenuItem
+            // 
+            this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
+            this.englishToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.englishToolStripMenuItem.Text = "English";
+            this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
             // 
             // tbBreakfast
             // 
@@ -384,6 +404,13 @@
             this.bSaveMeal.Text = "Save Meal";
             this.bSaveMeal.UseVisualStyleBackColor = true;
             this.bSaveMeal.Click += new System.EventHandler(this.bSaveMeal_Click);
+            // 
+            // spanishToolStripMenuItem
+            // 
+            this.spanishToolStripMenuItem.Name = "spanishToolStripMenuItem";
+            this.spanishToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.spanishToolStripMenuItem.Text = "Spanish";
+            this.spanishToolStripMenuItem.Click += new System.EventHandler(this.spanishToolStripMenuItem_Click);
             // 
             // NuWayOrderForm
             // 
@@ -469,6 +496,9 @@
         private System.Windows.Forms.Label LoginLabel;
         private System.Windows.Forms.Button bMyMeals;
         private System.Windows.Forms.Button bSaveMeal;
+        private System.Windows.Forms.ToolStripMenuItem translateToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem spanishToolStripMenuItem;
     }
 }
 
