@@ -355,6 +355,27 @@ namespace NuWayUnitTestProject
             Assert.AreEqual(form.getTextBox("tbSubtotal").Text, "0.00", "SubTotal not zeroed");
             Assert.IsTrue(form.prices.Count == 0, "Prices not empty");
         }
+
+        [TestMethod]
+        public void TestTranslate()
+        {
+            //setup
+            NuWayOrderForm form = new NuWayOrderForm();
+            form.Show();
+            form.LoginService = new TestBox();
+            form.login.isAuthentic = true;
+            form.signInToolStripMenuItem_Click(this, null);
+
+            //Action
+            form.spanishToolStripMenuItem_Click(this, null);
+
+            //Check
+            Assert.IsTrue(form.getListBox("lbDessert").Items[0].ToString().CompareTo("") == 0, "Did not translate");
+            Assert.IsTrue(form.getListBox("lbDrinks").Items[0].ToString().CompareTo("") == 0, "Did not translate");
+            Assert.IsTrue(form.getListBox("lbLD").Items[0].ToString().CompareTo("") == 0, "Did not translate");
+            Assert.IsTrue(form.getListBox("lbBreakfast").Items[0].ToString().CompareTo("") == 0, "Did not translate");
+
+        }
     }
 
     public class TestBox : IMessageBoxService

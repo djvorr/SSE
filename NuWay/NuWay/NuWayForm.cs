@@ -661,7 +661,7 @@ namespace NuWay
             
         }
 
-        private void spanishToolStripMenuItem_Click(object sender, EventArgs e)
+        public void spanishToolStripMenuItem_Click(object sender, EventArgs e)
         {
             translate("sp", lbBreakfast);
             translate("sp", lbDessert);
