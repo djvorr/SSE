@@ -457,18 +457,26 @@ namespace NuWay
         {
             if (sender.Equals(lbDessert))
             {
+                if (lbDessert.SelectedIndex < 0)
+                    return;
                 tbDessert.Text = (lbDessert.SelectedItem as NuWayMenuItem).ItemDesc;
             }
             else if (sender.Equals(lbBreakfast))
             {
+                if (lbBreakfast.SelectedIndex < 0)
+                    return;
                 tbBreakfast.Text = (lbBreakfast.SelectedItem as NuWayMenuItem).ItemDesc;
             }
             else if (sender.Equals(lbLD))
             {
+                if (lbLD.SelectedIndex < 0)
+                    return;
                 tbLD.Text = (lbLD.SelectedItem as NuWayMenuItem).ItemDesc;
             }
             else if (sender.Equals(lbDrinks))
             {
+                if (lbDrinks.SelectedIndex < 0)
+                    return;
                 tbDrink.Text = (lbDrinks.SelectedItem as NuWayMenuItem).ItemDesc;
             }
         }
@@ -587,12 +595,28 @@ namespace NuWay
             scope.SetVariable("l", lefts);
             //scope.SetVariable("amt", Convert.ToDecimal(textBox2.Text));
             source.Execute(scope);
-            lb.Items.Clear();
-
+            //lb.Items.Clear();
+            
             List<string> spans = scope.GetVariable("l");
-
-            for(int i=0; i<spans.Count; i++)
-                lb.Items.Add(spans[i] + " " + pairs[i].b);
+            lb.BeginUpdate();
+            try
+            {
+                for (int i = 0; i < lb.Items.Count; i++)
+                {
+                    lb.SelectedIndex = i;
+                    NuWayMenuItem tempNMI = new NuWayMenuItem(spans[i], (lb.Items[i] as NuWayMenuItem).ItemDesc, (lb.Items[i] as NuWayMenuItem).ItemPrice);
+                    lb.ClearSelected();
+                    lb.SelectedIndex = i;
+                    lb.Items[i] = tempNMI;
+                }
+            }
+            finally
+            {
+                lb.EndUpdate();
+                lb.Refresh();
+            }
+            //for(int i=0; i<spans.Count; i++)
+             //   lb.Items.Add(spans[i] + "" + pairs[i].b);
 
 
             currentLang = lang;
@@ -665,7 +689,10 @@ namespace NuWay
         }
 
         public string ItemDesc { get { return itemDesc; } }
-        public string ItemName { get { return itemName; } }
+        public string ItemName { get { return itemName; }
+            set { itemName = value; }
+        }
+        public string ItemPrice { get { return itemPrice; } }
     }
 
     public class Pair
