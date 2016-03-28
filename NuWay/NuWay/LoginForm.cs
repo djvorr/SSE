@@ -23,9 +23,13 @@ namespace NuWay
 
         public string CurrentUser { get; set; }
 
+        public string userVal { set { tbUser.Text = value; } }
+        public string passVal { set { tbPass.Text = value; } }
+
         public OleDbConnection conn;
         public OleDbCommand cmd;
         public OleDbDataReader reader;
+        public IMessageBoxService MessageBoxService { get; set; }
 
         En_De_cryption cryptographer = new En_De_cryption();
         Key key = new Key();
@@ -38,6 +42,7 @@ namespace NuWay
         public LoginForm()
         {
             InitializeComponent();
+            MessageBoxService = new MessageBoxService();
         }
 
         /// <summary>
@@ -136,7 +141,7 @@ namespace NuWay
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void bSignIn_Click(object sender, EventArgs e)
+        public void bSignIn_Click(object sender, EventArgs e)
         {
             string encrypteduser = cryptographer.EncryptString(tbUser.Text, cryptographer.DecryptString(key.EncryptedKey(), sharedPrivateKey));
             string encryptedpass = cryptographer.EncryptString(tbPass.Text, cryptographer.DecryptString(key.EncryptedKey(), sharedPrivateKey));
@@ -147,14 +152,14 @@ namespace NuWay
             {
                 if (AuthenticateUser(encrypteduser, encryptedpass))
                 {
-                    MessageBox.Show("User Signed in");
+                    MessageBoxService.Show("User Signed in");
                     isAuthentic = true;
                     currentRole = getRole(encrypteduser, encryptedpass);
                     Close();
                 }
                 else
                 {
-                    MessageBox.Show("Invalid Credentials");
+                    MessageBoxService.Show("Invalid Credentials");
                     CurrentUser = "";
                 }
             }
@@ -163,7 +168,7 @@ namespace NuWay
             {
                 if (AuthenticateAdministrator(encrypteduser, encryptedpass) && AuthenticateAdminRole(encrypteduser, encryptedpass))
                 {
-                    MessageBox.Show("Admin Signed in");
+                    MessageBoxService.Show("Admin Signed in");
                     isAuthentic = true;
                     isAdministrator = true;
                     currentRole = getRole(encrypteduser, encryptedpass);
@@ -171,10 +176,18 @@ namespace NuWay
                 }
                 else
                 {
-                    MessageBox.Show("Invalid Admin Credentials");
+                    MessageBoxService.Show("Invalid Admin Credentials");
                     CurrentUser = "";
                 }
             }
+        }
+    }
+
+    public class MessageBoxService : IMessageBoxService
+    {
+        public void Show(string message)
+        {
+            MessageBox.Show(message);
         }
     }
 }

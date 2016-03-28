@@ -19,9 +19,11 @@ namespace NuWay
         public OleDbCommand cmd;
         public OleDbDataReader reader;
         Tokenizer token;
-        LoginForm login = new LoginForm();
+        public LoginForm login = new LoginForm();
         MyMealForm mealform = new MyMealForm();
         SaveMealForm saveMeal = new SaveMealForm();
+
+        public IMessageBoxService LoginService { get; set; }
 
         UserDB db;
         Key key = new Key();
@@ -34,6 +36,7 @@ namespace NuWay
         public NuWayOrderForm()
         {
             InitializeComponent();
+            LoginService = new LoginDialogService(login);
         }
 
         /// <summary>
@@ -349,9 +352,10 @@ namespace NuWay
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void signInToolStripMenuItem_Click(object sender, EventArgs e)
+        public void signInToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            login.ShowDialog();
+            //login.ShowDialog();
+            LoginService.Show("");
 
             if (login.isAdministrator)
             {
@@ -615,6 +619,8 @@ namespace NuWay
                 lb.EndUpdate();
                 lb.Refresh();
             }
+            if (lb.Items.Count > 0)
+                lb.SelectedIndex = 0;
             //for(int i=0; i<spans.Count; i++)
              //   lb.Items.Add(spans[i] + "" + pairs[i].b);
 
@@ -707,4 +713,18 @@ namespace NuWay
         }
     }
 
+    public class LoginDialogService : IMessageBoxService
+    {
+        LoginForm login;
+
+        public LoginDialogService(LoginForm login)
+        {
+            this.login = login;
+        }
+
+        public void Show(string message)
+        {
+            login.ShowDialog();
+        }
+    }
 }
