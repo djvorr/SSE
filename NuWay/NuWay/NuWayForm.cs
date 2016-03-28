@@ -32,6 +32,7 @@ namespace NuWay
 
         public static string selectString = "SELECT Item, Description, Price FROM NuWay";
         public string currentLang = "en";
+        public double exchange = 17.56;
 
         public NuWayOrderForm()
         {
@@ -605,10 +606,19 @@ namespace NuWay
             lb.BeginUpdate();
             try
             {
+                double price;
                 for (int i = 0; i < lb.Items.Count; i++)
                 {
                     lb.SelectedIndex = i;
-                    NuWayMenuItem tempNMI = new NuWayMenuItem(spans[i], (lb.Items[i] as NuWayMenuItem).ItemDesc, (lb.Items[i] as NuWayMenuItem).ItemPrice);
+                    price = double.Parse((lb.Items[i] as NuWayMenuItem).ItemPrice.Substring(1));
+                    if (currentLang.CompareTo(lang)!= 0)
+                    {
+                        if (currentLang.CompareTo("en") == 0)
+                            price = price * exchange;
+                        else
+                            price = price / exchange;
+                    }
+                    NuWayMenuItem tempNMI = new NuWayMenuItem(spans[i], (lb.Items[i] as NuWayMenuItem).ItemDesc, "$" + price);
                     lb.ClearSelected();
                     lb.SelectedIndex = i;
                     lb.Items[i] = tempNMI;
@@ -624,8 +634,6 @@ namespace NuWay
             //for(int i=0; i<spans.Count; i++)
              //   lb.Items.Add(spans[i] + "" + pairs[i].b);
 
-
-            currentLang = lang;
         }
 
         /// <summary>
@@ -660,6 +668,7 @@ namespace NuWay
             translate("sp", lbDrinks);
             translate("sp", lbLD);
             translate("sp", lbOrder);
+            currentLang = "sp";
         }
 
         private void englishToolStripMenuItem_Click(object sender, EventArgs e)
@@ -669,6 +678,7 @@ namespace NuWay
             translate("en", lbDrinks);
             translate("en", lbLD);
             translate("en", lbOrder);
+            currentLang = "en";
         }
     }
 
@@ -691,7 +701,31 @@ namespace NuWay
 
         public override string ToString()
         {
-            return itemName + " " + itemPrice;
+            return itemName + " " + format(itemPrice);
+        }
+
+        public String format(String amount)
+        {
+            //if amount not blank
+            if (amount.Length > 0)
+            {
+                //if contains "."
+                if (amount.Contains("."))
+                {
+                    //if no 0's
+                    if (amount.IndexOf('.') == amount.Length - 1)
+                        return amount += "00";
+                    //if one 0
+                    else if (amount.IndexOf('.') == amount.Length - 2)
+                        return amount += "0";
+                    else if (amount.IndexOf('.') < amount.Length - 3)
+                        return amount.Substring(0, amount.IndexOf('.') + 3);
+                }
+                else
+                    return amount += ".00";
+            }
+
+            return amount;
         }
 
         public string ItemDesc { get { return itemDesc; } }
