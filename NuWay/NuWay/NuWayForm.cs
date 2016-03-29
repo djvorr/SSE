@@ -518,6 +518,11 @@ namespace NuWay
             return lefts;
         }
 
+        /// <summary>
+        /// divides all listbox items into text and cost pairs
+        /// </summary>
+        /// <param name="list"></param>
+        /// <returns></returns>
         public List<Pair> enPair(ListBox list)
         {
             List<Pair> ret = new List<Pair>();
@@ -535,9 +540,9 @@ namespace NuWay
         /// Translate all text from the current language to the selected language.
         /// </summary>
         /// <param name="lang"></param>
-        public void goslate(string lang)
+        public void goslate(string lang, ListBox lb)
         {
-            List<Pair> pairs = enPair(lbBreakfast);
+            List<Pair> pairs = enPair(lb);
             List<String> lefts = getWords(pairs);
             string script;
 
@@ -558,13 +563,31 @@ namespace NuWay
 
 
             scope.SetVariable("l", lefts);
-            //scope.SetVariable("amt", Convert.ToDecimal(textBox2.Text));
             source.Execute(scope);
-            lbBreakfast.Items.Clear();
-            foreach (string s in scope.GetVariable("ret"))
-                lbBreakfast.Items.Add(s);
+            lb.Items.Clear();
+            List<string> trans = scope.GetVariable("ret");
+
+            for (int i = 0; i < trans.Count; i++)
+                lb.Items.Add(trans[i] + " " + pairs[i].b);
 
         }
+
+        /*
+        var scriptRuntime = Python.CreateRuntime();
+        var pythEng = scriptRuntime.GetEngine("Python");
+        var source = pythEng.CreateScriptSourceFromFile(script);
+        var scope = pythEng.CreateScope();
+
+        scope.SetVariable("l", 17.65);
+        scope.SetVariable("l", rights);
+        source.Execute(scope);
+
+        List<string> cost = scope.GetVariable("l");
+
+        for (int i = 0; i < cost.Count; i++)
+            lb.Items.Add(cost[i] + " " + pairs[i].b);
+    
+        */
 
         public void translate(string lang, ListBox lb)
         {
@@ -589,10 +612,10 @@ namespace NuWay
             source.Execute(scope);
             lb.Items.Clear();
 
-            List<string> spans = scope.GetVariable("l");
+            List<string> trans = scope.GetVariable("l");
 
-            for(int i=0; i<spans.Count; i++)
-                lb.Items.Add(spans[i] + " " + pairs[i].b);
+            for(int i=0; i< trans.Count; i++)
+                lb.Items.Add(trans[i] + " " + pairs[i].b);
 
 
             currentLang = lang;
