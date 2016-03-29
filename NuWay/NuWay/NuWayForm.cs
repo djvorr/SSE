@@ -539,7 +539,7 @@ namespace NuWay
             {
                 string s = list.Items[i].ToString();
                 int ind = s.IndexOf("$");
-                ret.Add(new Pair(s.Substring(0, ind), s.Substring(ind)));
+                ret.Add(new Pair(s.Substring(0, ind-1), s.Substring(ind)));
             }
             return ret;
         }
@@ -669,6 +669,7 @@ namespace NuWay
             translate("sp", lbLD);
             translate("sp", lbOrder);
             currentLang = "sp";
+            Total();
         }
 
         private void englishToolStripMenuItem_Click(object sender, EventArgs e)
@@ -679,6 +680,7 @@ namespace NuWay
             translate("en", lbLD);
             translate("en", lbOrder);
             currentLang = "en";
+            Total();
         }
     }
 

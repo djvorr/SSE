@@ -370,10 +370,10 @@ namespace NuWayUnitTestProject
             form.spanishToolStripMenuItem_Click(this, null);
 
             //Check
-            Assert.IsTrue(form.getListBox("lbDessert").Items[0].ToString().CompareTo("") == 0, "Did not translate");
-            Assert.IsTrue(form.getListBox("lbDrinks").Items[0].ToString().CompareTo("") == 0, "Did not translate");
-            Assert.IsTrue(form.getListBox("lbLD").Items[0].ToString().CompareTo("") == 0, "Did not translate");
-            Assert.IsTrue(form.getListBox("lbBreakfast").Items[0].ToString().CompareTo("") == 0, "Did not translate");
+            Assert.IsTrue(form.getListBox("lbDessert").Items[3].ToString().CompareTo("Volumen de negocios de manzana caliente $22.65") == 0, "Dessert did not translate");
+            Assert.IsTrue(form.getListBox("lbDrinks").Items[0].ToString().CompareTo("Bebidas $29.67") == 0, "Drink did not translate");
+            Assert.IsTrue(form.getListBox("lbLD").Items[2].ToString().CompareTo("queso Pancho $40.21") == 0, "Lunch/Dinner did not translate");
+            Assert.IsTrue(form.getListBox("lbBreakfast").Items[0].ToString().CompareTo("sandwich de huevo w/ Tocino $52.50") == 0, "Breakfast did not translate");
 
         }
     }
