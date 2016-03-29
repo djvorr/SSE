@@ -23,11 +23,46 @@ namespace NuWayUnitTestProject
         }
 
         [TestMethod]
+        public void TestLogin()
+        {
+            //setup
+            NuWayOrderForm form = new NuWayOrderForm();
+            form.Show();
+            form.LoginService = new TestBox();
+            form.login.isAuthentic = true;
+            form.signInToolStripMenuItem_Click(this, null);
+            //form.login.Show();
+            //form.login.MessageBoxService = new TestBox() as IMessageBoxService;
+            //form.login.tbPass.Text = "alf1";
+            //form.login.tbUser.Text = "jalf"; 
+            //form.login.bSignIn_Click(this, null);
+
+
+
+            Assert.IsTrue(form.getListBox("lbBreakfast").Items.Count > 0, "lbBreakfast is empty.");
+            Assert.IsTrue(form.getListBox("lbBreakfast").SelectedIndex == 0, "lbBreakfast selected index is not 0.");
+
+            Assert.IsTrue(form.getListBox("lbLD").Items.Count > 0, "lbLD is empty.");
+            Assert.IsTrue(form.getListBox("lbLD").SelectedIndex == 0, "lbLD selected index is not 0.");
+
+            Assert.IsTrue(form.getListBox("lbDrinks").Items.Count > 0, "lbDrinks is empty.");
+            Assert.IsTrue(form.getListBox("lbDrinks").SelectedIndex == 0, "lbDrinks selected index is not.");
+
+            Assert.IsTrue(form.getListBox("lbDessert").Items.Count > 0, "lbDesserts is empty.");
+            Assert.IsTrue(form.getListBox("lbDessert").Items.Count > 0, "lbDesserts selected index is not 0.");
+
+            Assert.IsTrue(form.getListBox("lbOrder").Items.Count == 0, "lbOrder is not empty.");
+        }
+
+        [TestMethod]
         public void TestTokenizePrices()
         {
             //setup
             NuWayOrderForm form = new NuWayOrderForm();
             form.Show();
+            form.LoginService = new TestBox();
+            form.login.isAuthentic = true;
+            form.signInToolStripMenuItem_Click(this, null);
             form.bBreakfast_Click(this, null);
 
             //action
@@ -43,6 +78,10 @@ namespace NuWayUnitTestProject
             //setup
             NuWayOrderForm form = new NuWayOrderForm();
             form.Show();
+            form.LoginService = new TestBox();
+            form.login.isAuthentic = true;
+            form.signInToolStripMenuItem_Click(this, null);
+            
 
             form.bBreakfast_Click(this, null);
             form.bDrinks_Click(this, null);
@@ -71,6 +110,9 @@ namespace NuWayUnitTestProject
             //setup
             NuWayOrderForm form = new NuWayOrderForm();
             form.Show();
+            form.LoginService = new TestBox();
+            form.login.isAuthentic = true;
+            form.signInToolStripMenuItem_Click(this, null);
 
             //action
             form.bBreakfast_Click(this, null);
@@ -89,6 +131,9 @@ namespace NuWayUnitTestProject
             //setup
             NuWayOrderForm form = new NuWayOrderForm();
             form.Show();
+            form.LoginService = new TestBox();
+            form.login.isAuthentic = true;
+            form.signInToolStripMenuItem_Click(this, null);
 
             //check
             Assert.IsTrue(form.getTextBox("tbTotal").Text == "0.00", "tbTotal not 0.00.");
@@ -101,6 +146,9 @@ namespace NuWayUnitTestProject
             //setup
             NuWayOrderForm form = new NuWayOrderForm();
             form.Show();
+            form.LoginService = new TestBox();
+            form.login.isAuthentic = true;
+            form.signInToolStripMenuItem_Click(this, null);
 
             form.bBreakfast_Click(this, null);
             form.bBreakfast_Click(this, null);
@@ -123,6 +171,9 @@ namespace NuWayUnitTestProject
             //setup
             NuWayOrderForm form = new NuWayOrderForm();
             form.Show();
+            form.LoginService = new TestBox();
+            form.login.isAuthentic = true;
+            form.signInToolStripMenuItem_Click(this, null);
 
             form.bBreakfast_Click(this, null);
 
@@ -164,7 +215,10 @@ namespace NuWayUnitTestProject
             //setup
             NuWayOrderForm form = new NuWayOrderForm();
             form.Show();
-            
+            form.LoginService = new TestBox();
+            form.login.isAuthentic = true;
+            form.signInToolStripMenuItem_Click(this, null);
+
             //baseline
             int count = form.getListBox("lbBreakfast").Items.Count;
             Assert.IsTrue(form.getListBox("lbBreakfast").Items.Count > 0, "lbBreakfast has no item.");
@@ -187,7 +241,10 @@ namespace NuWayUnitTestProject
             //setup
             NuWayOrderForm form = new NuWayOrderForm();
             form.Show();
-            
+            form.LoginService = new TestBox();
+            form.login.isAuthentic = true;
+            form.signInToolStripMenuItem_Click(this, null);
+
             //baseline
             int count = form.getListBox("lbLD").Items.Count;
             Assert.IsTrue(form.getListBox("lbLD").Items.Count > 0, "lbLD has no item.");
@@ -210,6 +267,9 @@ namespace NuWayUnitTestProject
             //setup
             NuWayOrderForm form = new NuWayOrderForm();
             form.Show();
+            form.LoginService = new TestBox();
+            form.login.isAuthentic = true;
+            form.signInToolStripMenuItem_Click(this, null);
 
             //baseline
             int count = form.getListBox("lbDessert").Items.Count;
@@ -233,7 +293,10 @@ namespace NuWayUnitTestProject
             //setup
             NuWayOrderForm form = new NuWayOrderForm();
             form.Show();
-            
+            form.LoginService = new TestBox();
+            form.login.isAuthentic = true;
+            form.signInToolStripMenuItem_Click(this, null);
+
             //baseline
             int count = form.getListBox("lbDrinks").Items.Count;
             Assert.IsTrue(form.getListBox("lbDrinks").Items.Count > 0, "lbDrinks has no item.");
@@ -256,6 +319,9 @@ namespace NuWayUnitTestProject
             //setup
             NuWayOrderForm form = new NuWayOrderForm();
             form.Show();
+            form.LoginService = new TestBox();
+            form.login.isAuthentic = true;
+            form.signInToolStripMenuItem_Click(this, null);
 
             //check
             Assert.IsTrue(form.getListBox("lbBreakfast").Items.Count > 0, "lbBreakfast is empty.");
@@ -279,12 +345,44 @@ namespace NuWayUnitTestProject
             //setup
             NuWayOrderForm form = new NuWayOrderForm();
             form.Show();
+            form.LoginService = new TestBox();
+            form.login.isAuthentic = true;
+            form.signInToolStripMenuItem_Click(this, null);
 
             //check
             Assert.AreEqual(form.getTextBox("tbTotal").Text, "0.00", "Total not zeroed");
             Assert.AreEqual(form.getTextBox("tbTax").Text, "0.06", "Tax not zeroed");
             Assert.AreEqual(form.getTextBox("tbSubtotal").Text, "0.00", "SubTotal not zeroed");
             Assert.IsTrue(form.prices.Count == 0, "Prices not empty");
+        }
+
+        [TestMethod]
+        public void TestTranslate()
+        {
+            //setup
+            NuWayOrderForm form = new NuWayOrderForm();
+            form.Show();
+            form.LoginService = new TestBox();
+            form.login.isAuthentic = true;
+            form.signInToolStripMenuItem_Click(this, null);
+
+            //Action
+            form.spanishToolStripMenuItem_Click(this, null);
+
+            //Check
+            Assert.IsTrue(form.getListBox("lbDessert").Items[3].ToString().CompareTo("Volumen de negocios de manzana caliente $22.65") == 0, "Dessert did not translate");
+            Assert.IsTrue(form.getListBox("lbDrinks").Items[0].ToString().CompareTo("Bebidas $29.67") == 0, "Drink did not translate");
+            Assert.IsTrue(form.getListBox("lbLD").Items[2].ToString().CompareTo("queso Pancho $40.21") == 0, "Lunch/Dinner did not translate");
+            Assert.IsTrue(form.getListBox("lbBreakfast").Items[0].ToString().CompareTo("sandwich de huevo w/ Tocino $52.50") == 0, "Breakfast did not translate");
+
+        }
+    }
+
+    public class TestBox : IMessageBoxService
+    {
+        public void Show(string message)
+        {
+            
         }
     }
 }

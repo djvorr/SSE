@@ -19,9 +19,11 @@ namespace NuWay
         public OleDbCommand cmd;
         public OleDbDataReader reader;
         Tokenizer token;
-        LoginForm login = new LoginForm();
+        public LoginForm login = new LoginForm();
         MyMealForm mealform = new MyMealForm();
         SaveMealForm saveMeal = new SaveMealForm();
+
+        public IMessageBoxService LoginService { get; set; }
 
         UserDB db;
         Key key = new Key();
@@ -30,10 +32,12 @@ namespace NuWay
 
         public static string selectString = "SELECT Item, Description, Price FROM NuWay";
         public string currentLang = "en";
+        public double exchange = 17.56;
 
         public NuWayOrderForm()
         {
             InitializeComponent();
+            LoginService = new LoginDialogService(login);
         }
 
         /// <summary>
@@ -349,9 +353,10 @@ namespace NuWay
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void signInToolStripMenuItem_Click(object sender, EventArgs e)
+        public void signInToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            login.ShowDialog();
+            //login.ShowDialog();
+            LoginService.Show("");
 
             if (login.isAdministrator)
             {
@@ -457,18 +462,26 @@ namespace NuWay
         {
             if (sender.Equals(lbDessert))
             {
+                if (lbDessert.SelectedIndex < 0)
+                    return;
                 tbDessert.Text = (lbDessert.SelectedItem as NuWayMenuItem).ItemDesc;
             }
             else if (sender.Equals(lbBreakfast))
             {
+                if (lbBreakfast.SelectedIndex < 0)
+                    return;
                 tbBreakfast.Text = (lbBreakfast.SelectedItem as NuWayMenuItem).ItemDesc;
             }
             else if (sender.Equals(lbLD))
             {
+                if (lbLD.SelectedIndex < 0)
+                    return;
                 tbLD.Text = (lbLD.SelectedItem as NuWayMenuItem).ItemDesc;
             }
             else if (sender.Equals(lbDrinks))
             {
+                if (lbDrinks.SelectedIndex < 0)
+                    return;
                 tbDrink.Text = (lbDrinks.SelectedItem as NuWayMenuItem).ItemDesc;
             }
         }
@@ -526,7 +539,7 @@ namespace NuWay
             {
                 string s = list.Items[i].ToString();
                 int ind = s.IndexOf("$");
-                ret.Add(new Pair(s.Substring(0, ind), s.Substring(ind)));
+                ret.Add(new Pair(s.Substring(0, ind-1), s.Substring(ind)));
             }
             return ret;
         }
@@ -587,15 +600,40 @@ namespace NuWay
             scope.SetVariable("l", lefts);
             //scope.SetVariable("amt", Convert.ToDecimal(textBox2.Text));
             source.Execute(scope);
-            lb.Items.Clear();
-
+            //lb.Items.Clear();
+            
             List<string> spans = scope.GetVariable("l");
+            lb.BeginUpdate();
+            try
+            {
+                double price;
+                for (int i = 0; i < lb.Items.Count; i++)
+                {
+                    lb.SelectedIndex = i;
+                    price = double.Parse((lb.Items[i] as NuWayMenuItem).ItemPrice.Substring(1));
+                    if (currentLang.CompareTo(lang)!= 0)
+                    {
+                        if (currentLang.CompareTo("en") == 0)
+                            price = price * exchange;
+                        else
+                            price = price / exchange;
+                    }
+                    NuWayMenuItem tempNMI = new NuWayMenuItem(spans[i], (lb.Items[i] as NuWayMenuItem).ItemDesc, "$" + price);
+                    lb.ClearSelected();
+                    lb.SelectedIndex = i;
+                    lb.Items[i] = tempNMI;
+                }
+            }
+            finally
+            {
+                lb.EndUpdate();
+                lb.Refresh();
+            }
+            if (lb.Items.Count > 0)
+                lb.SelectedIndex = 0;
+            //for(int i=0; i<spans.Count; i++)
+             //   lb.Items.Add(spans[i] + "" + pairs[i].b);
 
-            for(int i=0; i<spans.Count; i++)
-                lb.Items.Add(spans[i] + " " + pairs[i].b);
-
-
-            currentLang = lang;
         }
 
         /// <summary>
@@ -623,13 +661,15 @@ namespace NuWay
             
         }
 
-        private void spanishToolStripMenuItem_Click(object sender, EventArgs e)
+        public void spanishToolStripMenuItem_Click(object sender, EventArgs e)
         {
             translate("sp", lbBreakfast);
             translate("sp", lbDessert);
             translate("sp", lbDrinks);
             translate("sp", lbLD);
             translate("sp", lbOrder);
+            currentLang = "sp";
+            Total();
         }
 
         private void englishToolStripMenuItem_Click(object sender, EventArgs e)
@@ -639,6 +679,8 @@ namespace NuWay
             translate("en", lbDrinks);
             translate("en", lbLD);
             translate("en", lbOrder);
+            currentLang = "en";
+            Total();
         }
     }
 
@@ -661,11 +703,38 @@ namespace NuWay
 
         public override string ToString()
         {
-            return itemName + " " + itemPrice;
+            return itemName + " " + format(itemPrice);
+        }
+
+        public String format(String amount)
+        {
+            //if amount not blank
+            if (amount.Length > 0)
+            {
+                //if contains "."
+                if (amount.Contains("."))
+                {
+                    //if no 0's
+                    if (amount.IndexOf('.') == amount.Length - 1)
+                        return amount += "00";
+                    //if one 0
+                    else if (amount.IndexOf('.') == amount.Length - 2)
+                        return amount += "0";
+                    else if (amount.IndexOf('.') < amount.Length - 3)
+                        return amount.Substring(0, amount.IndexOf('.') + 3);
+                }
+                else
+                    return amount += ".00";
+            }
+
+            return amount;
         }
 
         public string ItemDesc { get { return itemDesc; } }
-        public string ItemName { get { return itemName; } }
+        public string ItemName { get { return itemName; }
+            set { itemName = value; }
+        }
+        public string ItemPrice { get { return itemPrice; } }
     }
 
     public class Pair
@@ -680,4 +749,18 @@ namespace NuWay
         }
     }
 
+    public class LoginDialogService : IMessageBoxService
+    {
+        LoginForm login;
+
+        public LoginDialogService(LoginForm login)
+        {
+            this.login = login;
+        }
+
+        public void Show(string message)
+        {
+            login.ShowDialog();
+        }
+    }
 }
