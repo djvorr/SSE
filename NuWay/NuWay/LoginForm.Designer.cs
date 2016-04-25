@@ -135,8 +135,8 @@
         private System.Windows.Forms.Button bSignIn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox tbUser;
-        private System.Windows.Forms.TextBox tbPass;
+        public System.Windows.Forms.TextBox tbUser;
+        public System.Windows.Forms.TextBox tbPass;
         private System.Windows.Forms.TextBox tbKey;
         private System.Windows.Forms.Label lAdmin;
         private System.Windows.Forms.CheckBox cbAdmin;
