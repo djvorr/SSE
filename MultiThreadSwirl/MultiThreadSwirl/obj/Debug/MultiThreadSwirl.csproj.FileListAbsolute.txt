@@ -1,0 +1,9 @@
+c:\users\dave\documents\visual studio 2015\Projects\MultiThreadSwirl\MultiThreadSwirl\bin\Debug\MultiThreadSwirl.exe.config
+c:\users\dave\documents\visual studio 2015\Projects\MultiThreadSwirl\MultiThreadSwirl\bin\Debug\MultiThreadSwirl.exe
+c:\users\dave\documents\visual studio 2015\Projects\MultiThreadSwirl\MultiThreadSwirl\bin\Debug\MultiThreadSwirl.pdb
+c:\users\dave\documents\visual studio 2015\Projects\MultiThreadSwirl\MultiThreadSwirl\obj\Debug\MultiThreadSwirl.csprojResolveAssemblyReference.cache
+c:\users\dave\documents\visual studio 2015\Projects\MultiThreadSwirl\MultiThreadSwirl\obj\Debug\MultiThreadSwirl.Form1.resources
+c:\users\dave\documents\visual studio 2015\Projects\MultiThreadSwirl\MultiThreadSwirl\obj\Debug\MultiThreadSwirl.Properties.Resources.resources
+c:\users\dave\documents\visual studio 2015\Projects\MultiThreadSwirl\MultiThreadSwirl\obj\Debug\MultiThreadSwirl.csproj.GenerateResource.Cache
+c:\users\dave\documents\visual studio 2015\Projects\MultiThreadSwirl\MultiThreadSwirl\obj\Debug\MultiThreadSwirl.exe
+c:\users\dave\documents\visual studio 2015\Projects\MultiThreadSwirl\MultiThreadSwirl\obj\Debug\MultiThreadSwirl.pdb
