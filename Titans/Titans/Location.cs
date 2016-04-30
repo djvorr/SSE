@@ -5,8 +5,7 @@ using System.Text;
 
 namespace Titans
 {
-    public 
-        class Location
+    public class Location
     {
         private int X;
         private int Y;

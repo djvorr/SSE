@@ -100,6 +100,7 @@
     <Compile Include="BodySlam.cs" />
     <Compile Include="Boss.cs" />
     <Compile Include="BossFight.cs" />
+    <Compile Include="Bounds.cs" />
     <Compile Include="Character.cs" />
     <Compile Include="Fighter.cs" />
     <Compile Include="Finisher.cs" />
@@ -110,12 +111,17 @@
     <Compile Include="HobGoblin.cs" />
     <Compile Include="Iterator.cs" />
     <Compile Include="Jump.cs" />
+    <Compile Include="KnightCommand.cs" />
+    <Compile Include="Knights.cs" />
+    <Compile Include="KnightsIterator.cs" />
+    <Compile Include="LineFormationCommand.cs" />
     <Compile Include="MonsterIterator.cs" />
     <Compile Include="NonHero.cs" />
     <Compile Include="Observer.cs" />
     <Compile Include="OrcArcher.cs" />
     <Compile Include="OrcArmy.cs" />
     <Compile Include="OrcWarrior.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="Portal.cs" />
     <Compile Include="Hero.cs" />
     <Compile Include="HomeTeleport.cs">
@@ -126,6 +132,7 @@
     <Compile Include="Monster.cs" />
     <Compile Include="PortalSpell.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Room.cs" />
     <Compile Include="Script.cs" />
     <Compile Include="Slash.cs" />
     <Compile Include="Smash.cs" />
