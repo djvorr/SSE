@@ -10,8 +10,10 @@ namespace Titans
         Location getLocation();
         bool isDead();
         void setLocation(Location location);
-        List<Monster> callBackup();
+        void callBackup();
         int getHealth();
         void updateAndSwarm(Location location);
+        List<NonHero> getReinforcements();
+        void takeDamage(int damage);
     }
 }

@@ -9,7 +9,7 @@ namespace Titans
     {
         bool hasNext();
         bool isEmpty();
-        void Add();
+        void Add(Monster monster);
         void Remove();
     }
 }

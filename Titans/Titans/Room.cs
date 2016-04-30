@@ -8,7 +8,7 @@ namespace Titans
     public class Room
     {
         Bounds bounds;
-        public void Room(int xBound, int yBound)
+        public Room(int xBound, int yBound)
         {
             bounds = new Bounds(xBound, yBound);
         }

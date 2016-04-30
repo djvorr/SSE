@@ -4,3 +4,9 @@ C:\Users\Dave\Documents\Visual Studio 2010\Projects\Titans\Titans\bin\x86\Debug\
 C:\Users\Dave\Documents\Visual Studio 2010\Projects\Titans\Titans\obj\x86\Debug\Titans.dll
 C:\Users\Dave\Documents\Visual Studio 2010\Projects\Titans\Titans\obj\x86\Debug\Titans.pdb
 C:\Users\Dave\Documents\Visual Studio 2010\Projects\Titans\Titans\obj\x86\Debug\Titans.csprojResolveAssemblyReference.cache
+C:\Users\Dave\Documents\Git\SSE\Titans\Titans\obj\x86\Debug\Titans.csprojResolveAssemblyReference.cache
+C:\Users\Dave\Documents\Git\SSE\Titans\Titans\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Dave\Documents\Git\SSE\Titans\Titans\obj\x86\Debug\Titans.dll
+C:\Users\Dave\Documents\Git\SSE\Titans\Titans\obj\x86\Debug\Titans.pdb
+C:\Users\Dave\Documents\Git\SSE\Titans\Titans\bin\x86\Debug\Titans.dll
+C:\Users\Dave\Documents\Git\SSE\Titans\Titans\bin\x86\Debug\Titans.pdb

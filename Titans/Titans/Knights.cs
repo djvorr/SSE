@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Titans
 {
-    class Knights
+    public class Knights
     {
         List<Hero> knights;
         public Knights()

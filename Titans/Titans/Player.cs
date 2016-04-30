@@ -11,7 +11,7 @@ namespace Titans
         KnightCommand commander;
         Room currentRoom;
 
-        public void Player(Room room)
+        public Player(Room room)
         {
             currentRoom = room;
             knights = new Knights();

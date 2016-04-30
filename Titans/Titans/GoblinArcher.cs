@@ -7,7 +7,7 @@ namespace Titans
 {
     public class GoblinArcher : Archer
     {
-        int health;
+        public int health;
         bool isDead;
         Location location;
 

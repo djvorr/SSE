@@ -93,18 +93,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AggresiveState.cs" />
     <Compile Include="Archer.cs" />
     <Compile Include="Army.cs" />
     <Compile Include="ArmyFactory.cs" />
     <Compile Include="Barracks.cs" />
+    <Compile Include="BattleState.cs" />
     <Compile Include="BodySlam.cs" />
     <Compile Include="Boss.cs" />
     <Compile Include="BossFight.cs" />
     <Compile Include="Bounds.cs" />
     <Compile Include="Character.cs" />
+    <Compile Include="DeadState.cs" />
+    <Compile Include="DefensiveState.cs" />
     <Compile Include="Fighter.cs" />
     <Compile Include="Finisher.cs" />
     <Compile Include="FinisherDecorator.cs" />
+    <Compile Include="FleeingState.cs" />
     <Compile Include="GoblinArcher.cs" />
     <Compile Include="GoblinArcherAdapter.cs" />
     <Compile Include="GoblinArmy.cs" />

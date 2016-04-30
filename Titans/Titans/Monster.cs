@@ -9,6 +9,11 @@ namespace Titans
     {
         public Location location;
         bool isAlive = false;
+        List<NonHero> reinforcements;
+        public int health = 8;
+
+        public Monster()
+        { reinforcements = new List<NonHero>(); }
 
         public Location getLocation()
         { return location; }
@@ -19,22 +24,24 @@ namespace Titans
         public void setLocation(Location location)
         { this.location = location; }
 
-        public List<Monster> callBackup()
+        public void callBackup()
         {
-            List<Monster> reinforcements = new List<Monster>();
-
             reinforcements.Add(new Monster());
             reinforcements.Add(new Monster());
-
-            return reinforcements;
         }
 
         public int getHealth()
-        { return 8; }
+        { return health; }
 
         public void updateAndSwarm(Location location)
         {
             this.location = location;
         }
+
+        public List<NonHero> getReinforcements()
+        { return reinforcements; }
+
+        public void takeDamage(int damage)
+        { health -= damage; }
     }
 }

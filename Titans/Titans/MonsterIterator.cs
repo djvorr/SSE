@@ -8,17 +8,13 @@ namespace Titans
     class MonsterIterator : Iterator
     {
         List<Monster> monsters;
-        int index = 0;
+        int index = -1;
 
         public MonsterIterator(List<Monster> monsters)
-        {
-            this.monsters = monsters;
-        }
+        { this.monsters = monsters; }
 
         public void reset()
-        {
-            index = 0;
-        }
+        { index = -1; }
 
         public Monster next()
         {
