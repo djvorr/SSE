@@ -5,11 +5,8 @@ using System.Text;
 
 namespace Titans
 {
-    interface Iterator
+    public interface KnightCommand
     {
-        bool hasNext();
-        bool isEmpty();
-        void Add();
-        void Remove();
+        bool execute();
     }
 }
