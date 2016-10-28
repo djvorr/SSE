@@ -11,6 +11,6 @@ namespace QueensAndJacks
 
         Hand getHand();
         Card pickCard();
-        void pickAccepted();
+        void pickAccepted(Card card);
     }
 }

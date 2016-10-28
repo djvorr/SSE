@@ -1,82 +1,82 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="QueensAndJacks.Card" Collapsed="true">
-    <Position X="9.75" Y="0.75" Width="1.5" />
+  <Class Name="QueensAndJacks.Card">
+    <Position X="7.75" Y="2" Width="1.5" />
     <Members>
       <Method Name="getSuit" Hidden="true" />
     </Members>
     <TypeIdentifier>
-      <HashCode>AEAAAAAAAAAAAAAAAEAAAAAAAAQAAAAAAAAABAAAQAA=</HashCode>
+      <HashCode>AEAAAAAAAAAAAAAAAEAAAAAAEAQAAAAAAAAABABAQAA=</HashCode>
       <FileName>Cards.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="QueensAndJacks.HelpMenu" Collapsed="true">
-    <Position X="6" Y="1.5" Width="1.5" />
+  <Class Name="QueensAndJacks.HelpMenu">
+    <Position X="1" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>HelpMenu.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="QueensAndJacks.Hand" Collapsed="true">
-    <Position X="8" Y="0.75" Width="1.5" />
+  <Class Name="QueensAndJacks.Hand">
+    <Position X="6" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAIAAAAAAAAgAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAIAAAAAAAAgAAAAAAAAIAAQAAAAAAAAAAAA=</HashCode>
       <FileName>Hand.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="QueensAndJacks.Table">
-    <Position X="2.75" Y="0.75" Width="1.5" />
+    <Position X="9.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AACAAAABEAAQAAIAAIAAAAAAAAAIAAAAAAAAABIAAAA=</HashCode>
       <FileName>Table.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="QueensAndJacks.Deck">
-    <Position X="12" Y="4.25" Width="1.5" />
+    <Position X="3.75" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AEAAAEAAAIQAAAAAAAoAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>gAAQAEAAAoQAAAAAAAoAAAAAAAAIAAAAAAAAQAAAAAA=</HashCode>
       <FileName>Deck.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="QueensAndJacks.Scoreboard" Collapsed="true">
-    <Position X="6" Y="0.75" Width="1.5" />
+  <Class Name="QueensAndJacks.Scoreboard">
+    <Position X="3.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAABAAAEAAAAAAAAAIAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
       <FileName>Scoreboard.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="QueensAndJacks.Game">
-    <Position X="0.5" Y="2.5" Width="1.5" />
+    <Position X="0.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAhhAQAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAgAAAAAAhhAQAAAAAAAAA=</HashCode>
       <FileName>Game.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="QueensAndJacks.Player" Collapsed="true">
-    <Position X="5.25" Y="5.25" Width="1.5" />
+  <Class Name="QueensAndJacks.Player">
+    <Position X="7.5" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAgAAQAAAggAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="QueensAndJacks.CPU" Collapsed="true">
-    <Position X="7" Y="5.75" Width="1.5" />
+  <Class Name="QueensAndJacks.CPU">
+    <Position X="6" Y="7.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAgAAQAAAggAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>CPU.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Interface Name="QueensAndJacks.Seat" Collapsed="true">
-    <Position X="3" Y="5.75" Width="1.5" />
+  <Interface Name="QueensAndJacks.Seat">
+    <Position X="3.75" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAgAAQAAAggAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Seat.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Enum Name="QueensAndJacks.SeatNumber" Collapsed="true">
-    <Position X="8" Y="4.75" Width="1.5" />
+  <Enum Name="QueensAndJacks.SeatNumber">
+    <Position X="5.75" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAGABAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
       <FileName>SeatNumber.cs</FileName>

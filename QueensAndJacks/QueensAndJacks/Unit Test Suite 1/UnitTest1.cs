@@ -21,6 +21,7 @@ namespace Unit_Test_Suite_1
             Assert.IsTrue(card.compare(new Card('H', "A")) < 0, "Card.Compare incorrect for greater than.");
             Assert.IsTrue(card.compare(new Card('C', "9")) > 0, "Card.Compare incorrect for lesser than.");
             Assert.IsTrue(card.compare(new Card('D', "10")) == 0, "Card.Compare incorrect for equivalent.");
+            Assert.IsTrue(card.compare(new Card('H', "K")) > 0, "Card.Compare incorrect for greater than K.");
 
             //Test for trump suits compared to a non-trump suit
             Assert.IsTrue(card.compare(new Card('S', "10")) < 0, "Card.Compare incorrect for equivalent trump.");
@@ -76,6 +77,10 @@ namespace Unit_Test_Suite_1
             Table table = new Table();
             table.setOrder(seats);
 
+            List<Hand> hands = new List<Hand>();
+            hands.Add(hand2);
+            table.setHands(hands);
+
             //Try to get the current turn value, the person who should go next
             Assert.IsTrue(table.getTurn() == 0, "Table.GetTurn failed");
             Assert.IsTrue(table.nextTurn().GetType() == (new Player()).GetType(), "Table.NextTurn failed");
@@ -87,12 +92,9 @@ namespace Unit_Test_Suite_1
             //Try and get the CPU hand just for fun.
             Assert.IsTrue(table.nextTurn().getHand().Find('H', "10"), "Table.GetTurn error getting CPU hand.");
 
-            List<Hand> hands = new List<Hand>();
-            hands.Add(hand2);
-            table.setHands(hands);
-
             //Test to make sure the hand was added to the table
             Assert.IsTrue(table.getHands().Contains(hand2), "Error adding a hand to the table.");
+
         }
 
         [TestMethod]
@@ -156,5 +158,7 @@ namespace Unit_Test_Suite_1
             Assert.IsTrue(player.getHand() == hand, "Player.GetHand failed return hand.");
             Assert.IsTrue(cpu.getHand() == hand2, "CPU.GetHand failed return hand.");
         }
+
+
     }
 }

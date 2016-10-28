@@ -9,16 +9,29 @@ namespace QueensAndJacks
     {
         private List<Card> cards;
 
+        /// <summary>
+        /// Creates a new Hand instance.
+        /// </summary>
+        /// <param name="cards"></param>
         public Hand(List<Card> cards)
         {
             this.cards = cards;
         }
 
+        /// <summary>
+        /// Returns a list representation of the cards in the hand.
+        /// </summary>
+        /// <returns>List<Card> of cards</returns>
         public List<Card> getCards()
         {
             return cards;
         }
 
+        /// <summary>
+        /// Removes a specified card from the hand.
+        /// </summary>
+        /// <param name="card"></param>
+        /// <returns>True if successful, False if not.</returns>
         public bool removeCard(Card card)
         {
             if (cards.Contains(card))
@@ -30,6 +43,12 @@ namespace QueensAndJacks
             return false;
         }
 
+        /// <summary>
+        /// Finds a card in the hand using the face and suit.
+        /// </summary>
+        /// <param name="suit"></param>
+        /// <param name="face"></param>
+        /// <returns>True if exists, false if not.</returns>
         public bool Find(char suit, string face)
         {
             foreach (Card c in cards)
