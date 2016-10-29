@@ -9,8 +9,8 @@ namespace QueensAndJacks
     {
         private List<Hand> hands;
         public int turn = 0;
-        private List<Seat> turnOrder;
-        public List<Card> field;
+        public List<Seat> turnOrder;
+        public List<Card> field = new List<Card>();
 
         /// <summary>
         /// Sets the order of turns according to position of Seats and starting index.
@@ -74,21 +74,31 @@ namespace QueensAndJacks
         }
 
 
-        public void updateField(Card card)
+        public void addToField(Card card)
         {
+            field.Add(card);
+        }
 
+        public void setField(List<Card> cards)
+        {
+            field = cards;
+        }
+
+        public List<Card> getField()
+        {
+            return field;
         }
 
         /// <summary>
-        /// Returns the player who just went.
+        /// Returns the player index who just went.
         /// </summary>
         /// <returns></returns>
-        public Seat getLast()
+        public int getLast()
         {
             if (turn <= 0)
-                return turnOrder[3];
+                return 3;
             else
-                return turnOrder[turn - 1];
+                return turn - 1;
         }
 
         /// <summary>
@@ -100,6 +110,40 @@ namespace QueensAndJacks
             Seat player = turnOrder[turn];
             turn = (turn + 1) % 4;
             return player;
+        }
+
+        /// <summary>
+        /// Returns true when all players have 0 cards. False if any has at least 1 card.
+        /// </summary>
+        /// <returns></returns>
+        public bool noMoreTurns()
+        {
+            foreach(Seat s in turnOrder)
+            {
+                if(s.getHand().getCards().Count > 0)
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        public Card getHighest()
+        {
+            if (field.Count == 0)
+                return null;
+            else
+            {
+                Card max = field[0];
+                foreach (Card c in field)
+                {
+                    if (max.compare(c) < 0)
+                        max = c;
+                }
+
+                return max;
+            }
         }
     }
 }

@@ -43,6 +43,9 @@ namespace QueensAndJacks
         /// <returns>Returns an acceptable card from the CPU's hand.</returns>
         public Card pickCard(Card highest)
         {
+            if (highest == null)
+                return pickCard();
+
             foreach (Card c in hand.getCards())
             {
                 if (c.getSuit() == highest.getSuit())

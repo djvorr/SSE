@@ -2,6 +2,7 @@
 using QueensAndJacks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
+using System.Windows.Forms;
 
 namespace Unit_Test_Suite_1
 {
@@ -91,10 +92,23 @@ namespace Unit_Test_Suite_1
 
             table.turn = 0;
             seats.Clear();
-            seats.Add(new Player());
-            seats.Add(new CPU());
-            seats.Add(new CPU());
-            seats.Add(new CPU());
+
+            List<Card> cards = new List<Card>();
+
+            Hand hand = new Hand(cards);
+            Player p = new Player();
+            p.hand = hand;
+            CPU cpu1 = new CPU();
+            cpu1.hand = hand;
+            CPU cpu2 = new CPU();
+            cpu2.hand = hand;
+            CPU cpu3 = new CPU();
+            cpu3.hand = hand;
+
+            seats.Add(p);
+            seats.Add(cpu1);
+            seats.Add(cpu2);
+            seats.Add(cpu3);
             table.setOrder(seats);
 
             Seat s = table.takeTurn();
@@ -114,9 +128,74 @@ namespace Unit_Test_Suite_1
             Assert.AreEqual(s.GetType(), typeof(Player), "TakeTurn not working for turn = 1.2 type.");
             Assert.AreEqual(s.GetType(), table.getLast().GetType(), "GetLast not equal for turn = 1.2.");
 
-
+            Assert.IsTrue(table.noMoreTurns(), "Detected at least one card.");
         }
 
+        [TestMethod]
+        public void TestGame()
+        {
+            Game game = new Game();
 
+            game.deal();
+            game.seatPlayers();
+
+            Table table = game.getTable();
+
+            Seat s = table.takeTurn();
+            Assert.AreEqual(s.GetType(), typeof(Player), "Player not loaded into seat.");
+            Assert.IsTrue(s.hand.getCards().Count > 1, "Player cards not loaded.");
+            Assert.IsFalse(table.noMoreTurns(), "Detected no more turns.");
+
+            s = table.takeTurn();
+            Assert.AreEqual(s.GetType(), typeof(CPU), "CPU not loaded into seat.");
+            Assert.IsTrue(s.hand.getCards().Count > 1, "CPU cards not loaded.");
+        }
+
+        [TestMethod]
+        public void TestDrawHand()
+        {
+            List<Card> cards = new List<Card>();
+            Card c = new Card('H', "10");
+            cards.Add(c);
+            Card c1 = new Card('C', "K");
+            cards.Add(c1);
+            Card c2 = new Card('D', "K");
+            cards.Add(c2);
+            Card c3 = new Card('S', "9");
+            cards.Add(c3);
+
+            Hand hand = new Hand(cards);
+            Board board = new Board();
+            board.clearButtons();
+            board.drawHand(hand);
+            
+            List<Button> buttons = board.getHand();
+
+            Assert.IsTrue(buttons[0].Text.Length > 0, "Button 0 card not loaded.");
+            Assert.IsTrue(buttons[1].Text.Length > 0, "Button 1 card not loaded.");
+            Assert.IsTrue(buttons[2].Text.Length > 0, "Button 2 card not loaded.");
+            Assert.IsTrue(buttons[3].Text.Length > 0, "Button 3 card not loaded.");
+            Assert.IsTrue(buttons[4].Text.Length == 0, "Button 4 card loaded.");
+            Assert.IsTrue(buttons[5].Text.Length == 0, "Button 5 card loaded.");
+
+            cards.Add(c3);
+            cards.Add(c3);
+
+            hand = new Hand(cards);
+            board.drawHand(hand);
+            buttons = board.getHand();
+
+            Assert.IsTrue(buttons[5].Text.Length > 0, "Button 5 card not loaded.");
+
+            cards.Clear();
+
+            hand = new Hand(cards);
+            board.drawHand(hand);
+            buttons = board.getHand();
+
+            Assert.IsTrue(buttons[0].Text.Length == 0, "Button 0 wrongly loaded.");
+            Assert.IsTrue(buttons[5].Text.Length == 0, "Button 5 wrongly loaded.");
+            
+        }
     }
 }

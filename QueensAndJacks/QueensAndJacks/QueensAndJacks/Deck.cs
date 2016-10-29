@@ -129,6 +129,7 @@ namespace QueensAndJacks
             {
                 for (int j=0; j<n; j++)
                 {
+                    r = new Random(Guid.NewGuid().GetHashCode());
                     Card c = cards[r.Next(n)];
                     cards.Remove(c);
                     cards.Add(c);

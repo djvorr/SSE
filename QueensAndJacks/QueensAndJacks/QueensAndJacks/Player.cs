@@ -24,7 +24,7 @@ namespace QueensAndJacks
         /// <param name="card"></param>
         public void pickAccepted(Card card)
         {
-            throw new System.NotImplementedException();
+            hand.removeCard(card);
         }
 
         /// <summary>
@@ -34,6 +34,18 @@ namespace QueensAndJacks
         public Card pickCard()
         {
             throw new System.NotImplementedException();
+        }
+
+        public Card pickCard(Board b)
+        {
+            //b.Show();
+
+            while(!b.picked)
+            {
+                System.Threading.Thread.Sleep(500);
+            }
+
+            return b.getPickedCard();
         }
     }
 }

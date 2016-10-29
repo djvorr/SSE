@@ -14,9 +14,13 @@ namespace QueensAndJacks
         [STAThread]
         static void Main()
         {
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            /*Application.Run(new Board());*/
+
+            Game game = new Game();
+            game.main();
         }
     }
 }

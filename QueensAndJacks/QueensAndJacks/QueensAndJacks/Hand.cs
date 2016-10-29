@@ -43,6 +43,19 @@ namespace QueensAndJacks
             return false;
         }
 
+        public bool removeCard(char suit, string face)
+        {
+            foreach (Card c in cards)
+            {
+                if (c.getSuit() == suit && c.getFace() == face)
+                {
+                    cards.Remove(c);
+                    return true;
+                }
+            }
+            return false;
+        }
+
         /// <summary>
         /// Finds a card in the hand using the face and suit.
         /// </summary>

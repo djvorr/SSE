@@ -87,5 +87,10 @@ namespace QueensAndJacks
             return -1;
 
         }
+
+        public string getPlain()
+        {
+            return getSuit().ToString() + getFace().ToString();
+        }
     }
 }
