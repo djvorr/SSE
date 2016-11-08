@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="QueensAndJacks.Card">
-    <Position X="7.75" Y="2" Width="1.5" />
+    <Position X="7.75" Y="1.75" Width="1.5" />
     <Members>
       <Method Name="getSuit" Hidden="true" />
     </Members>
     <TypeIdentifier>
-      <HashCode>AEAAAAAAAAAAAAAAAEAAAAAAEAQAAAAAAAAABABAQAA=</HashCode>
+      <HashCode>IEAAAAAAAAAAAAAAAEAAAAAAEAQAAAAAAAAABABAQAA=</HashCode>
       <FileName>Cards.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="QueensAndJacks.HelpMenu">
-    <Position X="1" Y="6.75" Width="1.5" />
+    <Position X="1" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>HelpMenu.cs</FileName>
@@ -27,7 +27,7 @@
   <Class Name="QueensAndJacks.Table">
     <Position X="9.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AACAAAABEAAQAAIAAIAAAAAAAAAIAAAAAAAAABIAAAA=</HashCode>
+      <HashCode>ChCAEAABEAAQAAIAAJAAAAAAAAAIAAAAAEAAABIAAAA=</HashCode>
       <FileName>Table.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -48,7 +48,7 @@
   <Class Name="QueensAndJacks.Game">
     <Position X="0.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAABAAAAAAAAgAAAAAAhhAQAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAABAAAAAAABAAAAAAAEgAAAAAAhhAQAAAAAACAQ=</HashCode>
       <FileName>Game.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -61,7 +61,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="QueensAndJacks.CPU">
-    <Position X="6" Y="7.75" Width="1.5" />
+    <Position X="6" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAgAAQAAAggAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>CPU.cs</FileName>

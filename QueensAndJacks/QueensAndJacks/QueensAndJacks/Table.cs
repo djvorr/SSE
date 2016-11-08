@@ -12,6 +12,29 @@ namespace QueensAndJacks
         public List<Seat> turnOrder;
         public List<Card> field = new List<Card>();
 
+        private static Table instance = null;
+        private static readonly object padlock = new object();
+
+        
+        private void Singleton()
+        {
+        }
+
+        public static Table Instance
+        {
+            get
+            {
+                lock (padlock)
+                {
+                    if (instance == null)
+                    {
+                        instance = new Table();
+                    }
+                    return instance;
+                }
+            }
+        }
+
         /// <summary>
         /// Sets the order of turns according to position of Seats and starting index.
         /// </summary>
