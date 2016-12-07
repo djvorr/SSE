@@ -13,6 +13,7 @@ namespace QueensAndJacks
         private CPU cpu2 = new CPU();
         private CPU cpu3 = new CPU();
         private Table table = new Table();
+        Scoreboard scoring = new Scoreboard();
 
         public void main()
         {
@@ -34,15 +35,35 @@ namespace QueensAndJacks
 
         public void StartGame()
         {
-            deal();
-            seatPlayers();
-            gameLoop();
+            string response;
+            do
+            {
+                List<int> scores = scoring.getScore();
+                Console.Write("Player\tCPU 1\tCPU 2\tCPU 3\n");
+                Console.Write("------\t-----\t-----\t-----\n");
+                foreach (int a in scores)
+                {
+                    Console.Write(a);
+                    Console.Write("\t");
+                }
+                Console.Write("\n");
+
+                deal();
+                seatPlayers();
+                gameLoop();
+                Console.Write("Play another round?");
+                Console.WriteLine();
+                response = Console.ReadLine();
+            }
+            while (response.Equals("yes", StringComparison.InvariantCultureIgnoreCase));
         }
 
         public void gameLoop()
         {
             int i = 0;
-            while(!table.noMoreTurns())
+            List<Card> playedCards = new List<Card>();
+
+            while (!table.noMoreTurns())
             {
                 Board b = new Board();
 
@@ -66,7 +87,7 @@ namespace QueensAndJacks
                     h.removeCard(c.getSuit(), c.getFace());
                     p.pickAccepted(c);
                     table.turnOrder[table.getLast()].hand = h;
-
+                    playedCards.Add(c);
                 }
                 else
                 {
@@ -83,14 +104,25 @@ namespace QueensAndJacks
                     h.removeCard(c.getSuit(), c.getFace());
                     cpu.pickAccepted(c);
                     table.turnOrder[table.getLast()].hand = h;
+                    playedCards.Add(c);
                 }
 
                 i++;
 
-                if(i % 4 == 0)
+                if (i % 4 == 0)
                 {
+                    Card high = table.getHighest();
+                    int winner = -1;
+                    for (int j = 0; j < playedCards.Count(); j++)
+                    {
+                        if (high == playedCards.ElementAt(j))
+                            winner = j;
+                    }
+                    Console.Write("Winner: " + winner);
+                    playedCards.Clear();
+
                     string str = "";
-                    foreach(Card c in table.getField())
+                    foreach (Card c in table.getField())
                     {
                         str = str + c.getPlain() + " ";
                     }

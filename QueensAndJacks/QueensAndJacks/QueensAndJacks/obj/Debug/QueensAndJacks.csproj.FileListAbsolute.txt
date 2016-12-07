@@ -1,0 +1,9 @@
+C:\Users\gtyj9\Documents\GitHub\SSE-657-Maintenance\QueensAndJacks\QueensAndJacks\QueensAndJacks\bin\Debug\QueensAndJacks.exe.config
+C:\Users\gtyj9\Documents\GitHub\SSE-657-Maintenance\QueensAndJacks\QueensAndJacks\QueensAndJacks\bin\Debug\QueensAndJacks.exe
+C:\Users\gtyj9\Documents\GitHub\SSE-657-Maintenance\QueensAndJacks\QueensAndJacks\QueensAndJacks\bin\Debug\QueensAndJacks.pdb
+C:\Users\gtyj9\Documents\GitHub\SSE-657-Maintenance\QueensAndJacks\QueensAndJacks\QueensAndJacks\obj\Debug\QueensAndJacks.csprojResolveAssemblyReference.cache
+C:\Users\gtyj9\Documents\GitHub\SSE-657-Maintenance\QueensAndJacks\QueensAndJacks\QueensAndJacks\obj\Debug\QueensAndJacks.Board.resources
+C:\Users\gtyj9\Documents\GitHub\SSE-657-Maintenance\QueensAndJacks\QueensAndJacks\QueensAndJacks\obj\Debug\QueensAndJacks.Properties.Resources.resources
+C:\Users\gtyj9\Documents\GitHub\SSE-657-Maintenance\QueensAndJacks\QueensAndJacks\QueensAndJacks\obj\Debug\QueensAndJacks.csproj.GenerateResource.Cache
+C:\Users\gtyj9\Documents\GitHub\SSE-657-Maintenance\QueensAndJacks\QueensAndJacks\QueensAndJacks\obj\Debug\QueensAndJacks.exe
+C:\Users\gtyj9\Documents\GitHub\SSE-657-Maintenance\QueensAndJacks\QueensAndJacks\QueensAndJacks\obj\Debug\QueensAndJacks.pdb
