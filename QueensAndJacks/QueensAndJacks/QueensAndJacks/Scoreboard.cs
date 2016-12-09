@@ -11,7 +11,7 @@ namespace QueensAndJacks
 
         public void addPoints(int player, int points)
         {
-            throw new System.NotImplementedException();
+            score[player] += points;
         }
 
         public List<int> getScore()
