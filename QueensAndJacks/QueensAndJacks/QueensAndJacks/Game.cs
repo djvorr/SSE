@@ -13,6 +13,8 @@ namespace QueensAndJacks
         private CPU cpu2 = new CPU();
         private CPU cpu3 = new CPU();
         private Table table = new Table();
+        Scoreboard scoring = new Scoreboard();
+        int WIN_SCORE = 200;
 
         public void main()
         {
@@ -34,15 +36,40 @@ namespace QueensAndJacks
 
         public void StartGame()
         {
-            deal();
-            seatPlayers();
-            gameLoop();
+            string response;
+            do
+            {
+                deal();
+                seatPlayers();
+                gameLoop();
+                if (scoring.getScore().Max() >= WIN_SCORE)
+                {
+                    response = Console.ReadLine();
+                    break;
+                }
+                Console.Write("Play another round?");
+                Console.WriteLine();
+                response = Console.ReadLine();
+            }
+            while (response.Equals("yes", StringComparison.InvariantCultureIgnoreCase));
         }
 
         public void gameLoop()
         {
+            List<int> scores = scoring.getScore();
+            Console.Write("\nPlayer\tCPU 1\tCPU 2\tCPU 3\n");
+            Console.Write("------\t-----\t-----\t-----\n");
+            foreach (int a in scores)
+            {
+                Console.Write(a);
+                Console.Write("\t");
+            }
+            Console.Write("\n\n");
+
             int i = 0;
-            while(!table.noMoreTurns())
+            List<Card> playedCards = new List<Card>();
+
+            while (!table.noMoreTurns() && scores.Max() < WIN_SCORE)
             {
                 Board b = new Board();
 
@@ -66,7 +93,7 @@ namespace QueensAndJacks
                     h.removeCard(c.getSuit(), c.getFace());
                     p.pickAccepted(c);
                     table.turnOrder[table.getLast()].hand = h;
-
+                    playedCards.Add(c);
                 }
                 else
                 {
@@ -83,14 +110,46 @@ namespace QueensAndJacks
                     h.removeCard(c.getSuit(), c.getFace());
                     cpu.pickAccepted(c);
                     table.turnOrder[table.getLast()].hand = h;
+                    playedCards.Add(c);
                 }
 
                 i++;
 
-                if(i % 4 == 0)
+                if (i % 4 == 0)
                 {
+                    // Determine winner of round and add score for winner.
+                    Card high = table.getHighest();
+                    int winner = -1;
+                    int score = 0;
+                    for (int j = 0; j < playedCards.Count(); j++)
+                    {
+                        if (high == playedCards.ElementAt(j))
+                            winner = j;
+
+                        score += playedCards.ElementAt(j).getScore();
+                    }
+                    Console.Write("Winner: ");
+                    if (winner.Equals(0))
+                        Console.Write("Player\n");
+                    else
+                        Console.Write("CPU " + winner + "\n");
+                    Console.Write("Score: " + score + "\n\n");
+
+                    scoring.addPoints(winner, score);
+                    playedCards.Clear();
+
+                    scores = scoring.getScore();
+                    Console.Write("Player\tCPU 1\tCPU 2\tCPU 3\n");
+                    Console.Write("------\t-----\t-----\t-----\n");
+                    foreach (int a in scores)
+                    {
+                        Console.Write(a);
+                        Console.Write("\t");
+                    }
+                    Console.Write("\n\n");
+
                     string str = "";
-                    foreach(Card c in table.getField())
+                    foreach (Card c in table.getField())
                     {
                         str = str + c.getPlain() + " ";
                     }
@@ -103,6 +162,18 @@ namespace QueensAndJacks
 
                     //MessageBox.Show(str);
                 }
+            }
+
+            if (scores.Max() >= WIN_SCORE)
+            {
+                int winner = scores.IndexOf(scores.Max());
+
+                if (winner.Equals(0))
+                    Console.Write("Player");
+                else
+                    Console.Write("CPU " + winner);
+
+                Console.Write(" won!");
             }
         }
 

@@ -1,0 +1,7 @@
+C:\Users\gtyj9\Documents\GitHub\SSE-657-Maintenance\QueensAndJacks\QueensAndJacks\Unit Test Suite 1\bin\Debug\Unit Test Suite 1.dll
+C:\Users\gtyj9\Documents\GitHub\SSE-657-Maintenance\QueensAndJacks\QueensAndJacks\Unit Test Suite 1\bin\Debug\Unit Test Suite 1.pdb
+C:\Users\gtyj9\Documents\GitHub\SSE-657-Maintenance\QueensAndJacks\QueensAndJacks\Unit Test Suite 1\bin\Debug\QueensAndJacks.exe
+C:\Users\gtyj9\Documents\GitHub\SSE-657-Maintenance\QueensAndJacks\QueensAndJacks\Unit Test Suite 1\bin\Debug\QueensAndJacks.pdb
+C:\Users\gtyj9\Documents\GitHub\SSE-657-Maintenance\QueensAndJacks\QueensAndJacks\Unit Test Suite 1\obj\Debug\Unit Test Suite 1.csprojResolveAssemblyReference.cache
+C:\Users\gtyj9\Documents\GitHub\SSE-657-Maintenance\QueensAndJacks\QueensAndJacks\Unit Test Suite 1\obj\Debug\Unit Test Suite 1.dll
+C:\Users\gtyj9\Documents\GitHub\SSE-657-Maintenance\QueensAndJacks\QueensAndJacks\Unit Test Suite 1\obj\Debug\Unit Test Suite 1.pdb

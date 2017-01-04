@@ -7,11 +7,11 @@ namespace QueensAndJacks
 {
     public class Card
     {
-        private string[] vals = {"9", "J", "Q", "K", "10", "A"};
+        private string[] vals = { "9", "J", "Q", "K", "10", "A" };
 
         private char suit;
         private string face;
-   
+
         /// <summary>
         /// Creates a new card with provided suit and face.
         /// </summary>
@@ -49,7 +49,7 @@ namespace QueensAndJacks
                 {
                     return indexOf(face) - indexOf(card.face);
                 }
-                catch(Exception e)
+                catch (Exception e)
                 {
                     throw new Exception("Index Error");
                 }
@@ -91,6 +91,17 @@ namespace QueensAndJacks
         public string getPlain()
         {
             return getSuit().ToString() + getFace().ToString();
+        }
+
+        // Returns integer representing score of card.
+        public int getScore()
+        {
+            if (face.Equals("A") || face.Equals("10"))
+                return 10;
+            else if (face.Equals("K") || face.Equals("Q"))
+                return 5;
+            else
+                return 0;
         }
     }
 }

@@ -8,7 +8,6 @@ namespace QueensAndJacks
     public interface Seat
     {
         Hand hand { get; set; }
-
         Hand getHand();
         Card pickCard();
         void pickAccepted(Card card);
