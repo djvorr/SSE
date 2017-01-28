@@ -1,0 +1,156 @@
+﻿CLA CSC 125.006 Intro to Computing Cynthia Robertson TR 9:25 AM 10:40 AM CSB 100 Classroom
+CLA CSC 125.008 Intro to Computing Jerome Gratigny TR 6:00 PM 7:15 PM CSB 100 Classroom
+CLA CSC 204.003 Programming I Robert Allen MWF 9:00 AM 9:50 AM CSB 100 Classroom
+CLA CSC 204.004 Programming I Cynthia Robertson MWF 12:00 PM 12:50 PM CSB 100 Classroom
+CLA CSC 205.002 Programming II Qiang Zhao MWF 1:00 PM 1:50 PM CSB 100 Classroom
+CLA CSC 245.001 Data Struct & Algorithm Analysis Andy Digh MWF 12:00 PM 12:50 PM CSB 204 Classroom
+CLA CSC 245.002 Data Struct & Algorithm Analysis Andy Digh MWF 2:00 PM 2:50 PM CSB 204 Classroom
+CLA CSC 303.001 Topi/Comp Sci: Introduction to Data Qiang Zhao MWF CSB 204 Classroom
+CLA CSC 310.001 File Structures & Advanced 3:00 PM 4:15 PM Andy Digh MW CSB 306 Classroom
+CLA CSC 398.001 Internship in Computer Science David Cozart Independent Study
+CLA CSC 415.001 Graphics Simulatn & Visualizatn Andrew Pounds TR 10:50 AM 12:05 PM CSB 204 Classroom
+CLA CSC 460.001 Operating Systems Robert Allen MWF 12:00 PM 12:50 PM CSB 306 Classroom
+CLA CSC 485.001 Topi/Comp Sci: Introduction to Data 9:00 AM 9:50 AM Qiang Zhao MWF CSB 204 Classroom
+CLA CSC 485.091 Topi/Comp Sci: Computer Science Robert Allen Independent Study
+CLA CSC 499.001 Undergraduate Research Andy Digh Independent Study
+
+EGR BME 402.001 Biomedical Instrumentation Edward O'Brien TR 10:50 AM 12:05 PM EGC 109 Classroom
+EGR BME 425.001 Basic Transport Phenomena Sinjae Hyun MWF 2:00 PM 2:50 PM EGC 109 Classroom
+EGR BME 440.001 Dynamics of Biological Fluids Sinjae Hyun TR 10:50 AM 12:05 PM EGC 110 Classroom
+EGR BME 460.001 Biomedical Materials Ha Vo TR 9:25 AM 10:40 AM EGC 203 Classroom
+EGR BME 480.001 Introduction to Senior Design Edward O'Brien Independent Study
+EGR BME 487.001 Engineering Design Exhibit I Richard Mines TR 3:05 PM 5:45 PM SEB 143 Classroom
+EGR BME 488.001 Engineering Design Exhibit II Hodge Jenkins TR 3:05 PM 5:45 PM SEB 110 Classroom
+EGR BME 491.001 Spc Top: Introduction to Tissue 12:00 PM 12:50 PM Joanna Thomas MWF EGC 217 Classroom
+
+EGR ECE 202.001 Signals & Systems Kevin Barnett MWF 12:00 PM 12:50 PM EGC 220 Classroom
+EGR ECE 311.091 Electronics I Kevin Barnett Independent Study
+EGR ECE 312.001 Electronics II Ruiyun Fu TR 9:25 AM 10:40 AM EGC 207 Classroom
+EGR ECE 312L001 Electronics II Laboratory Ruiyun Fu M 2:00 PM 4:45 PM EGC 211 Classroom
+EGR ECE 322.001 Digital Logic Donald Ekong MW 3:00 PM 3:50 PM EGC 203 Classroom
+EGR ECE 341.001 Electromagnetic Field Theory Jeng-Nan Juang MWF 11:00 AM 11:50 AM EGC 217 Classroom
+EGR ECE 411.001 Power Electronics Ruiyun Fu MWF 9:00 AM 9:50 AM EGC 209 Classroom
+EGR ECE 428.001 Embedded Computer Systems Anthony Choi TR 1:40 PM 2:55 PM EGC 210 Classroom
+EGR ECE 429.001 Mobile Application Development 6:00 PM 9:00 PM Donald Ekong R SEB 144 Classroom
+EGR ECE 432.001 Digital Signal Processing Kevin Barnett TR 12:15 PM 1:30 PM EGC 217 Classroom
+EGR ECE 452.001 Communications Systems II Behnam Kamali MWF 12:00 PM 12:50 PM EGC 218 Classroom
+EGR ECE 455.001 Computer Networks Donald Ekong MWF 1:00 PM 1:50 PM EGC 220 Classroom
+EGR ECE 480.001 Intro Sr Design-Electrical Specl Edward O'Brien Independent Study
+EGR ECE 481.001 Intro Sr Design-Computer Spclztn Edward O'Brien Independent Study
+EGR ECE 486.001 Egr Design Exhibit II-Comp Splzn Hodge Jenkins TR 3:05 PM 5:45 PM SEB 110 Classroom
+EGR ECE 487.001 Egr Design Exhibit I-Elect Spclz Richard Mines TR 3:05 PM 5:45 PM SEB 143 Classroom
+EGR ECE 488.001 Egr Design Exhibit II: Elec Splz Hodge Jenkins TR 3:05 PM 5:45 PM SEB 110 Classroom
+
+EGR EGR 102.001 Freshman Engineering Honors II Philip McCreanor Independent Study
+EGR EGR 107.001 Intro Engineering Design Wade Shaw MW 3:00 PM 4:15 PM SEB 110 Classroom
+EGR EGR 107.002 Intro Engineering Design Edward O'Brien MW 3:00 PM 4:15 PM SEB 110 Classroom
+EGR EGR 107.003 Intro Engineering Design Joanna Thomas MT 3:00 PM 4:15 PM SEB 110 Classroom
+EGR EGR 107.004 Intro Engineering Design Andre Butler MW 3:00 PM 4:15 PM SEB 110 Classroom
+EGR EGR 126.007 Programming for Engineers Cynthia Robertson TR 10:50 AM 12:05 PM CSB 100 Classroom
+EGR EGR 126.008 Programming for Engineers Andy Digh TR 3:05 PM 4:20 PM CSB 100 Classroom
+EGR EGR 126.009 Programming for Engineers Anthony Choi TR 3:05 PM 4:20 PM SEB 218 Classroom
+EGR EGR 126.010 Programming for Engineers Anthony Choi TR 4:30 PM 5:45 PM SEB 218 Classroom
+EGR EGR 202.001 Sophomore Engineering Honors II Philip McCreanor Independent Study
+EGR EGR 232.001 Statics/Solid Mechanics David McClellan MWF 11:00 AM 11:50 AM EGC 207 Classroom
+EGR EGR 235.001 Thermodynamics David McClellan TR 10:50 AM 12:05 PM EGC 217 Classroom
+EGR EGR 235.002 Thermodynamics Stephen Hill TR 9:25 AM 10:40 AM EGC 210 Classroom
+EGR EGR 235.003 Thermodynamics Stephen Hill TR 1:40 PM 2:55 PM EGC 203 Classroom
+EGR EGR 236.001 Dynamics Arash Afshar MWF 11:00 AM 11:50 AM EGC 220 Classroom
+EGR EGR 236.002 Dynamics Richard Kunz MWF 9:00 AM 9:50 AM EGC 218 Classroom
+EGR EGR 236.003 Dynamics Kenneth Marek MWF 9:00 AM 9:50 AM EGC 220 Classroom
+EGR EGR 236.004 Dynamics Kenneth Marek MWF 1:00 PM 1:50 PM EGC 218 Classroom
+EGR EGR 244.001 Electric Circuit Analysis Makhin Thitsa MWF 2:00 PM 2:50 PM EGC 207 Classroom
+EGR EGR 245.001 Introduction to Electronics and 1:00 PM 1:50 PM Kevin Barnett MWF SEB 110 Classroom
+EGR EGR 245.002 Introduction to Electronics and 2:00 PM 2:50 PM Behnam Kamali MWF EGC 203 Classroom
+EGR EGR 246L002 Electric Circuits Labatory Kevin Barnett W 6:00 PM 9:00 PM EGC 211 Classroom
+EGR EGR 246L003 Electric Circuits Labatory Kevin Barnett T 6:00 PM 9:00 PM EGC 211 Classroom
+EGR EGR 246L004 Electric Circuits Labatory Kevin BarnetTR 6:00 PM 9:00 PM EGC 211 Classroom
+EGR EGR 246L005 Electric Circuits Labatory Jeng-Nan Juang M 6:00 PM 9:00 PM EGC 211 Classroom
+EGR EGR 246L006 Electric Circuits Labatory Kevin Barnett T 3:00 PM 5:45 PM EGC 211 Classroom
+EGR EGR 246L007 Electric Circuits Labatory Kevin Barnett T 12:15 PM 3:00 PM EGC 211 Classroom
+EGR EGR 246L008 Electric Circuits Labatory Kevin Barnett W 3:00 PM 5:45 PM EGC 211 Classroom
+EGR EGR 252.001 Probability & Statistics for Egr Melinda Hollingshed MW 3:00 PM 4:15 PM EGC 217 Classroom
+EGR EGR 252.002 Probability & Statistics for Egr Melinda Hollingshed TR 1:40 PM 2:55 PM EGC 216B Classroom
+EGR EGR 252.003 Probability & Statistics for Egr Melinda Hollingshed TR 10:50 AM 12:05 PM EGC 216B Classroom
+EGR EGR 302.001 Junior Engineering Honors II Philip McCreanor Independent Study
+EGR EGR 312.001 Engineering Economy Pablo Biswas TR 1:40 PM 2:55 PM EGC 216A Classroom
+EGR EGR 312.002 Engineering Economy Sheila Barnett TR 4:30 PM 5:45 PM EGC 218 Classroom
+EGR EGR 312.003 Engineering Economy Scott Schultz TR 10:50 AM 12:05 PM EGC 210 Classroom
+EGR EGR 386.001 Fdbck Control & Modeling for Egr Makhin Thitsa MWF 1:00 PM 1:50 PM EGC 210 Classroom
+EGR EGR 386.002 Fdbck Control & Modeling for Egr Kevin Barnett MWF 8:00 AM 8:50 AM SEB 110 Classroom
+EGR EGR 401.091 Senior Engineering Honors I Philip McCreanor Independent Study
+EGR EGR 402.001 Senior Engineering Honors II Philip McCreanor Independent Study
+EGR EGR 483.001 Entrepreneurship in Egr Design Ramachandran Radharamanan Independent Study
+
+EGR EVE 384.001 Engineering Hydraulics Michael MacCarthy TR 1:40 PM 2:55 PM EGC 110 Classroom
+EGR EVE 405.001 Design/Analysis of Wastewater Sy Richard Mines TR 9:25 AM 10:40 AM EGC 216B Classroom
+EGR EVE 412.001 Green Engineering Michael MacCarthy TR 6:00 PM 7:15 PM EGC 110 Classroom
+EGR EVE 420.001 Solid Waste Management Philip McCreanor TR 12:15 PM 1:30 PM SEB 201 Classroom
+EGR EVE 480.001 Intro to Senior Design Edward O'Brien Independent Study
+EGR EVE 487.001 Engineering Design Exhibit I Richard Mines TR 3:05 PM 5:45 PM SEB 143 Classroom
+EGR EVE 488.001 Engineering Design Exhibit II Hodge Jenkins TR 3:05 PM 5:45 PM SEB 110 Classroom
+EGR EVE 491F001 Special Topics: Gray Water Research I Philip McCreanor Independent Study
+EGR EVE 492F001 Gray Water Research II Philip McCreanor Independent Study
+EGR EVE 493.091 Spc Top: Aerosol Removal using Impaction Devices Laura Lackey Independent Study
+
+EGR IDM 288.001 Intro to Industrial Management Joan Burtner M 5:00 PM 7:40 PM EGC 204A Classroom
+EGR IDM 404.001 Industrial Management Case Stds Joan Burtner TR 10:50 AM 12:05 PM EGC 204A Classroom
+EGR IDM 480.001 Intro to Senior Design Edward O'Brien Independent Study
+EGR IDM 487.001 Senior Design Exhibit I Richard Mines TR 3:05 PM 5:45 PM SEB 143 Classroom
+EGR IDM 488.001 Senior Design Exhibit II Hodge Jenkins TR 3:05 PM 5:45 PM SEB 110 Classroom
+
+EGR ISE 288.001 Intro Indust Egr & Manufact Egr Joan Burtner M 5:00 PM 7:40 PM EGC 204A Classroom
+EGR ISE 311.001 Ergonomics and Work Laura Moody MWF 1:00 PM 1:50 PM SEB 144 Classroom
+EGR ISE 362.001 Production Planning & Control Pablo Biswas MWF 11:00 AM 11:50 AM EGC 225B Classroom
+EGR ISE 370.001 Manufacturing Processes Ramachandran 1:40 PM 2:55 PM Radharamanan TR EGC 217 Classroom
+EGR ISE 403.001 Modeling and Simulation Pablo Biswas TR 12:15 PM 1:30 PM EGC 216B Classroom
+EGR ISE 425.001 Computer Assisted Manufacturing RW 9:25 AM 12:05 PM Systems & Lab Ramachandran
+
+EGR ISE 468.001 Healthcare Process Improvement Joan Burtner MW 3:00 PM 4:15 PM EGC 218 Classroom
+EGR ISE 480.001 Intro to Senior Design Edward O'Brien Independent Study
+EGR ISE 482L001 Industrial EGR Capstone Lab Laura Moody TR 1:40 PM 2:55 PM EGC 215 Classroom
+EGR ISE 487.001 Engineering Design Exhibit I Richard Mines TR 3:05 PM 5:45 PM SEB 143 Classroom
+EGR ISE 488.001 Engineering Design Exhibit II Hodge Jenkins TR 3:05 PM 5:45 PM SEB 110 Classroom
+
+EGR MAE 205.001 Visualization and Solid Modeling Arash Afshar MW 4:30 PM 5:45 PM EGC 216A Classroom
+EGR MAE 205.002 Visualization and Solid Modeling Arash Afshar TR 3:05 PM 4:00 PM EGC 216B Classroom
+EGR MAE 250L001 Manufacturing Practices Edward O'Brien TR 2:00 PM 4:45 PM EGC 119 Classroom
+EGR MAE 250L002 Manufacturing Practices Richard Kunz MW 2:00 PM 4:45 PM EGC 119 Classroom
+EGR MAE 301.001 Experimental Methods for 11:00 AM 11:50 AM William Moses MWF EGC 218 Classroom
+EGR MAE 301.002 Experimental Methods for 9:00 AM 9:50 AM William Moses MWF EGC 217 Classroom
+EGR MAE 301L001 Mechanical Engineering laboratory Dorina Mihut M 3:00 PM 5:45 PM EGC 123 Classroom
+EGR MAE 301L002 Mechanical Engineering laboratory Kenneth Marek T 3:00 PM 5:45 PM EGC 123 Classroom
+EGR MAE 301L003 Mechanical Engineering laboratory Kenneth Marek W 3:00 PM 5:45 PM EGC 123 Classroom
+EGR MAE 301L004 Mechanical Engineering laboratory Dorina MihuTR 3:00 PM 5:45 PM EGC 123 Classroom
+EGR MAE 322.001 Machine Design Hodge Jenkins MWF 11:00 AM 11:50 AM SEB 143 Classroom
+EGR MAE 322.002 Machine Design Hodge Jenkins MWF 2:00 PM 2:50 PM EGC 210 Classroom
+EGR MAE 362.001 Structure/Properties of Material Dorina Mihut TR 9:25 AM 10:40 AM SEB 143 Classroom
+EGR MAE 362.002 Structure/Properties of Material Dorina Mihut MWF 9:00 AM 9:50 AM SEB 201 Classroom
+EGR MAE 430.001 Heat Transfer Loren Sumner MWF 2:00 PM 2:50 PM EGC 218 Classroom
+EGR MAE 430.002 Heat Transfer William Moses TR 9:25 AM 10:40 AM EGC 220 Classroom
+EGR MAE 435.001 Thermal Systems Analysis Stephen Hill MWF 2:00 PM 2:50 PM EGC 217 Classroom
+EGR MAE 436.001 Turbomachinery Loren Sumner TR 10:50 AM 12:05 PM EGC 203 Classroom
+EGR MAE 480.001 Intro to Senior Design Edward O'Brien Independent Study
+EGR MAE 487.001 Engineering Design Exhibit I Richard Mines TR 3:05 PM 5:45 PM SEB 143 Classroom
+EGR MAE 488.001 Engineering Design Exhibit II Hodge Jenkins TR 3:05 PM 5:45 PM SEB 110 Classroom
+EGR MAE 499.091 Idp Stu: Characterization of Polymer Composites Arash Afshar Independent Study
+EGR MAE 499.092 Idp Sty: Erosion Behavior of Molecularly Coated Metals Dorina Mihut Independent Study
+
+EGR TCO 141.001 Introduction to Professional 9:25 AM 10:40 AM Robert Watson TR SEB 202 Classroom
+EGR TCO 141.002 Introduction to Professional 10:50 AM 12:05 PM Susan Codone TR SEB 201 Classroom
+EGR TCO 141.003 Introduction to Professional 1:40 PM 2:55 PM Robert Watson TR SEB 201 Classroom
+EGR TCO 141.004 Introduction to Professional 3:05 PM 4:20 PM Pam Brewer TR SEB 201 Classroom
+EGR TCO 141.005 Introduction to Professional 3:00 PM 4:15 PM Helen Grady MW SEB 144 Classroom
+EGR TCO 285.001 Document & Web Design Lisa Newman TR 9:25 AM 10:40 AM EGC 216A Classroom
+EGR TCO 341.001 Technical Communication Jennifer Goode TR 8:00 AM 9:15 AM SEB 201 Classroom
+EGR TCO 341.002 Technical Communication Jennifer Goode TR 9:25 AM 10:40 AM SEB 201 Classroom
+EGR TCO 341.003 Technical Communication Lisa Newman TR 1:40 PM 2:55 PM SEB 202 Classroom
+EGR TCO 341.004 Technical Communication Lisa Newman MW 3:00 PM 4:15 PM SEB 202 Classroom
+EGR TCO 345.001 Communication in Management Helen Grady TR 1:40 PM 2:55 PM SEB 143 Classroom
+EGR TCO 361.001 Usability Pam Brewer MW 3:00 PM 4:15 PM SEB 201 Classroom
+EGR TCO 376.001 Visual Communication Jennifer Goode TR 10:50 AM 12:05 PM EGC 216A Classroom
+EGR TCO 480.001 Intro Senior Design/Internship Helen Grady Distance Learning
+EGR TCO 499.001 Independent Study - Usability Lab Pam Brewer Independent Study
+EGR TCO 499.002 Independent Study - DOT Lab Jennifer Goode Independent Study
+EGR TCO 499.091 Independent Study:Technical Helen Grady Independent Study
+EGR TCO 499.092 Independent Study: Video Production Helen Grady Independent Study
