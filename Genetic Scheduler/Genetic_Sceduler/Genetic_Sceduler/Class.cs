@@ -20,6 +20,8 @@ namespace Genetic_Sceduler
         public int val_Department = 0;
         public int val_Time = 0;
 
+
+        #region Evaluations
         public void evaluate()
         {
             evalDays();
@@ -84,8 +86,9 @@ namespace Genetic_Sceduler
                 if (time == "Distance Learning")
                     val_Time = 5;
                 else if (time == "Independent Study")
-                    val_Time = 4;
+                    val_Time = 2;
             }
         }
+        #endregion
     }
 }

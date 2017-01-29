@@ -8,11 +8,15 @@ namespace Genetic_Sceduler
 {
     class GenAlg
     {
-        bool promptMode = false;
+        bool debug = true;
 
         List<string> lines = new List<string>();
         List<Class> classes = new List<Class>();
         List<Chromosome> chromosomes = new List<Chromosome>();
+
+        int unitLength = 0;
+        int chromosomeCount = 500;
+        int numberIterations = 1000;
 
         public void main()
         {
@@ -20,12 +24,133 @@ namespace Genetic_Sceduler
             parseData();
             indexClasses();
 
+            unitLength = Convert.ToString(classes.Count, 2).Length;
+
             generateChromosomes(500);
+            fitChromosomes();
+
             displayChromosomes();
-            
-            Console.Read();
+
+            runAlgorithm(numberIterations);
+
+            if (debug)
+            {
+                Console.WriteLine("Done.");
+                Console.Read();
+            }
         }
 
+        public void runAlgorithm(int count)
+        {
+            for (int i=0; i<count; i++)
+            {
+                Console.WriteLine("Iteration: " + i);
+
+                splitList();
+                reproduceList();
+                fitChromosomes();
+
+                displayChromosomes();
+            }
+        }
+        
+        public void splitList()
+        {
+            int split = chromosomeCount / 3;
+            List<Chromosome> newlist = new List<Chromosome>();
+            
+            for(int i = 0; i <= split; i++)
+            {
+                newlist.Add(chromosomes[i]);
+            }
+
+            chromosomes = newlist;
+        }
+
+
+        #region Reproduce
+        public void reproduceList()
+        {
+            List<Chromosome> temp = chromosomes;
+            int count = chromosomes.Count;
+            if (temp.Count % 2 != 0)
+                count -= 1;
+            for (int i=0; i<temp.Count-1; i+=2)
+            {
+                temp.Add(createChromosome(temp[i], temp[i + 1], false));
+                temp.Add(createChromosome(temp[i], temp[i + 1], true));
+            }
+
+            chromosomes = temp;
+        }
+
+        public Chromosome createChromosome(Chromosome c1, Chromosome c2, bool flip)
+        {
+            int midpointA = 0;
+            int midpointB = 0;
+
+            if (c1.classes.Count % 2 != 0)
+                midpointA = (c1.classes.Count - 1) / 2;
+            else
+                midpointA = c1.classes.Count / 2;
+
+            if (c2.classes.Count % 2 != 0)
+                midpointB = (c2.classes.Count - 1) / 2;
+            else
+                midpointB = c2.classes.Count / 2;
+
+            return new Chromosome(subList(c1, c2, midpointA, midpointB, flip), unitLength);
+        }
+
+        public List<Class> subList(Chromosome c1, Chromosome c2, int midpointA, int midpointB, bool flip)
+        {
+            List<Class> temp = new List<Class>();
+
+            try
+            {
+                if (flip)
+                {
+                    for (int i = 0; i <= midpointA; i++)
+                        temp.Add(c1.classes[i]);
+
+                    for (int i = midpointB; i < c2.classes.Count; i++)
+                        temp.Add(c2.classes[i]);
+                }
+                else
+                {
+                    for (int i = 0; i <= midpointB; i++)
+                        temp.Add(c2.classes[i]);
+
+                    for (int i = midpointA; i < c1.classes.Count; i++)
+                        temp.Add(c1.classes[i]);
+                }
+            }
+            catch (Exception e) { }
+
+            return temp;
+        }
+        #endregion
+
+
+        #region Fitting
+        private void fitChromosomes()
+        {
+            foreach (Chromosome c in chromosomes)
+            {
+                Evaluator evaluator = new Evaluator();
+
+                c.fitness = evaluator.evaluate(c);
+            }
+
+            sortByFitness();
+        }
+
+        private void sortByFitness()
+        {
+            chromosomes.Sort((Chromosome c1, Chromosome c2) => c1.fitness.CompareTo(c2.fitness));
+            chromosomes.Reverse();
+        }
+        #endregion
 
 
         #region Generating Chromosomes
@@ -45,7 +170,7 @@ namespace Genetic_Sceduler
                     System.Threading.Thread.Sleep(5);
                 }
 
-                chromosomes.Add(new Chromosome(chromosomeSet, Convert.ToString(classes.Count, 2).Length));
+                chromosomes.Add(new Chromosome(chromosomeSet, unitLength));
             }
         }
 
@@ -160,16 +285,26 @@ namespace Genetic_Sceduler
         {
             if (line.ToUpper().Contains("DISTANCE LEARNING"))
                 return "Distance Learning";
-            else if (line.ToUpper().Contains("INDEPENDENT STUDY "))
+            else if (line.ToUpper().Contains("INDEPENDENT STUDY"))
                 return "Independent Study";
             else if (line.Contains(" TR "))
                 return "TR";
             else if (line.Contains(" MWF "))
                 return "MWF";
-            else if (line.Contains("MW"))
+            else if (line.Contains(" MW "))
                 return "MW";
-
-            return "";
+            else if (line.Contains(" M "))
+                return "M";
+            else if (line.Contains(" W "))
+                return "W";
+            else if (line.Contains(" R "))
+                return "R";
+            else if (line.Contains(" T "))
+                return "T";
+            else if (line.Contains(" RW "))
+                return "RW";
+            else
+                throw new Exception("Blank or space Day.");
         }
 
         private string parseTeacher(string line)
@@ -201,9 +336,12 @@ namespace Genetic_Sceduler
             string st = "";
             try
             {
-                st = line.Split('-')[2].Trim().Split(':')[0];
+                st = line.Trim().Split('-')[2].Trim().Split(':')[0];
             }
             catch (Exception e) { }
+
+            if (st == " " || st == "")
+                throw new Exception("Blank or space Time.");
 
             return st;
         }
@@ -221,6 +359,13 @@ namespace Genetic_Sceduler
         }
 
         public void displayChromosomes()
+        {
+            foreach (Chromosome c in chromosomes)
+                c.displayChromosome();
+            Console.WriteLine("\n\n----------------------------------------------------------------------\n\n");
+        }
+
+        public void displayChromosomeSets()
         {
             foreach (Chromosome c in chromosomes)
             {
