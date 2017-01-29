@@ -1,0 +1,2221 @@
+Fitness: 350
+00100101 ECE  Egr Design Exhibit I:Elect Spclz Mines TR 3
+00100110 ECE  Egr Design Exhibit II: Elec Splz Jenkins TR 3
+01010100 EVE  Engineering Design Exhibit I Mines TR 3
+10001001 TCO  Technical Communication Newman MW 3
+10001001 TCO  Technical Communication Newman MW 3
+00101101 EGR  Programming for Engineers Digh TR 3
+Fitness: 350
+01011111 ISE  Ergonomics and Work Moody MWF 1
+01010101 EVE  Engineering Design Exhibit II Jenkins TR 3
+01010111 EVE  Gray Water Research II McCreanor  Independent Study
+01100111 ISE  Engineering Design Exhibit I Mines TR 3
+00110011 EGR  Thermodynamics Hill TR 9
+01010101 EVE  Engineering Design Exhibit II Jenkins TR 3
+Fitness: 400
+00000110 CSC  Data Struct & Algorithm Analysis Digh MWF 2
+00000101 CSC  Data Struct & Algorithm Analysis Digh MWF 12
+00001110 BME  Biomedical Instrumentation O'Brien TR 10
+00111001 EGR  Electric Analysis MWF 2
+10000001 TCO  Introduction to Professional Codone TR 10
+01111010 MAE  Turbomachinery Sumner TR 10
+Fitness: 400
+00111110 EGR  Electric Circuits Labatory Barnet TR 6
+01000101 EGR  Probability & Statistics for Egr Hollingshed TR 10
+01010101 EVE  Engineering Design Exhibit II Jenkins TR 3
+00001100 CSC  Topi/Comp Sci: Computer Science Allen  Independent Study
+00111110 EGR  Electric Circuits Labatory Barnet TR 6
+Fitness: 400
+01111010 MAE  Turbomachinery Sumner TR 10
+00101000 EGR  Intro Engineering Design Shaw MW 3
+10001001 TCO  Technical Communication Newman MW 3
+10000011 TCO  Introduction to Professional Brewer TR 3
+00001001 CSC  Graphics Simulatn & Visualizatn Pounds TR 10
+00101001 EGR  Intro Engineering Design O'Brien MW 3
+Fitness: 400
+00011101 ECE  Embedded Computer Systems Choi TR 1
+01100111 ISE  Engineering Design Exhibit I Mines TR 3
+01110110 MAE  Structure/Properties of Material Mihut MWF 9
+01100110 ISE  Industrial EGR Capstone Lab Moody TR 1
+01010100 EVE  Engineering Design Exhibit I Mines TR 3
+01000100 EGR  Probability & Statistics for Egr Hollingshed TR 1
+Fitness: 450
+10000000 TCO  Introduction to Professional Watson TR 9
+10000110 TCO  Technical Communication Goode TR 8
+00101110 EGR  Programming for Engineers Choi TR 3
+00010011 BME  Engineering Design Exhibit I Mines TR 3
+Fitness: 450
+00010000 BME  Dynamics of Biological Fluids Hyun TR 10
+01011111 ISE  Ergonomics and Work Moody MWF 1
+00011011 ECE  Electromagnetic Field Theory Juang MWF 11
+01111100 MAE  Engineering Design Exhibit I Mines TR 3
+00111010 EGR  Introduction to Electronics and Barnett MWF 1
+Fitness: 450
+00010101 BME  Spc Top: Introduction to Tissue Thomas MWF 12
+01001010 EGR  Fdbck Control & Modeling for Egr Thitsa MWF 1
+01011011 IDM  Intro to Senior Design O'Brien  Independent Study
+01101010 MAE  Visualization and Solid Modeling Afshar TR 3
+01100111 ISE  Engineering Design Exhibit I Mines TR 3
+Fitness: 450
+10000100 TCO  Introduction to Professional Grady MW 3
+01011011 IDM  Intro to Senior Design O'Brien  Independent Study
+01000001 EGR  Electric Circuits Labatory Barnett  12
+10001000 TCO  Technical Communication Newman TR 1
+00011010 ECE  Digital Logic Ekong MW 3
+Fitness: 450
+00100000 ECE  Communications Systems II Kamali MWF 12
+01000001 EGR  Electric Circuits Labatory Barnett  12
+00000101 CSC  Data Struct & Algorithm Analysis Digh MWF 12
+Fitness: 450
+01000000 EGR  Electric Circuits Labatory Barnett  3
+00101010 EGR  Intro Engineering Design Thomas MW 3
+00101110 EGR  Programming for Engineers Choi TR 3
+01111110 MAE  Idp Stu: Characterization of Polymer Composites Afshar  Independent Study
+00011010 ECE  Digital Logic Ekong MW 3
+Fitness: 450
+01101000 ISE  Engineering Design Exhibit II Jenkins TR 3
+00011111 ECE  Digital Signal Processing Barnett TR 12
+01100100 ISE  Healthcare Process Improvement Burtner MW 3
+00011010 ECE  Digital Logic Ekong MW 3
+01111100 MAE  Engineering Design Exhibit I Mines TR 3
+Fitness: 450
+00111100 EGR  Electric Circuits Labatory Barnett  6
+01100110 ISE  Industrial EGR Capstone Lab Moody TR 1
+01010111 EVE  Gray Water Research II McCreanor  Independent Study
+01000100 EGR  Probability & Statistics for Egr Hollingshed TR 1
+Fitness: 450
+01101101 MAE  Experimental Methods for Moses MWF 11
+00100000 ECE  Communications Systems II Kamali MWF 12
+00101110 EGR  Programming for Engineers Choi TR 3
+00001010 CSC  Operating Systems Allen MWF 12
+Fitness: 450
+00010000 BME  Dynamics of Biological Fluids Hyun TR 10
+00111000 EGR  Dynamics Marek MWF 1
+01010101 EVE  Engineering Design Exhibit II Jenkins TR 3
+00111110 EGR  Electric Circuits Labatory Barnet TR 6
+00000001 CSC  Intro to Computing Gratigny TR 6
+Fitness: 450
+01000001 EGR  Electric Circuits Labatory Barnett  12
+00000011 CSC  Programming I Robertson MWF 12
+01101000 ISE  Engineering Design Exhibit II Jenkins TR 3
+00111111 EGR  Electric Circuits Labatory Juang  6
+01110000 MAE  Mechanical Engineering laboratory Marek  3
+01111101 MAE  Engineering Design Exhibit II Jenkins TR 3
+Fitness: 450
+00100101 ECE  Egr Design Exhibit I:Elect Spclz Mines TR 3
+01111110 MAE  Idp Stu: Characterization of Polymer Composites Afshar  Independent Study
+01010010 EVE  Solid Waste Management McCreanor TR 12
+00001111 BME  Basic Transport Phenomena Hyun MWF 2
+01111100 MAE  Engineering Design Exhibit I Mines TR 3
+Fitness: 450
+01101010 MAE  Visualization and Solid Modeling Afshar TR 3
+01110011 MAE  Machine Design Jenkins MWF 11
+01010110 EVE  Special Topics: Gray Water Research I McCreanor  Independent Study
+00010011 BME  Engineering Design Exhibit I Mines TR 3
+Fitness: 450
+01101000 ISE  Engineering Design Exhibit II Jenkins TR 3
+01000110 EGR  Junior Engineering Honors II McCreanor  Independent Study
+00101010 EGR  Intro Engineering Design Thomas MW 3
+01011000 EVE  Spc Top: Aerosol Removal using Impaction Devices Lackey  Independent Study
+00100110 ECE  Egr Design Exhibit II: Elec Splz Jenkins TR 3
+Fitness: 450
+00110100 EGR  Thermodynamics Hill TR 1
+00100011 ECE  Intro Sr Design:Computer Spclztn O'Brien  Independent Study
+01001001 EGR  Engineering Economy Schultz TR 10
+01000100 EGR  Probability & Statistics for Egr Hollingshed TR 1
+00000001 CSC  Intro to Computing Gratigny TR 6
+00001001 CSC  Graphics Simulatn & Visualizatn Pounds TR 10
+Fitness: 450
+00110001 EGR  Statics/Solid Mechanics McClellan MWF 11
+00000110 CSC  Data Struct & Algorithm Analysis Digh MWF 2
+01110011 MAE  Machine Design Jenkins MWF 11
+10000101 TCO  Document & Web Design Newman TR 9
+01101000 ISE  Engineering Design Exhibit II Jenkins TR 3
+00010001 BME  Biomedical Materials Vo TR 9
+Fitness: 450
+01110110 MAE  Structure/Properties of Material Mihut MWF 9
+00010110 ECE  Signals & Systems Barnett MWF 12
+10000011 TCO  Introduction to Professional Brewer TR 3
+01010111 EVE  Gray Water Research II McCreanor  Independent Study
+00110011 EGR  Thermodynamics Hill TR 9
+00100110 ECE  Egr Design Exhibit II: Elec Splz Jenkins TR 3
+Fitness: 450
+01111111 MAE  Idp Sty: Erosion Behavior of Molecularly Coated Metals Mihut  Independent Study
+01001010 EGR  Fdbck Control & Modeling for Egr Thitsa MWF 1
+00111011 EGR  Introduction to Electronics and Kamali MWF 2
+01011100 IDM  Senior Design Exhibit I Mines TR 3
+01000011 EGR  Probability & Statistics for Egr Hollingshed MW 3
+00100110 ECE  Egr Design Exhibit II: Elec Splz Jenkins TR 3
+Fitness: 450
+01111011 MAE  Intro to Senior Design O'Brien  Independent Study
+00000001 CSC  Intro to Computing Gratigny TR 6
+00110011 EGR  Thermodynamics Hill TR 9
+01000101 EGR  Probability & Statistics for Egr Hollingshed TR 10
+01100000 ISE  Production Planning & Control Biswas MWF 11
+10000001 TCO  Introduction to Professional Codone TR 10
+Fitness: 450
+00111110 EGR  Electric Circuits Labatory Barnet TR 6
+00101111 EGR  Programming for Engineers Choi TR 4
+00111010 EGR  Introduction to Electronics and Barnett MWF 1
+00001010 CSC  Operating Systems Allen MWF 12
+01101000 ISE  Engineering Design Exhibit II Jenkins TR 3
+01011111 ISE  Ergonomics and Work Moody MWF 1
+Fitness: 450
+00101100 EGR  Programming for Engineers Robertson TR 10
+10000101 TCO  Document & Web Design Newman TR 9
+01101101 MAE  Experimental Methods for Moses MWF 11
+01011001 IDM  Intro to Industrial Management Burtner  5
+00000001 CSC  Intro to Computing Gratigny TR 6
+00001110 BME  Biomedical Instrumentation O'Brien TR 10
+Fitness: 450
+00001011 CSC  Topi/Comp Sci: Introduction to Data Zhao MWF 9
+00100111 EGR  Freshman Engineering Honors II McCreanor  Independent Study
+01001111 EVE  Engineering Hydraulics MacCarthy TR 1
+00010010 BME  Introduction to Senior Design O'Brien  Independent Study
+00101010 EGR  Intro Engineering Design Thomas MW 3
+01110110 MAE  Structure/Properties of Material Mihut MWF 9
+Fitness: 450
+00111110 EGR  Electric Circuits Labatory Barnet TR 6
+10000010 TCO  Introduction to Professional Watson TR 1
+01000111 EGR  Engineering Economy Biswas TR 1
+Fitness: 450
+01000011 EGR  Probability & Statistics for Egr Hollingshed MW 3
+00010100 BME  Engineering Design Exhibit II Jenkins TR 3
+10001001 TCO  Technical Communication Newman MW 3
+Fitness: 450
+01000111 EGR  Engineering Economy Biswas TR 1
+01111000 MAE  Heat Transfer Moses TR 9
+00001100 CSC  Topi/Comp Sci: Computer Science Allen  Independent Study
+00010001 BME  Biomedical Materials Vo TR 9
+01001111 EVE  Engineering Hydraulics MacCarthy TR 1
+Fitness: 450
+00111001 EGR  Electric Analysis MWF 2
+00011000 ECE  Electronics II Fu TR 9
+01000011 EGR  Probability & Statistics for Egr Hollingshed MW 3
+00010001 BME  Biomedical Materials Vo TR 9
+Fitness: 450
+01101101 MAE  Experimental Methods for Moses MWF 11
+01000001 EGR  Electric Circuits Labatory Barnett  12
+00010110 ECE  Signals & Systems Barnett MWF 12
+10000010 TCO  Introduction to Professional Watson TR 1
+00100110 ECE  Egr Design Exhibit II: Elec Splz Jenkins TR 3
+10001010 TCO  Communication in Management Grady TR 1
+Fitness: 450
+01000011 EGR  Probability & Statistics for Egr Hollingshed MW 3
+01100111 ISE  Engineering Design Exhibit I Mines TR 3
+00000110 CSC  Data Struct & Algorithm Analysis Digh MWF 2
+01110101 MAE  Structure/Properties of Material Mihut TR 9
+01111000 MAE  Heat Transfer Moses TR 9
+Fitness: 450
+00100000 ECE  Communications Systems II Kamali MWF 12
+00001001 CSC  Graphics Simulatn & Visualizatn Pounds TR 10
+00000011 CSC  Programming I Robertson MWF 12
+Fitness: 450
+01110011 MAE  Machine Design Jenkins MWF 11
+01011110 ISE  Intro Indust Egr & Manufact Egr Burtner  5
+01100000 ISE  Production Planning & Control Biswas MWF 11
+Fitness: 450
+01010001 EVE  Green Engineering MacCarthy TR 6
+00101100 EGR  Programming for Engineers Robertson TR 10
+10010000 TCO  Independent Study: Technical Grady  Independent Study
+01010010 EVE  Solid Waste Management McCreanor TR 12
+00110010 EGR  Thermodynamics McClellan TR 10
+Fitness: 450
+00010100 BME  Engineering Design Exhibit II Jenkins TR 3
+10001100 TCO  Visual Communication Goode TR 10
+00101100 EGR  Programming for Engineers Robertson TR 10
+01110111 MAE  Heat Transfer Sumner MWF 2
+00110111 EGR  Dynamics Marek MWF 9
+00010011 BME  Engineering Design Exhibit I Mines TR 3
+Fitness: 450
+00100000 ECE  Communications Systems II Kamali MWF 12
+01000110 EGR  Junior Engineering Honors II McCreanor  Independent Study
+10000110 TCO  Technical Communication Goode TR 8
+00110100 EGR  Thermodynamics Hill TR 1
+01101101 MAE  Experimental Methods for Moses MWF 11
+01001111 EVE  Engineering Hydraulics MacCarthy TR 1
+Fitness: 450
+01010001 EVE  Green Engineering MacCarthy TR 6
+10000101 TCO  Document & Web Design Newman TR 9
+10001110 TCO  Independent Study: Usability Lab Brewer  Independent Study
+01100111 ISE  Engineering Design Exhibit I Mines TR 3
+00100110 ECE  Egr Design Exhibit II: Elec Splz Jenkins TR 3
+Fitness: 450
+01000011 EGR  Probability & Statistics for Egr Hollingshed MW 3
+00100100 ECE  Egr Design Exhibit II:Comp Splzn Jenkins TR 3
+00110101 EGR  Dynamics Afshar MWF 11
+01101000 ISE  Engineering Design Exhibit II Jenkins TR 3
+Fitness: 450
+01000011 EGR  Probability & Statistics for Egr Hollingshed MW 3
+01001011 EGR  Fdbck Control & Modeling for Egr Barnett MWF 8
+10001011 TCO  Usability Brewer MW 3
+Fitness: 450
+01111101 MAE  Engineering Design Exhibit II Jenkins TR 3
+00010010 BME  Introduction to Senior Design O'Brien  Independent Study
+01010100 EVE  Engineering Design Exhibit I Mines TR 3
+Fitness: 450
+00000110 CSC  Data Struct & Algorithm Analysis Digh MWF 2
+00101100 EGR  Programming for Engineers Robertson TR 10
+01100100 ISE  Healthcare Process Improvement Burtner MW 3
+01111000 MAE  Heat Transfer Moses TR 9
+00101010 EGR  Intro Engineering Design Thomas MW 3
+Fitness: 500
+00000110 CSC  Data Struct & Algorithm Analysis Digh MWF 2
+00111101 EGR  Electric Circuits Labatory Barnett  6
+00001111 BME  Basic Transport Phenomena Hyun MWF 2
+00100100 ECE  Egr Design Exhibit II:Comp Splzn Jenkins TR 3
+10001101 TCO  Intro Senior Design/Internship Grady Distance Learning Distance Learning
+00011100 ECE  Power Electronics Fu MWF 9
+Fitness: 500
+00010100 BME  Engineering Design Exhibit II Jenkins TR 3
+Fitness: 500
+10001001 TCO  Technical Communication Newman MW 3
+01101100 MAE  Manufacturing Practices Kunz MW 2
+01000111 EGR  Engineering Economy Biswas TR 1
+00100100 ECE  Egr Design Exhibit II:Comp Splzn Jenkins TR 3
+10000000 TCO  Introduction to Professional Watson TR 9
+Fitness: 500
+00100101 ECE  Egr Design Exhibit I:Elect Spclz Mines TR 3
+01010010 EVE  Solid Waste Management McCreanor TR 12
+00001011 CSC  Topi/Comp Sci: Introduction to Data Zhao MWF 9
+Fitness: 500
+01010000 EVE  Design/Analysis of Wastewater Sy Mines TR 9
+Fitness: 500
+00011001 ECE  Electronics II Ruiyun  2
+01001010 EGR  Fdbck Control & Modeling for Egr Thitsa MWF 1
+00100101 ECE  Egr Design Exhibit I:Elect Spclz Mines TR 3
+Fitness: 500
+01111101 MAE  Engineering Design Exhibit II Jenkins TR 3
+01100101 ISE  Intro to Senior Design O'Brien  Independent Study
+01100001 ISE  Manufacturing Processes Radharamanan TR 1
+01111010 MAE  Turbomachinery Sumner TR 10
+01101000 ISE  Engineering Design Exhibit II Jenkins TR 3
+00001111 BME  Basic Transport Phenomena Hyun MWF 2
+Fitness: 500
+01000111 EGR  Engineering Economy Biswas TR 1
+00010101 BME  Spc Top: Introduction to Tissue Thomas MWF 12
+Fitness: 500
+01011111 ISE  Ergonomics and Work Moody MWF 1
+01010000 EVE  Design/Analysis of Wastewater Sy Mines TR 9
+01100110 ISE  Industrial EGR Capstone Lab Moody TR 1
+Fitness: 500
+00001101 CSC  Undergraduate Research Digh  Independent Study
+01011111 ISE  Ergonomics and Work Moody MWF 1
+00110110 EGR  Dynamics Kunz MWF 9
+Fitness: 500
+10001111 TCO  Independent Study: DOT Lab Goode  Independent Study
+01000111 EGR  Engineering Economy Biswas TR 1
+00110000 EGR  Sophomore Engineering Honors II McCreanor  Independent Study
+00010110 ECE  Signals & Systems Barnett MWF 12
+01001011 EGR  Fdbck Control & Modeling for Egr Barnett MWF 8
+00000010 CSC  Programming I Allen MWF 9
+Fitness: 500
+01000001 EGR  Electric Circuits Labatory Barnett  12
+00111010 EGR  Introduction to Electronics and Barnett MWF 1
+01101010 MAE  Visualization and Solid Modeling Afshar TR 3
+00101010 EGR  Intro Engineering Design Thomas MW 3
+01111101 MAE  Engineering Design Exhibit II Jenkins TR 3
+00011111 ECE  Digital Signal Processing Barnett TR 12
+Fitness: 500
+00110101 EGR  Dynamics Afshar MWF 11
+00000111 CSC  File Structures & Advanced Digh MW 3
+00111101 EGR  Electric Circuits Labatory Barnett  6
+01110101 MAE  Structure/Properties of Material Mihut TR 9
+Fitness: 500
+00100010 ECE  Intro Sr Design:Electrical Specl O'Brien  Independent Study
+00100101 ECE  Egr Design Exhibit I:Elect Spclz Mines TR 3
+01101111 MAE  Mechanical Engineering laboratory Mihut  3
+01001001 EGR  Engineering Economy Schultz TR 10
+Fitness: 500
+01011100 IDM  Senior Design Exhibit I Mines TR 3
+01101011 MAE  Manufacturing Practices O'Brien TR 2
+10001100 TCO  Visual Communication Goode TR 10
+Fitness: 500
+00110000 EGR  Sophomore Engineering Honors II McCreanor  Independent Study
+10000101 TCO  Document & Web Design Newman TR 9
+00111000 EGR  Dynamics Marek MWF 1
+01001001 EGR  Engineering Economy Schultz TR 10
+00000101 CSC  Data Struct & Algorithm Analysis Digh MWF 12
+Fitness: 500
+01100001 ISE  Manufacturing Processes Radharamanan TR 1
+01111100 MAE  Engineering Design Exhibit I Mines TR 3
+Fitness: 500
+00100111 EGR  Freshman Engineering Honors II McCreanor  Independent Study
+00110111 EGR  Dynamics Marek MWF 9
+01110101 MAE  Structure/Properties of Material Mihut TR 9
+Fitness: 500
+01110001 MAE  Mechanical Engineering laboratory Marek  3
+00110001 EGR  Statics/Solid Mechanics McClellan MWF 11
+00110100 EGR  Thermodynamics Hill TR 1
+00110110 EGR  Dynamics Kunz MWF 9
+Fitness: 500
+00000010 CSC  Programming I Allen MWF 9
+Fitness: 500
+00000010 CSC  Programming I Allen MWF 9
+Fitness: 500
+01100101 ISE  Intro to Senior Design O'Brien  Independent Study
+00101010 EGR  Intro Engineering Design Thomas MW 3
+01001111 EVE  Engineering Hydraulics MacCarthy TR 1
+10001100 TCO  Visual Communication Goode TR 10
+Fitness: 500
+00111100 EGR  Electric Circuits Labatory Barnett  6
+01110001 MAE  Mechanical Engineering laboratory Marek  3
+00100111 EGR  Freshman Engineering Honors II McCreanor  Independent Study
+01100111 ISE  Engineering Design Exhibit I Mines TR 3
+00110110 EGR  Dynamics Kunz MWF 9
+10000001 TCO  Introduction to Professional Codone TR 10
+Fitness: 500
+00011101 ECE  Embedded Computer Systems Choi TR 1
+01011100 IDM  Senior Design Exhibit I Mines TR 3
+00101011 EGR  Intro Engineering Design Butler MW 3
+Fitness: 500
+10000001 TCO  Introduction to Professional Codone TR 10
+01110110 MAE  Structure/Properties of Material Mihut MWF 9
+01100111 ISE  Engineering Design Exhibit I Mines TR 3
+00010111 ECE  Electronics I Barnett  Independent Study
+00111110 EGR  Electric Circuits Labatory Barnet TR 6
+Fitness: 500
+00001000 CSC  Internship in Computer Science Cozart  Independent Study
+00000110 CSC  Data Struct & Algorithm Analysis Digh MWF 2
+Fitness: 500
+00101100 EGR  Programming for Engineers Robertson TR 10
+01110100 MAE  Machine Design Jenkins MWF 2
+00110010 EGR  Thermodynamics McClellan TR 10
+00011101 ECE  Embedded Computer Systems Choi TR 1
+00101110 EGR  Programming for Engineers Choi TR 3
+Fitness: 500
+01101010 MAE  Visualization and Solid Modeling Afshar TR 3
+10000011 TCO  Introduction to Professional Brewer TR 3
+00000010 CSC  Programming I Allen MWF 9
+01001111 EVE  Engineering Hydraulics MacCarthy TR 1
+10000100 TCO  Introduction to Professional Grady MW 3
+Fitness: 500
+01110110 MAE  Structure/Properties of Material Mihut MWF 9
+01101111 MAE  Mechanical Engineering laboratory Mihut  3
+10000001 TCO  Introduction to Professional Codone TR 10
+01101101 MAE  Experimental Methods for Moses MWF 11
+00100110 ECE  Egr Design Exhibit II: Elec Splz Jenkins TR 3
+10000100 TCO  Introduction to Professional Grady MW 3
+Fitness: 500
+00100010 ECE  Intro Sr Design:Electrical Specl O'Brien  Independent Study
+01010001 EVE  Green Engineering MacCarthy TR 6
+00100110 ECE  Egr Design Exhibit II: Elec Splz Jenkins TR 3
+01010100 EVE  Engineering Design Exhibit I Mines TR 3
+10000001 TCO  Introduction to Professional Codone TR 10
+00001111 BME  Basic Transport Phenomena Hyun MWF 2
+Fitness: 500
+00010101 BME  Spc Top: Introduction to Tissue Thomas MWF 12
+10000001 TCO  Introduction to Professional Codone TR 10
+01011101 IDM  Senior Design Exhibit II Jenkins TR 3
+01010101 EVE  Engineering Design Exhibit II Jenkins TR 3
+01110100 MAE  Machine Design Jenkins MWF 2
+Fitness: 500
+01101101 MAE  Experimental Methods for Moses MWF 11
+Fitness: 500
+01101101 MAE  Experimental Methods for Moses MWF 11
+Fitness: 500
+01010001 EVE  Green Engineering MacCarthy TR 6
+00011100 ECE  Power Electronics Fu MWF 9
+01010100 EVE  Engineering Design Exhibit I Mines TR 3
+00010101 BME  Spc Top: Introduction to Tissue Thomas MWF 12
+01011111 ISE  Ergonomics and Work Moody MWF 1
+Fitness: 500
+01111101 MAE  Engineering Design Exhibit II Jenkins TR 3
+00000001 CSC  Intro to Computing Gratigny TR 6
+Fitness: 500
+01100001 ISE  Manufacturing Processes Radharamanan TR 1
+01100001 ISE  Manufacturing Processes Radharamanan TR 1
+10000110 TCO  Technical Communication Goode TR 8
+10000110 TCO  Technical Communication Goode TR 8
+01000111 EGR  Engineering Economy Biswas TR 1
+00010101 BME  Spc Top: Introduction to Tissue Thomas MWF 12
+Fitness: 500
+10001101 TCO  Intro Senior Design/Internship Grady Distance Learning Distance Learning
+01000110 EGR  Junior Engineering Honors II McCreanor  Independent Study
+01001011 EGR  Fdbck Control & Modeling for Egr Barnett MWF 8
+01100110 ISE  Industrial EGR Capstone Lab Moody TR 1
+Fitness: 500
+00101001 EGR  Intro Engineering Design O'Brien MW 3
+00101100 EGR  Programming for Engineers Robertson TR 10
+Fitness: 500
+01111111 MAE  Idp Sty: Erosion Behavior of Molecularly Coated Metals Mihut  Independent Study
+01110110 MAE  Structure/Properties of Material Mihut MWF 9
+10000010 TCO  Introduction to Professional Watson TR 1
+Fitness: 500
+00011011 ECE  Electromagnetic Field Theory Juang MWF 11
+Fitness: 500
+00011011 ECE  Electromagnetic Field Theory Juang MWF 11
+Fitness: 500
+01110010 MAE  Mechanical Engineering laboratory Mihut  3
+00010110 ECE  Signals & Systems Barnett MWF 12
+Fitness: 500
+01110010 MAE  Mechanical Engineering laboratory Mihut  3
+00010110 ECE  Signals & Systems Barnett MWF 12
+Fitness: 500
+10010000 TCO  Independent Study: Technical Grady  Independent Study
+00101011 EGR  Intro Engineering Design Butler MW 3
+00100100 ECE  Egr Design Exhibit II:Comp Splzn Jenkins TR 3
+01001000 EGR  Engineering Economy Barnett TR 4
+Fitness: 500
+01011000 EVE  Spc Top: Aerosol Removal using Impaction Devices Lackey  Independent Study
+10000110 TCO  Technical Communication Goode TR 8
+00111101 EGR  Electric Circuits Labatory Barnett  6
+00000111 CSC  File Structures & Advanced Digh MW 3
+00101010 EGR  Intro Engineering Design Thomas MW 3
+01110100 MAE  Machine Design Jenkins MWF 2
+Fitness: 500
+00010000 BME  Dynamics of Biological Fluids Hyun TR 10
+01110000 MAE  Mechanical Engineering laboratory Marek  3
+01010111 EVE  Gray Water Research II McCreanor  Independent Study
+00101001 EGR  Intro Engineering Design O'Brien MW 3
+00001110 BME  Biomedical Instrumentation O'Brien TR 10
+00011100 ECE  Power Electronics Fu MWF 9
+Fitness: 500
+01011010 IDM  Industrial Management Case Stds Burtner TR 10
+01101011 MAE  Manufacturing Practices O'Brien TR 2
+00010111 ECE  Electronics I Barnett  Independent Study
+01111001 MAE  Thermal Systems Analysis Hill MWF 2
+00000110 CSC  Data Struct & Algorithm Analysis Digh MWF 2
+10001011 TCO  Usability Brewer MW 3
+Fitness: 500
+01001100 EGR  Senior Engineering Honors I McCreanor  Independent Study
+00001010 CSC  Operating Systems Allen MWF 12
+01001110 EGR  Entrepreneurship in Egr Design Radharamanan  Independent Study
+01111001 MAE  Thermal Systems Analysis Hill MWF 2
+10001001 TCO  Technical Communication Newman MW 3
+Fitness: 500
+00111110 EGR  Electric Circuits Labatory Barnet TR 6
+00111010 EGR  Introduction to Electronics and Barnett MWF 1
+10000101 TCO  Document & Web Design Newman TR 9
+01111010 MAE  Turbomachinery Sumner TR 10
+Fitness: 500
+01011101 IDM  Senior Design Exhibit II Jenkins TR 3
+Fitness: 500
+00000100 CSC  Programming II Zhao MWF 1
+00111100 EGR  Electric Circuits Labatory Barnett  6
+00101010 EGR  Intro Engineering Design Thomas MW 3
+01110100 MAE  Machine Design Jenkins MWF 2
+Fitness: 500
+00010010 BME  Introduction to Senior Design O'Brien  Independent Study
+00001100 CSC  Topi/Comp Sci: Computer Science Allen  Independent Study
+10000011 TCO  Introduction to Professional Brewer TR 3
+01110011 MAE  Machine Design Jenkins MWF 11
+00001001 CSC  Graphics Simulatn & Visualizatn Pounds TR 10
+Fitness: 500
+00100000 ECE  Communications Systems II Kamali MWF 12
+01101101 MAE  Experimental Methods for Moses MWF 11
+01001100 EGR  Senior Engineering Honors I McCreanor  Independent Study
+01110011 MAE  Machine Design Jenkins MWF 11
+00010110 ECE  Signals & Systems Barnett MWF 12
+10001000 TCO  Technical Communication Newman TR 1
+Fitness: 500
+00101110 EGR  Programming for Engineers Choi TR 3
+Fitness: 500
+00000100 CSC  Programming II Zhao MWF 1
+10000100 TCO  Introduction to Professional Grady MW 3
+Fitness: 500
+01011010 IDM  Industrial Management Case Stds Burtner TR 10
+00111110 EGR  Electric Circuits Labatory Barnet TR 6
+01100000 ISE  Production Planning & Control Biswas MWF 11
+Fitness: 500
+10000110 TCO  Technical Communication Goode TR 8
+Fitness: 500
+10000110 TCO  Technical Communication Goode TR 8
+Fitness: 500
+01111000 MAE  Heat Transfer Moses TR 9
+01010100 EVE  Engineering Design Exhibit I Mines TR 3
+01011011 IDM  Intro to Senior Design O'Brien  Independent Study
+01001110 EGR  Entrepreneurship in Egr Design Radharamanan  Independent Study
+00000001 CSC  Intro to Computing Gratigny TR 6
+00001011 CSC  Topi/Comp Sci: Introduction to Data Zhao MWF 9
+Fitness: 500
+00010100 BME  Engineering Design Exhibit II Jenkins TR 3
+Fitness: 500
+00110010 EGR  Thermodynamics McClellan TR 10
+Fitness: 500
+00110010 EGR  Thermodynamics McClellan TR 10
+Fitness: 500
+00110010 EGR  Thermodynamics McClellan TR 10
+Fitness: 500
+00010111 ECE  Electronics I Barnett  Independent Study
+00011110 ECE  Mobile Application Development Ekong  6
+10001001 TCO  Technical Communication Newman MW 3
+00001111 BME  Basic Transport Phenomena Hyun MWF 2
+Fitness: 500
+00011110 ECE  Mobile Application Development Ekong  6
+00010100 BME  Engineering Design Exhibit II Jenkins TR 3
+01101001 MAE  Visualization and Solid Modeling Afshar MW 4
+00011101 ECE  Embedded Computer Systems Choi TR 1
+Fitness: 500
+01000011 EGR  Probability & Statistics for Egr Hollingshed MW 3
+00000011 CSC  Programming I Robertson MWF 12
+Fitness: 500
+00011001 ECE  Electronics II Ruiyun  2
+00000011 CSC  Programming I Robertson MWF 12
+01100011 ISE  Computer Assisted Manufacturing Radharamanan  9
+10000001 TCO  Introduction to Professional Codone TR 10
+01001011 EGR  Fdbck Control & Modeling for Egr Barnett MWF 8
+Fitness: 500
+01110001 MAE  Mechanical Engineering laboratory Marek  3
+01011110 ISE  Intro Indust Egr & Manufact Egr Burtner  5
+01111011 MAE  Intro to Senior Design O'Brien  Independent Study
+01000001 EGR  Electric Circuits Labatory Barnett  12
+01010000 EVE  Design/Analysis of Wastewater Sy Mines TR 9
+10000001 TCO  Introduction to Professional Codone TR 10
+Fitness: 500
+01100011 ISE  Computer Assisted Manufacturing Radharamanan  9
+10001101 TCO  Intro Senior Design/Internship Grady Distance Learning Distance Learning
+00100011 ECE  Intro Sr Design:Computer Spclztn O'Brien  Independent Study
+01000001 EGR  Electric Circuits Labatory Barnett  12
+01000011 EGR  Probability & Statistics for Egr Hollingshed MW 3
+Fitness: 500
+10001111 TCO  Independent Study: DOT Lab Goode  Independent Study
+01110011 MAE  Machine Design Jenkins MWF 11
+01110111 MAE  Heat Transfer Sumner MWF 2
+Fitness: 500
+10000001 TCO  Introduction to Professional Codone TR 10
+00010011 BME  Engineering Design Exhibit I Mines TR 3
+Fitness: 500
+01001000 EGR  Engineering Economy Barnett TR 4
+01011101 IDM  Senior Design Exhibit II Jenkins TR 3
+00000001 CSC  Intro to Computing Gratigny TR 6
+Fitness: 500
+01110100 MAE  Machine Design Jenkins MWF 2
+Fitness: 500
+01110100 MAE  Machine Design Jenkins MWF 2
+Fitness: 500
+01110100 MAE  Machine Design Jenkins MWF 2
+Fitness: 500
+00000010 CSC  Programming I Allen MWF 9
+01011000 EVE  Spc Top: Aerosol Removal using Impaction Devices Lackey  Independent Study
+01010001 EVE  Green Engineering MacCarthy TR 6
+Fitness: 500
+01000011 EGR  Probability & Statistics for Egr Hollingshed MW 3
+00000011 CSC  Programming I Robertson MWF 12
+Fitness: 500
+00110110 EGR  Dynamics Kunz MWF 9
+01010100 EVE  Engineering Design Exhibit I Mines TR 3
+01101100 MAE  Manufacturing Practices Kunz MW 2
+Fitness: 500
+00001011 CSC  Topi/Comp Sci: Introduction to Data Zhao MWF 9
+01001110 EGR  Entrepreneurship in Egr Design Radharamanan  Independent Study
+00010101 BME  Spc Top: Introduction to Tissue Thomas MWF 12
+01010000 EVE  Design/Analysis of Wastewater Sy Mines TR 9
+01100100 ISE  Healthcare Process Improvement Burtner MW 3
+Fitness: 500
+00100010 ECE  Intro Sr Design:Electrical Specl O'Brien  Independent Study
+01101101 MAE  Experimental Methods for Moses MWF 11
+Fitness: 500
+01000101 EGR  Probability & Statistics for Egr Hollingshed TR 10
+00111011 EGR  Introduction to Electronics and Kamali MWF 2
+00110100 EGR  Thermodynamics Hill TR 1
+00011010 ECE  Digital Logic Ekong MW 3
+10000000 TCO  Introduction to Professional Watson TR 9
+Fitness: 500
+01110001 MAE  Mechanical Engineering laboratory Marek  3
+00100001 ECE  Computer Networks Ekong MWF 1
+10001001 TCO  Technical Communication Newman MW 3
+Fitness: 500
+00110111 EGR  Dynamics Marek MWF 9
+01101011 MAE  Manufacturing Practices O'Brien TR 2
+01101011 MAE  Manufacturing Practices O'Brien TR 2
+00011010 ECE  Digital Logic Ekong MW 3
+Fitness: 500
+01100011 ISE  Computer Assisted Manufacturing Radharamanan  9
+01010001 EVE  Green Engineering MacCarthy TR 6
+Fitness: 500
+01110011 MAE  Machine Design Jenkins MWF 11
+00000110 CSC  Data Struct & Algorithm Analysis Digh MWF 2
+01100010 ISE  Modeling and Simulation Biswas TR 12
+Fitness: 500
+00001111 BME  Basic Transport Phenomena Hyun MWF 2
+Fitness: 500
+00000001 CSC  Intro to Computing Gratigny TR 6
+00011011 ECE  Electromagnetic Field Theory Juang MWF 11
+01011110 ISE  Intro Indust Egr & Manufact Egr Burtner  5
+01001011 EGR  Fdbck Control & Modeling for Egr Barnett MWF 8
+01010011 EVE  Intro to Senior Design O'Brien  Independent Study
+00100000 ECE  Communications Systems II Kamali MWF 12
+Fitness: 500
+00100010 ECE  Intro Sr Design:Electrical Specl O'Brien  Independent Study
+00010101 BME  Spc Top: Introduction to Tissue Thomas MWF 12
+00110011 EGR  Thermodynamics Hill TR 9
+Fitness: 500
+00010100 BME  Engineering Design Exhibit II Jenkins TR 3
+01000100 EGR  Probability & Statistics for Egr Hollingshed TR 1
+Fitness: 500
+01010011 EVE  Intro to Senior Design O'Brien  Independent Study
+00001100 CSC  Topi/Comp Sci: Computer Science Allen  Independent Study
+10001101 TCO  Intro Senior Design/Internship Grady Distance Learning Distance Learning
+00011001 ECE  Electronics II Ruiyun  2
+10001101 TCO  Intro Senior Design/Internship Grady Distance Learning Distance Learning
+00011001 ECE  Electronics II Ruiyun  2
+Fitness: 500
+10001010 TCO  Communication in Management Grady TR 1
+00100101 ECE  Egr Design Exhibit I:Elect Spclz Mines TR 3
+01111110 MAE  Idp Stu: Characterization of Polymer Composites Afshar  Independent Study
+00111110 EGR  Electric Circuits Labatory Barnet TR 6
+00010010 BME  Introduction to Senior Design O'Brien  Independent Study
+00000101 CSC  Data Struct & Algorithm Analysis Digh MWF 12
+Fitness: 500
+00001011 CSC  Topi/Comp Sci: Introduction to Data Zhao MWF 9
+Fitness: 500
+10001101 TCO  Intro Senior Design/Internship Grady Distance Learning Distance Learning
+00001001 CSC  Graphics Simulatn & Visualizatn Pounds TR 10
+01011000 EVE  Spc Top: Aerosol Removal using Impaction Devices Lackey  Independent Study
+00011111 ECE  Digital Signal Processing Barnett TR 12
+01111101 MAE  Engineering Design Exhibit II Jenkins TR 3
+00011101 ECE  Embedded Computer Systems Choi TR 1
+Fitness: 500
+01110001 MAE  Mechanical Engineering laboratory Marek  3
+01101001 MAE  Visualization and Solid Modeling Afshar MW 4
+00110110 EGR  Dynamics Kunz MWF 9
+00100000 ECE  Communications Systems II Kamali MWF 12
+Fitness: 500
+01010111 EVE  Gray Water Research II McCreanor  Independent Study
+01001001 EGR  Engineering Economy Schultz TR 10
+Fitness: 500
+01010111 EVE  Gray Water Research II McCreanor  Independent Study
+01001001 EGR  Engineering Economy Schultz TR 10
+Fitness: 500
+00011101 ECE  Embedded Computer Systems Choi TR 1
+00000011 CSC  Programming I Robertson MWF 12
+00101101 EGR  Programming for Engineers Digh TR 3
+Fitness: 500
+01001001 EGR  Engineering Economy Schultz TR 10
+Fitness: 500
+00101110 EGR  Programming for Engineers Choi TR 3
+01001000 EGR  Engineering Economy Barnett TR 4
+01100000 ISE  Production Planning & Control Biswas MWF 11
+01010010 EVE  Solid Waste Management McCreanor TR 12
+00110110 EGR  Dynamics Kunz MWF 9
+Fitness: 500
+10000110 TCO  Technical Communication Goode TR 8
+00010011 BME  Engineering Design Exhibit I Mines TR 3
+01111000 MAE  Heat Transfer Moses TR 9
+00010001 BME  Biomedical Materials Vo TR 9
+00111011 EGR  Introduction to Electronics and Kamali MWF 2
+00000010 CSC  Programming I Allen MWF 9
+Fitness: 500
+01010000 EVE  Design/Analysis of Wastewater Sy Mines TR 9
+Fitness: 500
+00111110 EGR  Electric Circuits Labatory Barnet TR 6
+10001101 TCO  Intro Senior Design/Internship Grady Distance Learning Distance Learning
+00000010 CSC  Programming I Allen MWF 9
+00110011 EGR  Thermodynamics Hill TR 9
+00011110 ECE  Mobile Application Development Ekong  6
+00111010 EGR  Introduction to Electronics and Barnett MWF 1
+Fitness: 500
+01100000 ISE  Production Planning & Control Biswas MWF 11
+Fitness: 500
+00001000 CSC  Internship in Computer Science Cozart  Independent Study
+00010001 BME  Biomedical Materials Vo TR 9
+00111101 EGR  Electric Circuits Labatory Barnett  6
+01011001 IDM  Intro to Industrial Management Burtner  5
+00000101 CSC  Data Struct & Algorithm Analysis Digh MWF 12
+00111010 EGR  Introduction to Electronics and Barnett MWF 1
+Fitness: 500
+01101010 MAE  Visualization and Solid Modeling Afshar TR 3
+10001111 TCO  Independent Study: DOT Lab Goode  Independent Study
+01100010 ISE  Modeling and Simulation Biswas TR 12
+01110001 MAE  Mechanical Engineering laboratory Marek  3
+01000111 EGR  Engineering Economy Biswas TR 1
+00001111 BME  Basic Transport Phenomena Hyun MWF 2
+Fitness: 500
+00100010 ECE  Intro Sr Design:Electrical Specl O'Brien  Independent Study
+01111001 MAE  Thermal Systems Analysis Hill MWF 2
+01111100 MAE  Engineering Design Exhibit I Mines TR 3
+00000010 CSC  Programming I Allen MWF 9
+00101010 EGR  Intro Engineering Design Thomas MW 3
+01001000 EGR  Engineering Economy Barnett TR 4
+Fitness: 500
+01111010 MAE  Turbomachinery Sumner TR 10
+01000100 EGR  Probability & Statistics for Egr Hollingshed TR 1
+Fitness: 500
+01011110 ISE  Intro Indust Egr & Manufact Egr Burtner  5
+00010011 BME  Engineering Design Exhibit I Mines TR 3
+01110011 MAE  Machine Design Jenkins MWF 11
+01010011 EVE  Intro to Senior Design O'Brien  Independent Study
+00010101 BME  Spc Top: Introduction to Tissue Thomas MWF 12
+Fitness: 500
+01010000 EVE  Design/Analysis of Wastewater Sy Mines TR 9
+01000011 EGR  Probability & Statistics for Egr Hollingshed MW 3
+00011010 ECE  Digital Logic Ekong MW 3
+01010100 EVE  Engineering Design Exhibit I Mines TR 3
+Fitness: 500
+00011000 ECE  Electronics II Fu TR 9
+00001110 BME  Biomedical Instrumentation O'Brien TR 10
+00110010 EGR  Thermodynamics McClellan TR 10
+00010011 BME  Engineering Design Exhibit I Mines TR 3
+00001101 CSC  Undergraduate Research Digh  Independent Study
+00010110 ECE  Signals & Systems Barnett MWF 12
+Fitness: 500
+10001101 TCO  Intro Senior Design/Internship Grady Distance Learning Distance Learning
+01101101 MAE  Experimental Methods for Moses MWF 11
+00010001 BME  Biomedical Materials Vo TR 9
+Fitness: 500
+00101001 EGR  Intro Engineering Design O'Brien MW 3
+Fitness: 500
+00101001 EGR  Intro Engineering Design O'Brien MW 3
+Fitness: 500
+00110100 EGR  Thermodynamics Hill TR 1
+10000110 TCO  Technical Communication Goode TR 8
+00000010 CSC  Programming I Allen MWF 9
+Fitness: 500
+00011011 ECE  Electromagnetic Field Theory Juang MWF 11
+10000010 TCO  Introduction to Professional Watson TR 1
+00001100 CSC  Topi/Comp Sci: Computer Science Allen  Independent Study
+10000101 TCO  Document & Web Design Newman TR 9
+01111001 MAE  Thermal Systems Analysis Hill MWF 2
+00101101 EGR  Programming for Engineers Digh TR 3
+Fitness: 500
+00111001 EGR  Electric Analysis MWF 2
+00001000 CSC  Internship in Computer Science Cozart  Independent Study
+00001000 CSC  Internship in Computer Science Cozart  Independent Study
+Fitness: 500
+00101011 EGR  Intro Engineering Design Butler MW 3
+00110111 EGR  Dynamics Marek MWF 9
+Fitness: 500
+01110101 MAE  Structure/Properties of Material Mihut TR 9
+00110010 EGR  Thermodynamics McClellan TR 10
+Fitness: 500
+01101000 ISE  Engineering Design Exhibit II Jenkins TR 3
+Fitness: 500
+01011010 IDM  Industrial Management Case Stds Burtner TR 10
+00000010 CSC  Programming I Allen MWF 9
+01101101 MAE  Experimental Methods for Moses MWF 11
+00100111 EGR  Freshman Engineering Honors II McCreanor  Independent Study
+00111111 EGR  Electric Circuits Labatory Juang  6
+00110100 EGR  Thermodynamics Hill TR 1
+Fitness: 500
+01001100 EGR  Senior Engineering Honors I McCreanor  Independent Study
+00110001 EGR  Statics/Solid Mechanics McClellan MWF 11
+00010100 BME  Engineering Design Exhibit II Jenkins TR 3
+00100111 EGR  Freshman Engineering Honors II McCreanor  Independent Study
+00110010 EGR  Thermodynamics McClellan TR 10
+Fitness: 500
+00110010 EGR  Thermodynamics McClellan TR 10
+00010010 BME  Introduction to Senior Design O'Brien  Independent Study
+00101000 EGR  Intro Engineering Design Shaw MW 3
+Fitness: 500
+10001000 TCO  Technical Communication Newman TR 1
+01011100 IDM  Senior Design Exhibit I Mines TR 3
+00001011 CSC  Topi/Comp Sci: Introduction to Data Zhao MWF 9
+01111000 MAE  Heat Transfer Moses TR 9
+Fitness: 500
+00010110 ECE  Signals & Systems Barnett MWF 12
+Fitness: 500
+00001101 CSC  Undergraduate Research Digh  Independent Study
+00100010 ECE  Intro Sr Design:Electrical Specl O'Brien  Independent Study
+01000011 EGR  Probability & Statistics for Egr Hollingshed MW 3
+10000101 TCO  Document & Web Design Newman TR 9
+01101100 MAE  Manufacturing Practices Kunz MW 2
+Fitness: 500
+10001000 TCO  Technical Communication Newman TR 1
+Fitness: 500
+10001000 TCO  Technical Communication Newman TR 1
+Fitness: 500
+01101101 MAE  Experimental Methods for Moses MWF 11
+01011000 EVE  Spc Top: Aerosol Removal using Impaction Devices Lackey  Independent Study
+00110000 EGR  Sophomore Engineering Honors II McCreanor  Independent Study
+10000100 TCO  Introduction to Professional Grady MW 3
+Fitness: 500
+00101011 EGR  Intro Engineering Design Butler MW 3
+Fitness: 500
+00101011 EGR  Intro Engineering Design Butler MW 3
+Fitness: 500
+10000001 TCO  Introduction to Professional Codone TR 10
+01001010 EGR  Fdbck Control & Modeling for Egr Thitsa MWF 1
+Fitness: 500
+00000010 CSC  Programming I Allen MWF 9
+10001111 TCO  Independent Study: DOT Lab Goode  Independent Study
+01010010 EVE  Solid Waste Management McCreanor TR 12
+01111101 MAE  Engineering Design Exhibit II Jenkins TR 3
+Fitness: 500
+00101110 EGR  Programming for Engineers Choi TR 3
+01110101 MAE  Structure/Properties of Material Mihut TR 9
+Fitness: 500
+00100000 ECE  Communications Systems II Kamali MWF 12
+00010100 BME  Engineering Design Exhibit II Jenkins TR 3
+01001110 EGR  Entrepreneurship in Egr Design Radharamanan  Independent Study
+01011101 IDM  Senior Design Exhibit II Jenkins TR 3
+00100011 ECE  Intro Sr Design:Computer Spclztn O'Brien  Independent Study
+00101010 EGR  Intro Engineering Design Thomas MW 3
+Fitness: 500
+00111110 EGR  Electric Circuits Labatory Barnet TR 6
+00101010 EGR  Intro Engineering Design Thomas MW 3
+01001001 EGR  Engineering Economy Schultz TR 10
+Fitness: 500
+01101010 MAE  Visualization and Solid Modeling Afshar TR 3
+Fitness: 500
+01101010 MAE  Visualization and Solid Modeling Afshar TR 3
+Fitness: 500
+00101011 EGR  Intro Engineering Design Butler MW 3
+Fitness: 500
+00010110 ECE  Signals & Systems Barnett MWF 12
+00111010 EGR  Introduction to Electronics and Barnett MWF 1
+00000100 CSC  Programming II Zhao MWF 1
+01101110 MAE  Experimental Methods for Moses MWF 9
+00000101 CSC  Data Struct & Algorithm Analysis Digh MWF 12
+10001000 TCO  Technical Communication Newman TR 1
+Fitness: 500
+01111101 MAE  Engineering Design Exhibit II Jenkins TR 3
+00111001 EGR  Electric Analysis MWF 2
+00011010 ECE  Digital Logic Ekong MW 3
+Fitness: 500
+10001001 TCO  Technical Communication Newman MW 3
+00110101 EGR  Dynamics Afshar MWF 11
+01000101 EGR  Probability & Statistics for Egr Hollingshed TR 10
+00111010 EGR  Introduction to Electronics and Barnett MWF 1
+Fitness: 500
+10001101 TCO  Intro Senior Design/Internship Grady Distance Learning Distance Learning
+01111110 MAE  Idp Stu: Characterization of Polymer Composites Afshar  Independent Study
+01001101 EGR  Senior Engineering Honors II McCreanor  Independent Study
+01010001 EVE  Green Engineering MacCarthy TR 6
+Fitness: 500
+01011000 EVE  Spc Top: Aerosol Removal using Impaction Devices Lackey  Independent Study
+00101101 EGR  Programming for Engineers Digh TR 3
+00111111 EGR  Electric Circuits Labatory Juang  6
+10000010 TCO  Introduction to Professional Watson TR 1
+00110111 EGR  Dynamics Marek MWF 9
+00010110 ECE  Signals & Systems Barnett MWF 12
+Fitness: 500
+01001010 EGR  Fdbck Control & Modeling for Egr Thitsa MWF 1
+01011101 IDM  Senior Design Exhibit II Jenkins TR 3
+01110110 MAE  Structure/Properties of Material Mihut MWF 9
+10000010 TCO  Introduction to Professional Watson TR 1
+00101010 EGR  Intro Engineering Design Thomas MW 3
+Fitness: 500
+01110110 MAE  Structure/Properties of Material Mihut MWF 9
+01000011 EGR  Probability & Statistics for Egr Hollingshed MW 3
+00111010 EGR  Introduction to Electronics and Barnett MWF 1
+Fitness: 500
+00000100 CSC  Programming II Zhao MWF 1
+01011000 EVE  Spc Top: Aerosol Removal using Impaction Devices Lackey  Independent Study
+00110110 EGR  Dynamics Kunz MWF 9
+01000010 EGR  Electric Circuits Labatory Barnett  3
+00100010 ECE  Intro Sr Design:Electrical Specl O'Brien  Independent Study
+00000101 CSC  Data Struct & Algorithm Analysis Digh MWF 12
+Fitness: 500
+10000110 TCO  Technical Communication Goode TR 8
+10001000 TCO  Technical Communication Newman TR 1
+01101101 MAE  Experimental Methods for Moses MWF 11
+01000011 EGR  Probability & Statistics for Egr Hollingshed MW 3
+Fitness: 500
+00100010 ECE  Intro Sr Design:Electrical Specl O'Brien  Independent Study
+01101101 MAE  Experimental Methods for Moses MWF 11
+Fitness: 500
+00001000 CSC  Internship in Computer Science Cozart  Independent Study
+01101001 MAE  Visualization and Solid Modeling Afshar MW 4
+00111100 EGR  Electric Circuits Labatory Barnett  6
+01101111 MAE  Mechanical Engineering laboratory Mihut  3
+10001000 TCO  Technical Communication Newman TR 1
+Fitness: 500
+10001111 TCO  Independent Study: DOT Lab Goode  Independent Study
+00011010 ECE  Digital Logic Ekong MW 3
+01111001 MAE  Thermal Systems Analysis Hill MWF 2
+Fitness: 500
+01100011 ISE  Computer Assisted Manufacturing Radharamanan  9
+00110101 EGR  Dynamics Afshar MWF 11
+00100100 ECE  Egr Design Exhibit II:Comp Splzn Jenkins TR 3
+00101100 EGR  Programming for Engineers Robertson TR 10
+01001111 EVE  Engineering Hydraulics MacCarthy TR 1
+00110011 EGR  Thermodynamics Hill TR 9
+Fitness: 500
+00011011 ECE  Electromagnetic Field Theory Juang MWF 11
+01001011 EGR  Fdbck Control & Modeling for Egr Barnett MWF 8
+00001010 CSC  Operating Systems Allen MWF 12
+00001010 CSC  Operating Systems Allen MWF 12
+01101100 MAE  Manufacturing Practices Kunz MW 2
+10001011 TCO  Usability Brewer MW 3
+Fitness: 500
+00100111 EGR  Freshman Engineering Honors II McCreanor  Independent Study
+01010010 EVE  Solid Waste Management McCreanor TR 12
+10000000 TCO  Introduction to Professional Watson TR 9
+01000100 EGR  Probability & Statistics for Egr Hollingshed TR 1
+10000100 TCO  Introduction to Professional Grady MW 3
+Fitness: 500
+01010011 EVE  Intro to Senior Design O'Brien  Independent Study
+00111000 EGR  Dynamics Marek MWF 1
+01000100 EGR  Probability & Statistics for Egr Hollingshed TR 1
+Fitness: 500
+00011001 ECE  Electronics II Ruiyun  2
+10000010 TCO  Introduction to Professional Watson TR 1
+00100111 EGR  Freshman Engineering Honors II McCreanor  Independent Study
+01000101 EGR  Probability & Statistics for Egr Hollingshed TR 10
+Fitness: 500
+01000101 EGR  Probability & Statistics for Egr Hollingshed TR 10
+01101000 ISE  Engineering Design Exhibit II Jenkins TR 3
+Fitness: 500
+00110111 EGR  Dynamics Marek MWF 9
+Fitness: 500
+00110111 EGR  Dynamics Marek MWF 9
+Fitness: 500
+00110111 EGR  Dynamics Marek MWF 9
+Fitness: 500
+00101001 EGR  Intro Engineering Design O'Brien MW 3
+00110111 EGR  Dynamics Marek MWF 9
+01011010 IDM  Industrial Management Case Stds Burtner TR 10
+00100110 ECE  Egr Design Exhibit II: Elec Splz Jenkins TR 3
+01100000 ISE  Production Planning & Control Biswas MWF 11
+Fitness: 500
+01110011 MAE  Machine Design Jenkins MWF 11
+00110010 EGR  Thermodynamics McClellan TR 10
+00011001 ECE  Electronics II Ruiyun  2
+01110110 MAE  Structure/Properties of Material Mihut MWF 9
+01011000 EVE  Spc Top: Aerosol Removal using Impaction Devices Lackey  Independent Study
+00001111 BME  Basic Transport Phenomena Hyun MWF 2
+Fitness: 500
+01100101 ISE  Intro to Senior Design O'Brien  Independent Study
+01100001 ISE  Manufacturing Processes Radharamanan TR 1
+01010001 EVE  Green Engineering MacCarthy TR 6
+01110110 MAE  Structure/Properties of Material Mihut MWF 9
+01001010 EGR  Fdbck Control & Modeling for Egr Thitsa MWF 1
+Fitness: 500
+00000001 CSC  Intro to Computing Gratigny TR 6
+01000111 EGR  Engineering Economy Biswas TR 1
+00010101 BME  Spc Top: Introduction to Tissue Thomas MWF 12
+Fitness: 500
+01011000 EVE  Spc Top: Aerosol Removal using Impaction Devices Lackey  Independent Study
+00000001 CSC  Intro to Computing Gratigny TR 6
+10001000 TCO  Technical Communication Newman TR 1
+01110111 MAE  Heat Transfer Sumner MWF 2
+Fitness: 500
+10000100 TCO  Introduction to Professional Grady MW 3
+Fitness: 500
+10000100 TCO  Introduction to Professional Grady MW 3
+Fitness: 500
+00100010 ECE  Intro Sr Design:Electrical Specl O'Brien  Independent Study
+01000001 EGR  Electric Circuits Labatory Barnett  12
+01111010 MAE  Turbomachinery Sumner TR 10
+00011000 ECE  Electronics II Fu TR 9
+00011110 ECE  Mobile Application Development Ekong  6
+00010101 BME  Spc Top: Introduction to Tissue Thomas MWF 12
+Fitness: 500
+01001110 EGR  Entrepreneurship in Egr Design Radharamanan  Independent Study
+00100110 ECE  Egr Design Exhibit II: Elec Splz Jenkins TR 3
+00111110 EGR  Electric Circuits Labatory Barnet TR 6
+Fitness: 500
+00110010 EGR  Thermodynamics McClellan TR 10
+Fitness: 500
+01010000 EVE  Design/Analysis of Wastewater Sy Mines TR 9
+00001011 CSC  Topi/Comp Sci: Introduction to Data Zhao MWF 9
+00011000 ECE  Electronics II Fu TR 9
+01101001 MAE  Visualization and Solid Modeling Afshar MW 4
+Fitness: 500
+01100001 ISE  Manufacturing Processes Radharamanan TR 1
+01010000 EVE  Design/Analysis of Wastewater Sy Mines TR 9
+01001011 EGR  Fdbck Control & Modeling for Egr Barnett MWF 8
+01001010 EGR  Fdbck Control & Modeling for Egr Thitsa MWF 1
+01110100 MAE  Machine Design Jenkins MWF 2
+Fitness: 500
+10001101 TCO  Intro Senior Design/Internship Grady Distance Learning Distance Learning
+00110110 EGR  Dynamics Kunz MWF 9
+00001111 BME  Basic Transport Phenomena Hyun MWF 2
+Fitness: 500
+01010011 EVE  Intro to Senior Design O'Brien  Independent Study
+10000000 TCO  Introduction to Professional Watson TR 9
+10000010 TCO  Introduction to Professional Watson TR 1
+01001011 EGR  Fdbck Control & Modeling for Egr Barnett MWF 8
+Fitness: 500
+01111000 MAE  Heat Transfer Moses TR 9
+00100111 EGR  Freshman Engineering Honors II McCreanor  Independent Study
+00010100 BME  Engineering Design Exhibit II Jenkins TR 3
+Fitness: 500
+00100101 ECE  Egr Design Exhibit I:Elect Spclz Mines TR 3
+00011010 ECE  Digital Logic Ekong MW 3
+Fitness: 500
+01000001 EGR  Electric Circuits Labatory Barnett  12
+01100111 ISE  Engineering Design Exhibit I Mines TR 3
+00100001 ECE  Computer Networks Ekong MWF 1
+Fitness: 500
+01001011 EGR  Fdbck Control & Modeling for Egr Barnett MWF 8
+01111001 MAE  Thermal Systems Analysis Hill MWF 2
+01100110 ISE  Industrial EGR Capstone Lab Moody TR 1
+Fitness: 500
+01111111 MAE  Idp Sty: Erosion Behavior of Molecularly Coated Metals Mihut  Independent Study
+00111110 EGR  Electric Circuits Labatory Barnet TR 6
+Fitness: 500
+00011110 ECE  Mobile Application Development Ekong  6
+01111101 MAE  Engineering Design Exhibit II Jenkins TR 3
+00010011 BME  Engineering Design Exhibit I Mines TR 3
+01101111 MAE  Mechanical Engineering laboratory Mihut  3
+01111000 MAE  Heat Transfer Moses TR 9
+Fitness: 500
+01100100 ISE  Healthcare Process Improvement Burtner MW 3
+00001110 BME  Biomedical Instrumentation O'Brien TR 10
+01011110 ISE  Intro Indust Egr & Manufact Egr Burtner  5
+01111101 MAE  Engineering Design Exhibit II Jenkins TR 3
+00010110 ECE  Signals & Systems Barnett MWF 12
+10001010 TCO  Communication in Management Grady TR 1
+Fitness: 500
+01010110 EVE  Special Topics: Gray Water Research I McCreanor  Independent Study
+00111101 EGR  Electric Circuits Labatory Barnett  6
+00000110 CSC  Data Struct & Algorithm Analysis Digh MWF 2
+01111110 MAE  Idp Stu: Characterization of Polymer Composites Afshar  Independent Study
+00001001 CSC  Graphics Simulatn & Visualizatn Pounds TR 10
+Fitness: 500
+00011110 ECE  Mobile Application Development Ekong  6
+00001001 CSC  Graphics Simulatn & Visualizatn Pounds TR 10
+00011110 ECE  Mobile Application Development Ekong  6
+00111101 EGR  Electric Circuits Labatory Barnett  6
+00001110 BME  Biomedical Instrumentation O'Brien TR 10
+01101010 MAE  Visualization and Solid Modeling Afshar TR 3
+Fitness: 500
+10010000 TCO  Independent Study: Technical Grady  Independent Study
+01101000 ISE  Engineering Design Exhibit II Jenkins TR 3
+Fitness: 500
+01100001 ISE  Manufacturing Processes Radharamanan TR 1
+00101001 EGR  Intro Engineering Design O'Brien MW 3
+10000101 TCO  Document & Web Design Newman TR 9
+00001100 CSC  Topi/Comp Sci: Computer Science Allen  Independent Study
+00111011 EGR  Introduction to Electronics and Kamali MWF 2
+01110011 MAE  Machine Design Jenkins MWF 11
+Fitness: 500
+10000100 TCO  Introduction to Professional Grady MW 3
+00001000 CSC  Internship in Computer Science Cozart  Independent Study
+00110100 EGR  Thermodynamics Hill TR 1
+Fitness: 500
+00111010 EGR  Introduction to Electronics and Barnett MWF 1
+Fitness: 500
+00111010 EGR  Introduction to Electronics and Barnett MWF 1
+Fitness: 500
+01101010 MAE  Visualization and Solid Modeling Afshar TR 3
+Fitness: 500
+01101010 MAE  Visualization and Solid Modeling Afshar TR 3
+Fitness: 500
+00111010 EGR  Introduction to Electronics and Barnett MWF 1
+Fitness: 500
+01011101 IDM  Senior Design Exhibit II Jenkins TR 3
+00011000 ECE  Electronics II Fu TR 9
+01111111 MAE  Idp Sty: Erosion Behavior of Molecularly Coated Metals Mihut  Independent Study
+01110000 MAE  Mechanical Engineering laboratory Marek  3
+01100100 ISE  Healthcare Process Improvement Burtner MW 3
+01110000 MAE  Mechanical Engineering laboratory Marek  3
+Fitness: 500
+00010011 BME  Engineering Design Exhibit I Mines TR 3
+00011101 ECE  Embedded Computer Systems Choi TR 1
+00101111 EGR  Programming for Engineers Choi TR 4
+00011111 ECE  Digital Signal Processing Barnett TR 12
+01101100 MAE  Manufacturing Practices Kunz MW 2
+00000001 CSC  Intro to Computing Gratigny TR 6
+Fitness: 500
+01001010 EGR  Fdbck Control & Modeling for Egr Thitsa MWF 1
+01100010 ISE  Modeling and Simulation Biswas TR 12
+Fitness: 500
+00010111 ECE  Electronics I Barnett  Independent Study
+00101110 EGR  Programming for Engineers Choi TR 3
+00110101 EGR  Dynamics Afshar MWF 11
+01001100 EGR  Senior Engineering Honors I McCreanor  Independent Study
+01000011 EGR  Probability & Statistics for Egr Hollingshed MW 3
+Fitness: 500
+00100101 ECE  Egr Design Exhibit I:Elect Spclz Mines TR 3
+10001111 TCO  Independent Study: DOT Lab Goode  Independent Study
+10001110 TCO  Independent Study: Usability Lab Brewer  Independent Study
+01001011 EGR  Fdbck Control & Modeling for Egr Barnett MWF 8
+01010000 EVE  Design/Analysis of Wastewater Sy Mines TR 9
+10000100 TCO  Introduction to Professional Grady MW 3
+Fitness: 500
+00111010 EGR  Introduction to Electronics and Barnett MWF 1
+Fitness: 500
+01011000 EVE  Spc Top: Aerosol Removal using Impaction Devices Lackey  Independent Study
+01101010 MAE  Visualization and Solid Modeling Afshar TR 3
+00110010 EGR  Thermodynamics McClellan TR 10
+00111001 EGR  Electric Analysis MWF 2
+Fitness: 500
+10000100 TCO  Introduction to Professional Grady MW 3
+01010000 EVE  Design/Analysis of Wastewater Sy Mines TR 9
+Fitness: 500
+01001010 EGR  Fdbck Control & Modeling for Egr Thitsa MWF 1
+00001010 CSC  Operating Systems Allen MWF 12
+01101001 MAE  Visualization and Solid Modeling Afshar MW 4
+Fitness: 500
+00101111 EGR  Programming for Engineers Choi TR 4
+00110010 EGR  Thermodynamics McClellan TR 10
+01000101 EGR  Probability & Statistics for Egr Hollingshed TR 10
+01010000 EVE  Design/Analysis of Wastewater Sy Mines TR 9
+01100000 ISE  Production Planning & Control Biswas MWF 11
+10000100 TCO  Introduction to Professional Grady MW 3
+Fitness: 500
+01110110 MAE  Structure/Properties of Material Mihut MWF 9
+Fitness: 500
+01110110 MAE  Structure/Properties of Material Mihut MWF 9
+Fitness: 500
+01110110 MAE  Structure/Properties of Material Mihut MWF 9
+Fitness: 500
+00010000 BME  Dynamics of Biological Fluids Hyun TR 10
+00011101 ECE  Embedded Computer Systems Choi TR 1
+01001010 EGR  Fdbck Control & Modeling for Egr Thitsa MWF 1
+Fitness: 500
+01011011 IDM  Intro to Senior Design O'Brien  Independent Study
+01001111 EVE  Engineering Hydraulics MacCarthy TR 1
+00001011 CSC  Topi/Comp Sci: Introduction to Data Zhao MWF 9
+00011010 ECE  Digital Logic Ekong MW 3
+Fitness: 500
+01010110 EVE  Special Topics: Gray Water Research I McCreanor  Independent Study
+01101010 MAE  Visualization and Solid Modeling Afshar TR 3
+Fitness: 500
+01000001 EGR  Electric Circuits Labatory Barnett  12
+00101111 EGR  Programming for Engineers Choi TR 4
+00011111 ECE  Digital Signal Processing Barnett TR 12
+Fitness: 500
+00000111 CSC  File Structures & Advanced Digh MW 3
+01111001 MAE  Thermal Systems Analysis Hill MWF 2
+00000010 CSC  Programming I Allen MWF 9
+01101011 MAE  Manufacturing Practices O'Brien TR 2
+Fitness: 500
+00110011 EGR  Thermodynamics Hill TR 9
+Fitness: 500
+00110011 EGR  Thermodynamics Hill TR 9
+Fitness: 500
+00001001 CSC  Graphics Simulatn & Visualizatn Pounds TR 10
+01000010 EGR  Electric Circuits Labatory Barnett  3
+01110101 MAE  Structure/Properties of Material Mihut TR 9
+00110000 EGR  Sophomore Engineering Honors II McCreanor  Independent Study
+01001111 EVE  Engineering Hydraulics MacCarthy TR 1
+01011111 ISE  Ergonomics and Work Moody MWF 1
+Fitness: 500
+01011111 ISE  Ergonomics and Work Moody MWF 1
+Fitness: 500
+10000000 TCO  Introduction to Professional Watson TR 9
+00100011 ECE  Intro Sr Design:Computer Spclztn O'Brien  Independent Study
+01110101 MAE  Structure/Properties of Material Mihut TR 9
+00011110 ECE  Mobile Application Development Ekong  6
+00001010 CSC  Operating Systems Allen MWF 12
+01111101 MAE  Engineering Design Exhibit II Jenkins TR 3
+Fitness: 500
+01011111 ISE  Ergonomics and Work Moody MWF 1
+Fitness: 500
+00000111 CSC  File Structures & Advanced Digh MW 3
+00010110 ECE  Signals & Systems Barnett MWF 12
+01001001 EGR  Engineering Economy Schultz TR 10
+01110110 MAE  Structure/Properties of Material Mihut MWF 9
+01010100 EVE  Engineering Design Exhibit I Mines TR 3
+01110011 MAE  Machine Design Jenkins MWF 11
+Fitness: 500
+10001001 TCO  Technical Communication Newman MW 3
+01000101 EGR  Probability & Statistics for Egr Hollingshed TR 10
+10000001 TCO  Introduction to Professional Codone TR 10
+01110110 MAE  Structure/Properties of Material Mihut MWF 9
+01000111 EGR  Engineering Economy Biswas TR 1
+Fitness: 500
+01111011 MAE  Intro to Senior Design O'Brien  Independent Study
+01110101 MAE  Structure/Properties of Material Mihut TR 9
+00101000 EGR  Intro Engineering Design Shaw MW 3
+01110111 MAE  Heat Transfer Sumner MWF 2
+Fitness: 500
+01000011 EGR  Probability & Statistics for Egr Hollingshed MW 3
+01000000 EGR  Electric Circuits Labatory Barnett  3
+01000000 EGR  Electric Circuits Labatory Barnett  3
+00110110 EGR  Dynamics Kunz MWF 9
+00111111 EGR  Electric Circuits Labatory Juang  6
+01100010 ISE  Modeling and Simulation Biswas TR 12
+Fitness: 500
+00010101 BME  Spc Top: Introduction to Tissue Thomas MWF 12
+00101110 EGR  Programming for Engineers Choi TR 3
+01010000 EVE  Design/Analysis of Wastewater Sy Mines TR 9
+Fitness: 500
+00110101 EGR  Dynamics Afshar MWF 11
+01110000 MAE  Mechanical Engineering laboratory Marek  3
+01110111 MAE  Heat Transfer Sumner MWF 2
+00110111 EGR  Dynamics Marek MWF 9
+00110010 EGR  Thermodynamics McClellan TR 10
+Fitness: 500
+01100001 ISE  Manufacturing Processes Radharamanan TR 1
+01010101 EVE  Engineering Design Exhibit II Jenkins TR 3
+Fitness: 500
+01001111 EVE  Engineering Hydraulics MacCarthy TR 1
+01110100 MAE  Machine Design Jenkins MWF 2
+Fitness: 500
+00100011 ECE  Intro Sr Design:Computer Spclztn O'Brien  Independent Study
+10001110 TCO  Independent Study: Usability Lab Brewer  Independent Study
+00011001 ECE  Electronics II Ruiyun  2
+00001011 CSC  Topi/Comp Sci: Introduction to Data Zhao MWF 9
+Fitness: 500
+01100001 ISE  Manufacturing Processes Radharamanan TR 1
+01010101 EVE  Engineering Design Exhibit II Jenkins TR 3
+Fitness: 500
+00100111 EGR  Freshman Engineering Honors II McCreanor  Independent Study
+00001111 BME  Basic Transport Phenomena Hyun MWF 2
+00011111 ECE  Digital Signal Processing Barnett TR 12
+Fitness: 500
+01011101 IDM  Senior Design Exhibit II Jenkins TR 3
+01000100 EGR  Probability & Statistics for Egr Hollingshed TR 1
+00110110 EGR  Dynamics Kunz MWF 9
+Fitness: 500
+01000110 EGR  Junior Engineering Honors II McCreanor  Independent Study
+00100101 ECE  Egr Design Exhibit I:Elect Spclz Mines TR 3
+00011010 ECE  Digital Logic Ekong MW 3
+00011000 ECE  Electronics II Fu TR 9
+00011010 ECE  Digital Logic Ekong MW 3
+01111010 MAE  Turbomachinery Sumner TR 10
+Fitness: 500
+01100100 ISE  Healthcare Process Improvement Burtner MW 3
+00111010 EGR  Introduction to Electronics and Barnett MWF 1
+00010101 BME  Spc Top: Introduction to Tissue Thomas MWF 12
+Fitness: 500
+10000100 TCO  Introduction to Professional Grady MW 3
+00110100 EGR  Thermodynamics Hill TR 1
+01111011 MAE  Intro to Senior Design O'Brien  Independent Study
+01001010 EGR  Fdbck Control & Modeling for Egr Thitsa MWF 1
+01110000 MAE  Mechanical Engineering laboratory Marek  3
+10000000 TCO  Introduction to Professional Watson TR 9
+Fitness: 500
+00010101 BME  Spc Top: Introduction to Tissue Thomas MWF 12
+01110110 MAE  Structure/Properties of Material Mihut MWF 9
+Fitness: 500
+01110100 MAE  Machine Design Jenkins MWF 2
+00001011 CSC  Topi/Comp Sci: Introduction to Data Zhao MWF 9
+01010011 EVE  Intro to Senior Design O'Brien  Independent Study
+00110111 EGR  Dynamics Marek MWF 9
+00011110 ECE  Mobile Application Development Ekong  6
+01100110 ISE  Industrial EGR Capstone Lab Moody TR 1
+Fitness: 500
+01111001 MAE  Thermal Systems Analysis Hill MWF 2
+10010000 TCO  Independent Study: Technical Grady  Independent Study
+01001110 EGR  Entrepreneurship in Egr Design Radharamanan  Independent Study
+00000101 CSC  Data Struct & Algorithm Analysis Digh MWF 12
+Fitness: 500
+00110011 EGR  Thermodynamics Hill TR 9
+01000011 EGR  Probability & Statistics for Egr Hollingshed MW 3
+01001011 EGR  Fdbck Control & Modeling for Egr Barnett MWF 8
+01111100 MAE  Engineering Design Exhibit I Mines TR 3
+00110111 EGR  Dynamics Marek MWF 9
+Fitness: 500
+01011111 ISE  Ergonomics and Work Moody MWF 1
+Fitness: 500
+01111011 MAE  Intro to Senior Design O'Brien  Independent Study
+01100101 ISE  Intro to Senior Design O'Brien  Independent Study
+01111100 MAE  Engineering Design Exhibit I Mines TR 3
+Fitness: 500
+00001011 CSC  Topi/Comp Sci: Introduction to Data Zhao MWF 9
+01010011 EVE  Intro to Senior Design O'Brien  Independent Study
+00000110 CSC  Data Struct & Algorithm Analysis Digh MWF 2
+Fitness: 500
+10001110 TCO  Independent Study: Usability Lab Brewer  Independent Study
+01010111 EVE  Gray Water Research II McCreanor  Independent Study
+10000110 TCO  Technical Communication Goode TR 8
+00010010 BME  Introduction to Senior Design O'Brien  Independent Study
+00011101 ECE  Embedded Computer Systems Choi TR 1
+Fitness: 500
+00101010 EGR  Intro Engineering Design Thomas MW 3
+00111100 EGR  Electric Circuits Labatory Barnett  6
+01001011 EGR  Fdbck Control & Modeling for Egr Barnett MWF 8
+Fitness: 500
+01101111 MAE  Mechanical Engineering laboratory Mihut  3
+01101110 MAE  Experimental Methods for Moses MWF 9
+01000010 EGR  Electric Circuits Labatory Barnett  3
+00111101 EGR  Electric Circuits Labatory Barnett  6
+00100001 ECE  Computer Networks Ekong MWF 1
+Fitness: 500
+01111101 MAE  Engineering Design Exhibit II Jenkins TR 3
+00111110 EGR  Electric Circuits Labatory Barnet TR 6
+00001011 CSC  Topi/Comp Sci: Introduction to Data Zhao MWF 9
+00111100 EGR  Electric Circuits Labatory Barnett  6
+00101111 EGR  Programming for Engineers Choi TR 4
+01100110 ISE  Industrial EGR Capstone Lab Moody TR 1
+Fitness: 500
+01001000 EGR  Engineering Economy Barnett TR 4
+01010001 EVE  Green Engineering MacCarthy TR 6
+01000110 EGR  Junior Engineering Honors II McCreanor  Independent Study
+01100010 ISE  Modeling and Simulation Biswas TR 12
+00010101 BME  Spc Top: Introduction to Tissue Thomas MWF 12
+Fitness: 500
+01100110 ISE  Industrial EGR Capstone Lab Moody TR 1
+01100111 ISE  Engineering Design Exhibit I Mines TR 3
+Fitness: 500
+01100110 ISE  Industrial EGR Capstone Lab Moody TR 1
+01100111 ISE  Engineering Design Exhibit I Mines TR 3
+Fitness: 500
+10001011 TCO  Usability Brewer MW 3
+Fitness: 500
+00101100 EGR  Programming for Engineers Robertson TR 10
+00100001 ECE  Computer Networks Ekong MWF 1
+00100100 ECE  Egr Design Exhibit II:Comp Splzn Jenkins TR 3
+Fitness: 500
+01011111 ISE  Ergonomics and Work Moody MWF 1
+00101001 EGR  Intro Engineering Design O'Brien MW 3
+00001111 BME  Basic Transport Phenomena Hyun MWF 2
+Fitness: 500
+01001010 EGR  Fdbck Control & Modeling for Egr Thitsa MWF 1
+00110110 EGR  Dynamics Kunz MWF 9
+00100000 ECE  Communications Systems II Kamali MWF 12
+01000100 EGR  Probability & Statistics for Egr Hollingshed TR 1
+10000001 TCO  Introduction to Professional Codone TR 10
+01111101 MAE  Engineering Design Exhibit II Jenkins TR 3
+Fitness: 500
+00000100 CSC  Programming II Zhao MWF 1
+00110001 EGR  Statics/Solid Mechanics McClellan MWF 11
+01110000 MAE  Mechanical Engineering laboratory Marek  3
+00000100 CSC  Programming II Zhao MWF 1
+01111001 MAE  Thermal Systems Analysis Hill MWF 2
+01011100 IDM  Senior Design Exhibit I Mines TR 3
+Fitness: 500
+01001101 EGR  Senior Engineering Honors II McCreanor  Independent Study
+00011011 ECE  Electromagnetic Field Theory Juang MWF 11
+10001010 TCO  Communication in Management Grady TR 1
+00100101 ECE  Egr Design Exhibit I:Elect Spclz Mines TR 3
+01011100 IDM  Senior Design Exhibit I Mines TR 3
+00000100 CSC  Programming II Zhao MWF 1
+Fitness: 500
+00101010 EGR  Intro Engineering Design Thomas MW 3
+00010000 BME  Dynamics of Biological Fluids Hyun TR 10
+00000100 CSC  Programming II Zhao MWF 1
+01110111 MAE  Heat Transfer Sumner MWF 2
+00100110 ECE  Egr Design Exhibit II: Elec Splz Jenkins TR 3
+10000111 TCO  Technical Communication Goode TR 9
+Fitness: 500
+00100010 ECE  Intro Sr Design:Electrical Specl O'Brien  Independent Study
+00011010 ECE  Digital Logic Ekong MW 3
+00100100 ECE  Egr Design Exhibit II:Comp Splzn Jenkins TR 3
+01101010 MAE  Visualization and Solid Modeling Afshar TR 3
+01110100 MAE  Machine Design Jenkins MWF 2
+01101101 MAE  Experimental Methods for Moses MWF 11
+Fitness: 500
+00110111 EGR  Dynamics Marek MWF 9
+Fitness: 500
+01110100 MAE  Machine Design Jenkins MWF 2
+Fitness: 500
+01001000 EGR  Engineering Economy Barnett TR 4
+00110110 EGR  Dynamics Kunz MWF 9
+00111011 EGR  Introduction to Electronics and Kamali MWF 2
+Fitness: 500
+01011111 ISE  Ergonomics and Work Moody MWF 1
+00011000 ECE  Electronics II Fu TR 9
+01100100 ISE  Healthcare Process Improvement Burtner MW 3
+Fitness: 500
+00100101 ECE  Egr Design Exhibit I:Elect Spclz Mines TR 3
+01100010 ISE  Modeling and Simulation Biswas TR 12
+01000111 EGR  Engineering Economy Biswas TR 1
+Fitness: 500
+01010001 EVE  Green Engineering MacCarthy TR 6
+Fitness: 500
+01010001 EVE  Green Engineering MacCarthy TR 6
+Fitness: 500
+00100010 ECE  Intro Sr Design:Electrical Specl O'Brien  Independent Study
+01111110 MAE  Idp Stu: Characterization of Polymer Composites Afshar  Independent Study
+01101101 MAE  Experimental Methods for Moses MWF 11
+Fitness: 500
+01000011 EGR  Probability & Statistics for Egr Hollingshed MW 3
+01111000 MAE  Heat Transfer Moses TR 9
+01000010 EGR  Electric Circuits Labatory Barnett  3
+00100001 ECE  Computer Networks Ekong MWF 1
+01001100 EGR  Senior Engineering Honors I McCreanor  Independent Study
+00000101 CSC  Data Struct & Algorithm Analysis Digh MWF 12
+Fitness: 500
+01010110 EVE  Special Topics: Gray Water Research I McCreanor  Independent Study
+00000110 CSC  Data Struct & Algorithm Analysis Digh MWF 2
+00000100 CSC  Programming II Zhao MWF 1
+00000011 CSC  Programming I Robertson MWF 12
+Fitness: 500
+01111111 MAE  Idp Sty: Erosion Behavior of Molecularly Coated Metals Mihut  Independent Study
+00010010 BME  Introduction to Senior Design O'Brien  Independent Study
+00111001 EGR  Electric Analysis MWF 2
+01110001 MAE  Mechanical Engineering laboratory Marek  3
+00110110 EGR  Dynamics Kunz MWF 9
+10000100 TCO  Introduction to Professional Grady MW 3
+Fitness: 500
+01110010 MAE  Mechanical Engineering laboratory Mihut  3
+01000010 EGR  Electric Circuits Labatory Barnett  3
+01110000 MAE  Mechanical Engineering laboratory Marek  3
+01110010 MAE  Mechanical Engineering laboratory Mihut  3
+Fitness: 500
+00001100 CSC  Topi/Comp Sci: Computer Science Allen  Independent Study
+00001011 CSC  Topi/Comp Sci: Introduction to Data Zhao MWF 9
+01000100 EGR  Probability & Statistics for Egr Hollingshed TR 1
+01000011 EGR  Probability & Statistics for Egr Hollingshed MW 3
+Fitness: 500
+00011010 ECE  Digital Logic Ekong MW 3
+01101011 MAE  Manufacturing Practices O'Brien TR 2
+00001101 CSC  Undergraduate Research Digh  Independent Study
+01000011 EGR  Probability & Statistics for Egr Hollingshed MW 3
+00010001 BME  Biomedical Materials Vo TR 9
+Fitness: 500
+00100111 EGR  Freshman Engineering Honors II McCreanor  Independent Study
+00111100 EGR  Electric Circuits Labatory Barnett  6
+01100110 ISE  Industrial EGR Capstone Lab Moody TR 1
+01000010 EGR  Electric Circuits Labatory Barnett  3
+00011110 ECE  Mobile Application Development Ekong  6
+01101001 MAE  Visualization and Solid Modeling Afshar MW 4
+Fitness: 500
+00110101 EGR  Dynamics Afshar MWF 11
+00010111 ECE  Electronics I Barnett  Independent Study
+01111001 MAE  Thermal Systems Analysis Hill MWF 2
+00100001 ECE  Computer Networks Ekong MWF 1
+00111110 EGR  Electric Circuits Labatory Barnet TR 6
+Fitness: 500
+10000010 TCO  Introduction to Professional Watson TR 1
+10000111 TCO  Technical Communication Goode TR 9
+00010011 BME  Engineering Design Exhibit I Mines TR 3
+01010011 EVE  Intro to Senior Design O'Brien  Independent Study
+00010010 BME  Introduction to Senior Design O'Brien  Independent Study
+00001011 CSC  Topi/Comp Sci: Introduction to Data Zhao MWF 9
+Fitness: 500
+10000110 TCO  Technical Communication Goode TR 8
+00001000 CSC  Internship in Computer Science Cozart  Independent Study
+00011001 ECE  Electronics II Ruiyun  2
+01111111 MAE  Idp Sty: Erosion Behavior of Molecularly Coated Metals Mihut  Independent Study
+01111000 MAE  Heat Transfer Moses TR 9
+Fitness: 500
+00000101 CSC  Data Struct & Algorithm Analysis Digh MWF 12
+00010101 BME  Spc Top: Introduction to Tissue Thomas MWF 12
+01100100 ISE  Healthcare Process Improvement Burtner MW 3
+00110110 EGR  Dynamics Kunz MWF 9
+Fitness: 500
+01111101 MAE  Engineering Design Exhibit II Jenkins TR 3
+01101010 MAE  Visualization and Solid Modeling Afshar TR 3
+01010010 EVE  Solid Waste Management McCreanor TR 12
+Fitness: 500
+00001001 CSC  Graphics Simulatn & Visualizatn Pounds TR 10
+01111010 MAE  Turbomachinery Sumner TR 10
+01110111 MAE  Heat Transfer Sumner MWF 2
+00011011 ECE  Electromagnetic Field Theory Juang MWF 11
+01011100 IDM  Senior Design Exhibit I Mines TR 3
+00000001 CSC  Intro to Computing Gratigny TR 6
+Fitness: 500
+10001011 TCO  Usability Brewer MW 3
+00011001 ECE  Electronics II Ruiyun  2
+00011111 ECE  Digital Signal Processing Barnett TR 12
+00011011 ECE  Electromagnetic Field Theory Juang MWF 11
+01001111 EVE  Engineering Hydraulics MacCarthy TR 1
+Fitness: 500
+00010101 BME  Spc Top: Introduction to Tissue Thomas MWF 12
+01011010 IDM  Industrial Management Case Stds Burtner TR 10
+00000111 CSC  File Structures & Advanced Digh MW 3
+00010110 ECE  Signals & Systems Barnett MWF 12
+00111011 EGR  Introduction to Electronics and Kamali MWF 2
+01110110 MAE  Structure/Properties of Material Mihut MWF 9
+Fitness: 500
+00110111 EGR  Dynamics Marek MWF 9
+01000100 EGR  Probability & Statistics for Egr Hollingshed TR 1
+00010101 BME  Spc Top: Introduction to Tissue Thomas MWF 12
+01101100 MAE  Manufacturing Practices Kunz MW 2
+Fitness: 500
+10000111 TCO  Technical Communication Goode TR 9
+01000101 EGR  Probability & Statistics for Egr Hollingshed TR 10
+00001011 CSC  Topi/Comp Sci: Introduction to Data Zhao MWF 9
+Fitness: 500
+00000010 CSC  Programming I Allen MWF 9
+00110000 EGR  Sophomore Engineering Honors II McCreanor  Independent Study
+10001010 TCO  Communication in Management Grady TR 1
+01010100 EVE  Engineering Design Exhibit I Mines TR 3
+Fitness: 500
+01100011 ISE  Computer Assisted Manufacturing Radharamanan  9
+00101010 EGR  Intro Engineering Design Thomas MW 3
+Fitness: 500
+01010101 EVE  Engineering Design Exhibit II Jenkins TR 3
+Fitness: 500
+01010101 EVE  Engineering Design Exhibit II Jenkins TR 3
+Fitness: 500
+00000010 CSC  Programming I Allen MWF 9
+10000100 TCO  Introduction to Professional Grady MW 3
+00001000 CSC  Internship in Computer Science Cozart  Independent Study
+00001101 CSC  Undergraduate Research Digh  Independent Study
+00011010 ECE  Digital Logic Ekong MW 3
+01110111 MAE  Heat Transfer Sumner MWF 2
+Fitness: 500
+00110001 EGR  Statics/Solid Mechanics McClellan MWF 11
+10001011 TCO  Usability Brewer MW 3
+Fitness: 500
+01110110 MAE  Structure/Properties of Material Mihut MWF 9
+01010011 EVE  Intro to Senior Design O'Brien  Independent Study
+01110110 MAE  Structure/Properties of Material Mihut MWF 9
+00001110 BME  Biomedical Instrumentation O'Brien TR 10
+Fitness: 500
+00010010 BME  Introduction to Senior Design O'Brien  Independent Study
+00111001 EGR  Electric Analysis MWF 2
+Fitness: 500
+00110001 EGR  Statics/Solid Mechanics McClellan MWF 11
+10001011 TCO  Usability Brewer MW 3
+Fitness: 500
+00011110 ECE  Mobile Application Development Ekong  6
+01101100 MAE  Manufacturing Practices Kunz MW 2
+01100111 ISE  Engineering Design Exhibit I Mines TR 3
+00110011 EGR  Thermodynamics Hill TR 9
+Fitness: 500
+01010110 EVE  Special Topics: Gray Water Research I McCreanor  Independent Study
+01101010 MAE  Visualization and Solid Modeling Afshar TR 3
+Fitness: 500
+01011101 IDM  Senior Design Exhibit II Jenkins TR 3
+01111011 MAE  Intro to Senior Design O'Brien  Independent Study
+00111000 EGR  Dynamics Marek MWF 1
+Fitness: 500
+00100111 EGR  Freshman Engineering Honors II McCreanor  Independent Study
+00101011 EGR  Intro Engineering Design Butler MW 3
+00101010 EGR  Intro Engineering Design Thomas MW 3
+00000110 CSC  Data Struct & Algorithm Analysis Digh MWF 2
+01001011 EGR  Fdbck Control & Modeling for Egr Barnett MWF 8
+Fitness: 500
+00111110 EGR  Electric Circuits Labatory Barnet TR 6
+Fitness: 500
+00011001 ECE  Electronics II Ruiyun  2
+01011011 IDM  Intro to Senior Design O'Brien  Independent Study
+01100001 ISE  Manufacturing Processes Radharamanan TR 1
+00000110 CSC  Data Struct & Algorithm Analysis Digh MWF 2
+Fitness: 500
+01101011 MAE  Manufacturing Practices O'Brien TR 2
+01011100 IDM  Senior Design Exhibit I Mines TR 3
+00111100 EGR  Electric Circuits Labatory Barnett  6
+00010000 BME  Dynamics of Biological Fluids Hyun TR 10
+01001011 EGR  Fdbck Control & Modeling for Egr Barnett MWF 8
+Fitness: 500
+01111001 MAE  Thermal Systems Analysis Hill MWF 2
+Fitness: 500
+00100000 ECE  Communications Systems II Kamali MWF 12
+01010001 EVE  Green Engineering MacCarthy TR 6
+01000001 EGR  Electric Circuits Labatory Barnett  12
+00010100 BME  Engineering Design Exhibit II Jenkins TR 3
+Fitness: 500
+00100101 ECE  Egr Design Exhibit I:Elect Spclz Mines TR 3
+01010111 EVE  Gray Water Research II McCreanor  Independent Study
+10001100 TCO  Visual Communication Goode TR 10
+01100001 ISE  Manufacturing Processes Radharamanan TR 1
+01000011 EGR  Probability & Statistics for Egr Hollingshed MW 3
+01010010 EVE  Solid Waste Management McCreanor TR 12
+Fitness: 500
+00001001 CSC  Graphics Simulatn & Visualizatn Pounds TR 10
+00010110 ECE  Signals & Systems Barnett MWF 12
+00101110 EGR  Programming for Engineers Choi TR 3
+Fitness: 500
+01111000 MAE  Heat Transfer Moses TR 9
+00011100 ECE  Power Electronics Fu MWF 9
+01011001 IDM  Intro to Industrial Management Burtner  5
+01100100 ISE  Healthcare Process Improvement Burtner MW 3
+10000101 TCO  Document & Web Design Newman TR 9
+01101001 MAE  Visualization and Solid Modeling Afshar MW 4
+Fitness: 500
+00000010 CSC  Programming I Allen MWF 9
+Fitness: 500
+00111110 EGR  Electric Circuits Labatory Barnet TR 6
+Fitness: 500
+00001001 CSC  Graphics Simulatn & Visualizatn Pounds TR 10
+00100110 ECE  Egr Design Exhibit II: Elec Splz Jenkins TR 3
+01101010 MAE  Visualization and Solid Modeling Afshar TR 3
+01100010 ISE  Modeling and Simulation Biswas TR 12
+Fitness: 500
+00110101 EGR  Dynamics Afshar MWF 11
+Fitness: 500
+01001010 EGR  Fdbck Control & Modeling for Egr Thitsa MWF 1
+01010010 EVE  Solid Waste Management McCreanor TR 12
+Fitness: 500
+10001001 TCO  Technical Communication Newman MW 3
+Fitness: 500
+00110101 EGR  Dynamics Afshar MWF 11
+Fitness: 500
+00111100 EGR  Electric Circuits Labatory Barnett  6
+10000010 TCO  Introduction to Professional Watson TR 1
+01100010 ISE  Modeling and Simulation Biswas TR 12
+00010011 BME  Engineering Design Exhibit I Mines TR 3
+00001010 CSC  Operating Systems Allen MWF 12
+01111010 MAE  Turbomachinery Sumner TR 10
+Fitness: 500
+01011101 IDM  Senior Design Exhibit II Jenkins TR 3
+10001100 TCO  Visual Communication Goode TR 10
+01110011 MAE  Machine Design Jenkins MWF 11
+00010001 BME  Biomedical Materials Vo TR 9
+Fitness: 550
+00110111 EGR  Dynamics Marek MWF 9
+00100011 ECE  Intro Sr Design:Computer Spclztn O'Brien  Independent Study
+Fitness: 550
+01011100 IDM  Senior Design Exhibit I Mines TR 3
+00010011 BME  Engineering Design Exhibit I Mines TR 3
+10001110 TCO  Independent Study: Usability Lab Brewer  Independent Study
+Fitness: 550
+00111100 EGR  Electric Circuits Labatory Barnett  6
+Fitness: 550
+00000110 CSC  Data Struct & Algorithm Analysis Digh MWF 2
+01011000 EVE  Spc Top: Aerosol Removal using Impaction Devices Lackey  Independent Study
+Fitness: 550
+00110111 EGR  Dynamics Marek MWF 9
+00100011 ECE  Intro Sr Design:Computer Spclztn O'Brien  Independent Study
+Fitness: 550
+01000001 EGR  Electric Circuits Labatory Barnett  12
+Fitness: 550
+00000111 CSC  File Structures & Advanced Digh MW 3
+01000010 EGR  Electric Circuits Labatory Barnett  3
+10010000 TCO  Independent Study: Technical Grady  Independent Study
+Fitness: 550
+00001011 CSC  Topi/Comp Sci: Introduction to Data Zhao MWF 9
+00111110 EGR  Electric Circuits Labatory Barnet TR 6
+01101010 MAE  Visualization and Solid Modeling Afshar TR 3
+00010100 BME  Engineering Design Exhibit II Jenkins TR 3
+10010000 TCO  Independent Study: Technical Grady  Independent Study
+Fitness: 550
+01000001 EGR  Electric Circuits Labatory Barnett  12
+Fitness: 550
+00100011 ECE  Intro Sr Design:Computer Spclztn O'Brien  Independent Study
+Fitness: 550
+01101100 MAE  Manufacturing Practices Kunz MW 2
+01110011 MAE  Machine Design Jenkins MWF 11
+00111100 EGR  Electric Circuits Labatory Barnett  6
+01010011 EVE  Intro to Senior Design O'Brien  Independent Study
+00100010 ECE  Intro Sr Design:Electrical Specl O'Brien  Independent Study
+00100111 EGR  Freshman Engineering Honors II McCreanor  Independent Study
+Fitness: 550
+01001101 EGR  Senior Engineering Honors II McCreanor  Independent Study
+01000111 EGR  Engineering Economy Biswas TR 1
+01000001 EGR  Electric Circuits Labatory Barnett  12
+Fitness: 550
+01001110 EGR  Entrepreneurship in Egr Design Radharamanan  Independent Study
+01011110 ISE  Intro Indust Egr & Manufact Egr Burtner  5
+01000000 EGR  Electric Circuits Labatory Barnett  3
+01110010 MAE  Mechanical Engineering laboratory Mihut  3
+Fitness: 550
+00000111 CSC  File Structures & Advanced Digh MW 3
+10001010 TCO  Communication in Management Grady TR 1
+00111110 EGR  Electric Circuits Labatory Barnet TR 6
+00010111 ECE  Electronics I Barnett  Independent Study
+Fitness: 550
+00110001 EGR  Statics/Solid Mechanics McClellan MWF 11
+01011110 ISE  Intro Indust Egr & Manufact Egr Burtner  5
+01110001 MAE  Mechanical Engineering laboratory Marek  3
+00001011 CSC  Topi/Comp Sci: Introduction to Data Zhao MWF 9
+01011011 IDM  Intro to Senior Design O'Brien  Independent Study
+Fitness: 550
+01000111 EGR  Engineering Economy Biswas TR 1
+00100000 ECE  Communications Systems II Kamali MWF 12
+00001110 BME  Biomedical Instrumentation O'Brien TR 10
+10001011 TCO  Usability Brewer MW 3
+01011011 IDM  Intro to Senior Design O'Brien  Independent Study
+Fitness: 550
+00001011 CSC  Topi/Comp Sci: Introduction to Data Zhao MWF 9
+00100010 ECE  Intro Sr Design:Electrical Specl O'Brien  Independent Study
+01011110 ISE  Intro Indust Egr & Manufact Egr Burtner  5
+Fitness: 550
+01010101 EVE  Engineering Design Exhibit II Jenkins TR 3
+10000000 TCO  Introduction to Professional Watson TR 9
+01100111 ISE  Engineering Design Exhibit I Mines TR 3
+10001011 TCO  Usability Brewer MW 3
+01101000 ISE  Engineering Design Exhibit II Jenkins TR 3
+00110000 EGR  Sophomore Engineering Honors II McCreanor  Independent Study
+Fitness: 550
+01110111 MAE  Heat Transfer Sumner MWF 2
+01100100 ISE  Healthcare Process Improvement Burtner MW 3
+00100010 ECE  Intro Sr Design:Electrical Specl O'Brien  Independent Study
+01001010 EGR  Fdbck Control & Modeling for Egr Thitsa MWF 1
+01100011 ISE  Computer Assisted Manufacturing Radharamanan  9
+Fitness: 550
+01011011 IDM  Intro to Senior Design O'Brien  Independent Study
+00010111 ECE  Electronics I Barnett  Independent Study
+00001010 CSC  Operating Systems Allen MWF 12
+00110000 EGR  Sophomore Engineering Honors II McCreanor  Independent Study
+Fitness: 550
+01000001 EGR  Electric Circuits Labatory Barnett  12
+Fitness: 550
+01001110 EGR  Entrepreneurship in Egr Design Radharamanan  Independent Study
+Fitness: 550
+01001100 EGR  Senior Engineering Honors I McCreanor  Independent Study
+Fitness: 550
+00111010 EGR  Introduction to Electronics and Barnett MWF 1
+01100101 ISE  Intro to Senior Design O'Brien  Independent Study
+Fitness: 550
+01011000 EVE  Spc Top: Aerosol Removal using Impaction Devices Lackey  Independent Study
+00110011 EGR  Thermodynamics Hill TR 9
+00110000 EGR  Sophomore Engineering Honors II McCreanor  Independent Study
+01001110 EGR  Entrepreneurship in Egr Design Radharamanan  Independent Study
+Fitness: 550
+00110010 EGR  Thermodynamics McClellan TR 10
+01011010 IDM  Industrial Management Case Stds Burtner TR 10
+01100110 ISE  Industrial EGR Capstone Lab Moody TR 1
+01111110 MAE  Idp Stu: Characterization of Polymer Composites Afshar  Independent Study
+Fitness: 550
+01011100 IDM  Senior Design Exhibit I Mines TR 3
+01011011 IDM  Intro to Senior Design O'Brien  Independent Study
+Fitness: 550
+01011100 IDM  Senior Design Exhibit I Mines TR 3
+01011011 IDM  Intro to Senior Design O'Brien  Independent Study
+Fitness: 550
+01100100 ISE  Healthcare Process Improvement Burtner MW 3
+01100110 ISE  Industrial EGR Capstone Lab Moody TR 1
+01011100 IDM  Senior Design Exhibit I Mines TR 3
+00000011 CSC  Programming I Robertson MWF 12
+00001001 CSC  Graphics Simulatn & Visualizatn Pounds TR 10
+01011000 EVE  Spc Top: Aerosol Removal using Impaction Devices Lackey  Independent Study
+Fitness: 550
+00110000 EGR  Sophomore Engineering Honors II McCreanor  Independent Study
+01110101 MAE  Structure/Properties of Material Mihut TR 9
+10001100 TCO  Visual Communication Goode TR 10
+00001101 CSC  Undergraduate Research Digh  Independent Study
+Fitness: 550
+01000011 EGR  Probability & Statistics for Egr Hollingshed MW 3
+00001111 BME  Basic Transport Phenomena Hyun MWF 2
+00001000 CSC  Internship in Computer Science Cozart  Independent Study
+01011111 ISE  Ergonomics and Work Moody MWF 1
+10000101 TCO  Document & Web Design Newman TR 9
+00111101 EGR  Electric Circuits Labatory Barnett  6
+Fitness: 550
+01101111 MAE  Mechanical Engineering laboratory Mihut  3
+10000100 TCO  Introduction to Professional Grady MW 3
+01011100 IDM  Senior Design Exhibit I Mines TR 3
+00111111 EGR  Electric Circuits Labatory Juang  6
+Fitness: 550
+00111100 EGR  Electric Circuits Labatory Barnett  6
+01111100 MAE  Engineering Design Exhibit I Mines TR 3
+01110001 MAE  Mechanical Engineering laboratory Marek  3
+Fitness: 550
+10000010 TCO  Introduction to Professional Watson TR 1
+01111011 MAE  Intro to Senior Design O'Brien  Independent Study
+Fitness: 550
+00001110 BME  Biomedical Instrumentation O'Brien TR 10
+00111000 EGR  Dynamics Marek MWF 1
+01110000 MAE  Mechanical Engineering laboratory Marek  3
+Fitness: 550
+00101001 EGR  Intro Engineering Design O'Brien MW 3
+01111111 MAE  Idp Sty: Erosion Behavior of Molecularly Coated Metals Mihut  Independent Study
+00011100 ECE  Power Electronics Fu MWF 9
+10001111 TCO  Independent Study: DOT Lab Goode  Independent Study
+Fitness: 550
+00011011 ECE  Electromagnetic Field Theory Juang MWF 11
+00011111 ECE  Digital Signal Processing Barnett TR 12
+01010011 EVE  Intro to Senior Design O'Brien  Independent Study
+Fitness: 550
+01111010 MAE  Turbomachinery Sumner TR 10
+10001100 TCO  Visual Communication Goode TR 10
+01000010 EGR  Electric Circuits Labatory Barnett  3
+Fitness: 550
+10000110 TCO  Technical Communication Goode TR 8
+10001101 TCO  Intro Senior Design/Internship Grady Distance Learning Distance Learning
+Fitness: 550
+00111001 EGR  Electric Analysis MWF 2
+00110100 EGR  Thermodynamics Hill TR 1
+01001111 EVE  Engineering Hydraulics MacCarthy TR 1
+01110000 MAE  Mechanical Engineering laboratory Marek  3
+01101000 ISE  Engineering Design Exhibit II Jenkins TR 3
+00001100 CSC  Topi/Comp Sci: Computer Science Allen  Independent Study
+Fitness: 550
+00101011 EGR  Intro Engineering Design Butler MW 3
+01100100 ISE  Healthcare Process Improvement Burtner MW 3
+10000110 TCO  Technical Communication Goode TR 8
+01110000 MAE  Mechanical Engineering laboratory Marek  3
+Fitness: 550
+01110110 MAE  Structure/Properties of Material Mihut MWF 9
+01111010 MAE  Turbomachinery Sumner TR 10
+00111100 EGR  Electric Circuits Labatory Barnett  6
+Fitness: 550
+00100000 ECE  Communications Systems II Kamali MWF 12
+00110000 EGR  Sophomore Engineering Honors II McCreanor  Independent Study
+Fitness: 550
+10001110 TCO  Independent Study: Usability Lab Brewer  Independent Study
+Fitness: 550
+01100010 ISE  Modeling and Simulation Biswas TR 12
+00001101 CSC  Undergraduate Research Digh  Independent Study
+01111001 MAE  Thermal Systems Analysis Hill MWF 2
+00111101 EGR  Electric Circuits Labatory Barnett  6
+Fitness: 550
+00100000 ECE  Communications Systems II Kamali MWF 12
+00110000 EGR  Sophomore Engineering Honors II McCreanor  Independent Study
+Fitness: 550
+00100100 ECE  Egr Design Exhibit II:Comp Splzn Jenkins TR 3
+01000001 EGR  Electric Circuits Labatory Barnett  12
+Fitness: 550
+10000010 TCO  Introduction to Professional Watson TR 1
+01111011 MAE  Intro to Senior Design O'Brien  Independent Study
+Fitness: 550
+00111100 EGR  Electric Circuits Labatory Barnett  6
+00011001 ECE  Electronics II Ruiyun  2
+00101000 EGR  Intro Engineering Design Shaw MW 3
+01010001 EVE  Green Engineering MacCarthy TR 6
+01000011 EGR  Probability & Statistics for Egr Hollingshed MW 3
+00100011 ECE  Intro Sr Design:Computer Spclztn O'Brien  Independent Study
+Fitness: 550
+10000100 TCO  Introduction to Professional Grady MW 3
+01001011 EGR  Fdbck Control & Modeling for Egr Barnett MWF 8
+00000101 CSC  Data Struct & Algorithm Analysis Digh MWF 12
+01001100 EGR  Senior Engineering Honors I McCreanor  Independent Study
+01000110 EGR  Junior Engineering Honors II McCreanor  Independent Study
+Fitness: 550
+01100101 ISE  Intro to Senior Design O'Brien  Independent Study
+Fitness: 550
+00111010 EGR  Introduction to Electronics and Barnett MWF 1
+01100101 ISE  Intro to Senior Design O'Brien  Independent Study
+Fitness: 550
+01001001 EGR  Engineering Economy Schultz TR 10
+01001101 EGR  Senior Engineering Honors II McCreanor  Independent Study
+00111010 EGR  Introduction to Electronics and Barnett MWF 1
+01000110 EGR  Junior Engineering Honors II McCreanor  Independent Study
+Fitness: 550
+01110010 MAE  Mechanical Engineering laboratory Mihut  3
+01010010 EVE  Solid Waste Management McCreanor TR 12
+00011100 ECE  Power Electronics Fu MWF 9
+00011110 ECE  Mobile Application Development Ekong  6
+10001101 TCO  Intro Senior Design/Internship Grady Distance Learning Distance Learning
+Fitness: 550
+01001110 EGR  Entrepreneurship in Egr Design Radharamanan  Independent Study
+01101111 MAE  Mechanical Engineering laboratory Mihut  3
+01111100 MAE  Engineering Design Exhibit I Mines TR 3
+00011110 ECE  Mobile Application Development Ekong  6
+10010000 TCO  Independent Study: Technical Grady  Independent Study
+Fitness: 550
+10010000 TCO  Independent Study: Technical Grady  Independent Study
+Fitness: 550
+00001101 CSC  Undergraduate Research Digh  Independent Study
+00100111 EGR  Freshman Engineering Honors II McCreanor  Independent Study
+Fitness: 550
+01010101 EVE  Engineering Design Exhibit II Jenkins TR 3
+00101101 EGR  Programming for Engineers Digh TR 3
+01011010 IDM  Industrial Management Case Stds Burtner TR 10
+01000010 EGR  Electric Circuits Labatory Barnett  3
+Fitness: 550
+00001101 CSC  Undergraduate Research Digh  Independent Study
+00100111 EGR  Freshman Engineering Honors II McCreanor  Independent Study
+Fitness: 550
+01100100 ISE  Healthcare Process Improvement Burtner MW 3
+01110010 MAE  Mechanical Engineering laboratory Mihut  3
+00010111 ECE  Electronics I Barnett  Independent Study
+Fitness: 550
+00100111 EGR  Freshman Engineering Honors II McCreanor  Independent Study
+01100011 ISE  Computer Assisted Manufacturing Radharamanan  9
+00101100 EGR  Programming for Engineers Robertson TR 10
+10000000 TCO  Introduction to Professional Watson TR 9
+01011000 EVE  Spc Top: Aerosol Removal using Impaction Devices Lackey  Independent Study
+00010010 BME  Introduction to Senior Design O'Brien  Independent Study
+Fitness: 550
+00001001 CSC  Graphics Simulatn & Visualizatn Pounds TR 10
+01001110 EGR  Entrepreneurship in Egr Design Radharamanan  Independent Study
+00110000 EGR  Sophomore Engineering Honors II McCreanor  Independent Study
+Fitness: 550
+00101110 EGR  Programming for Engineers Choi TR 3
+00100001 ECE  Computer Networks Ekong MWF 1
+00001010 CSC  Operating Systems Allen MWF 12
+00010100 BME  Engineering Design Exhibit II Jenkins TR 3
+10001101 TCO  Intro Senior Design/Internship Grady Distance Learning Distance Learning
+Fitness: 550
+00000110 CSC  Data Struct & Algorithm Analysis Digh MWF 2
+01101001 MAE  Visualization and Solid Modeling Afshar MW 4
+01010111 EVE  Gray Water Research II McCreanor  Independent Study
+Fitness: 550
+01101101 MAE  Experimental Methods for Moses MWF 11
+00110000 EGR  Sophomore Engineering Honors II McCreanor  Independent Study
+01101010 MAE  Visualization and Solid Modeling Afshar TR 3
+01000110 EGR  Junior Engineering Honors II McCreanor  Independent Study
+01010011 EVE  Intro to Senior Design O'Brien  Independent Study
+Fitness: 550
+10001101 TCO  Intro Senior Design/Internship Grady Distance Learning Distance Learning
+Fitness: 550
+01011111 ISE  Ergonomics and Work Moody MWF 1
+01100000 ISE  Production Planning & Control Biswas MWF 11
+00010001 BME  Biomedical Materials Vo TR 9
+01000110 EGR  Junior Engineering Honors II McCreanor  Independent Study
+Fitness: 550
+00111100 EGR  Electric Circuits Labatory Barnett  6
+Fitness: 550
+01000101 EGR  Probability & Statistics for Egr Hollingshed TR 10
+01000000 EGR  Electric Circuits Labatory Barnett  3
+Fitness: 550
+01000101 EGR  Probability & Statistics for Egr Hollingshed TR 10
+01000000 EGR  Electric Circuits Labatory Barnett  3
+Fitness: 550
+00001011 CSC  Topi/Comp Sci: Introduction to Data Zhao MWF 9
+10001011 TCO  Usability Brewer MW 3
+00001000 CSC  Internship in Computer Science Cozart  Independent Study
+Fitness: 550
+00011011 ECE  Electromagnetic Field Theory Juang MWF 11
+00101111 EGR  Programming for Engineers Choi TR 4
+10001111 TCO  Independent Study: DOT Lab Goode  Independent Study
+00111100 EGR  Electric Circuits Labatory Barnett  6
+Fitness: 550
+00110111 EGR  Dynamics Marek MWF 9
+01100000 ISE  Production Planning & Control Biswas MWF 11
+00100001 ECE  Computer Networks Ekong MWF 1
+00111011 EGR  Introduction to Electronics and Kamali MWF 2
+01100000 ISE  Production Planning & Control Biswas MWF 11
+01111110 MAE  Idp Stu: Characterization of Polymer Composites Afshar  Independent Study
+Fitness: 550
+01101111 MAE  Mechanical Engineering laboratory Mihut  3
+00000101 CSC  Data Struct & Algorithm Analysis Digh MWF 12
+00001000 CSC  Internship in Computer Science Cozart  Independent Study
+01111011 MAE  Intro to Senior Design O'Brien  Independent Study
+Fitness: 550
+00011100 ECE  Power Electronics Fu MWF 9
+01000000 EGR  Electric Circuits Labatory Barnett  3
+00111011 EGR  Introduction to Electronics and Kamali MWF 2
+01111000 MAE  Heat Transfer Moses TR 9
+00011001 ECE  Electronics II Ruiyun  2
+Fitness: 550
+01001110 EGR  Entrepreneurship in Egr Design Radharamanan  Independent Study
+Fitness: 550
+01101000 ISE  Engineering Design Exhibit II Jenkins TR 3
+00001111 BME  Basic Transport Phenomena Hyun MWF 2
+00101000 EGR  Intro Engineering Design Shaw MW 3
+01101101 MAE  Experimental Methods for Moses MWF 11
+00011001 ECE  Electronics II Ruiyun  2
+Fitness: 550
+00111110 EGR  Electric Circuits Labatory Barnet TR 6
+01010110 EVE  Special Topics: Gray Water Research I McCreanor  Independent Study
+10010000 TCO  Independent Study: Technical Grady  Independent Study
+01001000 EGR  Engineering Economy Barnett TR 4
+00010010 BME  Introduction to Senior Design O'Brien  Independent Study
+00001000 CSC  Internship in Computer Science Cozart  Independent Study
+Fitness: 550
+10001101 TCO  Intro Senior Design/Internship Grady Distance Learning Distance Learning
+Fitness: 550
+01100001 ISE  Manufacturing Processes Radharamanan TR 1
+10001101 TCO  Intro Senior Design/Internship Grady Distance Learning Distance Learning
+00111101 EGR  Electric Circuits Labatory Barnett  6
+Fitness: 550
+00010111 ECE  Electronics I Barnett  Independent Study
+Fitness: 550
+01010011 EVE  Intro to Senior Design O'Brien  Independent Study
+01110101 MAE  Structure/Properties of Material Mihut TR 9
+00110111 EGR  Dynamics Marek MWF 9
+01101011 MAE  Manufacturing Practices O'Brien TR 2
+01010100 EVE  Engineering Design Exhibit I Mines TR 3
+01110000 MAE  Mechanical Engineering laboratory Marek  3
+Fitness: 550
+01111000 MAE  Heat Transfer Moses TR 9
+10000000 TCO  Introduction to Professional Watson TR 9
+00010010 BME  Introduction to Senior Design O'Brien  Independent Study
+Fitness: 550
+00011001 ECE  Electronics II Ruiyun  2
+Fitness: 550
+00001011 CSC  Topi/Comp Sci: Introduction to Data Zhao MWF 9
+01011110 ISE  Intro Indust Egr & Manufact Egr Burtner  5
+01010001 EVE  Green Engineering MacCarthy TR 6
+10001100 TCO  Visual Communication Goode TR 10
+00110111 EGR  Dynamics Marek MWF 9
+00011001 ECE  Electronics II Ruiyun  2
+Fitness: 550
+00111100 EGR  Electric Circuits Labatory Barnett  6
+01010101 EVE  Engineering Design Exhibit II Jenkins TR 3
+00011011 ECE  Electromagnetic Field Theory Juang MWF 11
+00001000 CSC  Internship in Computer Science Cozart  Independent Study
+Fitness: 550
+00011110 ECE  Mobile Application Development Ekong  6
+Fitness: 550
+00101010 EGR  Intro Engineering Design Thomas MW 3
+01110100 MAE  Machine Design Jenkins MWF 2
+01001101 EGR  Senior Engineering Honors II McCreanor  Independent Study
+Fitness: 550
+00111001 EGR  Electric Analysis MWF 2
+01110001 MAE  Mechanical Engineering laboratory Marek  3
+01000010 EGR  Electric Circuits Labatory Barnett  3
+Fitness: 550
+01100110 ISE  Industrial EGR Capstone Lab Moody TR 1
+01110010 MAE  Mechanical Engineering laboratory Mihut  3
+10001100 TCO  Visual Communication Goode TR 10
+00100011 ECE  Intro Sr Design:Computer Spclztn O'Brien  Independent Study
+00011110 ECE  Mobile Application Development Ekong  6
+Fitness: 550
+01001000 EGR  Engineering Economy Barnett TR 4
+10001001 TCO  Technical Communication Newman MW 3
+01001000 EGR  Engineering Economy Barnett TR 4
+01001101 EGR  Senior Engineering Honors II McCreanor  Independent Study
+00100010 ECE  Intro Sr Design:Electrical Specl O'Brien  Independent Study
+00001000 CSC  Internship in Computer Science Cozart  Independent Study
+Fitness: 550
+10000100 TCO  Introduction to Professional Grady MW 3
+00100011 ECE  Intro Sr Design:Computer Spclztn O'Brien  Independent Study
+00111111 EGR  Electric Circuits Labatory Juang  6
+00001110 BME  Biomedical Instrumentation O'Brien TR 10
+00001101 CSC  Undergraduate Research Digh  Independent Study
+Fitness: 550
+01101111 MAE  Mechanical Engineering laboratory Mihut  3
+Fitness: 550
+00000100 CSC  Programming II Zhao MWF 1
+01101000 ISE  Engineering Design Exhibit II Jenkins TR 3
+01110001 MAE  Mechanical Engineering laboratory Marek  3
+01111111 MAE  Idp Sty: Erosion Behavior of Molecularly Coated Metals Mihut  Independent Study
+10000101 TCO  Document & Web Design Newman TR 9
+10001110 TCO  Independent Study: Usability Lab Brewer  Independent Study
+Fitness: 550
+01011111 ISE  Ergonomics and Work Moody MWF 1
+01111100 MAE  Engineering Design Exhibit I Mines TR 3
+00011101 ECE  Embedded Computer Systems Choi TR 1
+00010101 BME  Spc Top: Introduction to Tissue Thomas MWF 12
+01101100 MAE  Manufacturing Practices Kunz MW 2
+10001110 TCO  Independent Study: Usability Lab Brewer  Independent Study
+Fitness: 550
+01001110 EGR  Entrepreneurship in Egr Design Radharamanan  Independent Study
+Fitness: 550
+01001110 EGR  Entrepreneurship in Egr Design Radharamanan  Independent Study
+Fitness: 550
+00010010 BME  Introduction to Senior Design O'Brien  Independent Study
+00110100 EGR  Thermodynamics Hill TR 1
+01001001 EGR  Engineering Economy Schultz TR 10
+00100010 ECE  Intro Sr Design:Electrical Specl O'Brien  Independent Study
+Fitness: 550
+00110011 EGR  Thermodynamics Hill TR 9
+00110011 EGR  Thermodynamics Hill TR 9
+00001111 BME  Basic Transport Phenomena Hyun MWF 2
+01000000 EGR  Electric Circuits Labatory Barnett  3
+01100011 ISE  Computer Assisted Manufacturing Radharamanan  9
+Fitness: 550
+00110000 EGR  Sophomore Engineering Honors II McCreanor  Independent Study
+00100010 ECE  Intro Sr Design:Electrical Specl O'Brien  Independent Study
+Fitness: 550
+01110100 MAE  Machine Design Jenkins MWF 2
+01101110 MAE  Experimental Methods for Moses MWF 9
+00001100 CSC  Topi/Comp Sci: Computer Science Allen  Independent Study
+Fitness: 550
+01010101 EVE  Engineering Design Exhibit II Jenkins TR 3
+00011101 ECE  Embedded Computer Systems Choi TR 1
+00011110 ECE  Mobile Application Development Ekong  6
+Fitness: 550
+01001100 EGR  Senior Engineering Honors I McCreanor  Independent Study
+Fitness: 550
+01101111 MAE  Mechanical Engineering laboratory Mihut  3
+Fitness: 550
+10001011 TCO  Usability Brewer MW 3
+00001001 CSC  Graphics Simulatn & Visualizatn Pounds TR 10
+01110011 MAE  Machine Design Jenkins MWF 11
+01101111 MAE  Mechanical Engineering laboratory Mihut  3
+Fitness: 550
+01011100 IDM  Senior Design Exhibit I Mines TR 3
+00111111 EGR  Electric Circuits Labatory Juang  6
+01000101 EGR  Probability & Statistics for Egr Hollingshed TR 10
+00011110 ECE  Mobile Application Development Ekong  6
+00001101 CSC  Undergraduate Research Digh  Independent Study
+00011001 ECE  Electronics II Ruiyun  2
+Fitness: 550
+00011001 ECE  Electronics II Ruiyun  2
+Fitness: 550
+01111000 MAE  Heat Transfer Moses TR 9
+01101111 MAE  Mechanical Engineering laboratory Mihut  3
+Fitness: 550
+01001100 EGR  Senior Engineering Honors I McCreanor  Independent Study
+10001010 TCO  Communication in Management Grady TR 1
+00010010 BME  Introduction to Senior Design O'Brien  Independent Study
+00111101 EGR  Electric Circuits Labatory Barnett  6
+Fitness: 550
+00111010 EGR  Introduction to Electronics and Barnett MWF 1
+10000001 TCO  Introduction to Professional Codone TR 10
+01111101 MAE  Engineering Design Exhibit II Jenkins TR 3
+01100011 ISE  Computer Assisted Manufacturing Radharamanan  9
+Fitness: 550
+01001001 EGR  Engineering Economy Schultz TR 10
+00010101 BME  Spc Top: Introduction to Tissue Thomas MWF 12
+00111000 EGR  Dynamics Marek MWF 1
+01011011 IDM  Intro to Senior Design O'Brien  Independent Study
+Fitness: 550
+01011000 EVE  Spc Top: Aerosol Removal using Impaction Devices Lackey  Independent Study
+Fitness: 550
+01011000 EVE  Spc Top: Aerosol Removal using Impaction Devices Lackey  Independent Study
+Fitness: 550
+00100111 EGR  Freshman Engineering Honors II McCreanor  Independent Study
+01111111 MAE  Idp Sty: Erosion Behavior of Molecularly Coated Metals Mihut  Independent Study
+Fitness: 550
+01011011 IDM  Intro to Senior Design O'Brien  Independent Study
+Fitness: 550
+01101111 MAE  Mechanical Engineering laboratory Mihut  3
+00100000 ECE  Communications Systems II Kamali MWF 12
+00010011 BME  Engineering Design Exhibit I Mines TR 3
+01001010 EGR  Fdbck Control & Modeling for Egr Thitsa MWF 1
+10000001 TCO  Introduction to Professional Codone TR 10
+00001100 CSC  Topi/Comp Sci: Computer Science Allen  Independent Study
+Fitness: 550
+00000110 CSC  Data Struct & Algorithm Analysis Digh MWF 2
+00010000 BME  Dynamics of Biological Fluids Hyun TR 10
+01011000 EVE  Spc Top: Aerosol Removal using Impaction Devices Lackey  Independent Study
+Fitness: 550
+01000000 EGR  Electric Circuits Labatory Barnett  3
+01010110 EVE  Special Topics: Gray Water Research I McCreanor  Independent Study
+Fitness: 550
+00010100 BME  Engineering Design Exhibit II Jenkins TR 3
+01110001 MAE  Mechanical Engineering laboratory Marek  3
+00100001 ECE  Computer Networks Ekong MWF 1
+00011001 ECE  Electronics II Ruiyun  2
+Fitness: 550
+00110000 EGR  Sophomore Engineering Honors II McCreanor  Independent Study
+Fitness: 550
+00000100 CSC  Programming II Zhao MWF 1
+00101100 EGR  Programming for Engineers Robertson TR 10
+01111111 MAE  Idp Sty: Erosion Behavior of Molecularly Coated Metals Mihut  Independent Study
+Fitness: 550
+01010011 EVE  Intro to Senior Design O'Brien  Independent Study
+Fitness: 550
+01010011 EVE  Intro to Senior Design O'Brien  Independent Study
+Fitness: 550
+00111000 EGR  Dynamics Marek MWF 1
+01010100 EVE  Engineering Design Exhibit I Mines TR 3
+01010001 EVE  Green Engineering MacCarthy TR 6
+00011000 ECE  Electronics II Fu TR 9
+00001101 CSC  Undergraduate Research Digh  Independent Study
+Fitness: 550
+01110001 MAE  Mechanical Engineering laboratory Marek  3
+Fitness: 550
+01110100 MAE  Machine Design Jenkins MWF 2
+00010110 ECE  Signals & Systems Barnett MWF 12
+00001110 BME  Biomedical Instrumentation O'Brien TR 10
+00010111 ECE  Electronics I Barnett  Independent Study
+Fitness: 550
+00100111 EGR  Freshman Engineering Honors II McCreanor  Independent Study
+01111111 MAE  Idp Sty: Erosion Behavior of Molecularly Coated Metals Mihut  Independent Study
+Fitness: 550
+00011001 ECE  Electronics II Ruiyun  2
+Fitness: 550
+01000101 EGR  Probability & Statistics for Egr Hollingshed TR 10
+01001100 EGR  Senior Engineering Honors I McCreanor  Independent Study
+01110000 MAE  Mechanical Engineering laboratory Marek  3
+01010110 EVE  Special Topics: Gray Water Research I McCreanor  Independent Study
+01010011 EVE  Intro to Senior Design O'Brien  Independent Study
+00100010 ECE  Intro Sr Design:Electrical Specl O'Brien  Independent Study
+Fitness: 550
+01010011 EVE  Intro to Senior Design O'Brien  Independent Study
+Fitness: 550
+01101111 MAE  Mechanical Engineering laboratory Mihut  3
+Fitness: 550
+00100111 EGR  Freshman Engineering Honors II McCreanor  Independent Study
+Fitness: 550
+01101111 MAE  Mechanical Engineering laboratory Mihut  3
+01001101 EGR  Senior Engineering Honors II McCreanor  Independent Study
+01011011 IDM  Intro to Senior Design O'Brien  Independent Study
+Fitness: 550
+01010011 EVE  Intro to Senior Design O'Brien  Independent Study
+01011001 IDM  Intro to Industrial Management Burtner  5
+00101100 EGR  Programming for Engineers Robertson TR 10
+00001100 CSC  Topi/Comp Sci: Computer Science Allen  Independent Study
+Fitness: 550
+01000110 EGR  Junior Engineering Honors II McCreanor  Independent Study
+10001001 TCO  Technical Communication Newman MW 3
+01100011 ISE  Computer Assisted Manufacturing Radharamanan  9
+Fitness: 550
+01110010 MAE  Mechanical Engineering laboratory Mihut  3
+Fitness: 550
+00111100 EGR  Electric Circuits Labatory Barnett  6
+00011110 ECE  Mobile Application Development Ekong  6
+00011001 ECE  Electronics II Ruiyun  2
+Fitness: 550
+00011001 ECE  Electronics II Ruiyun  2
+Fitness: 550
+00000010 CSC  Programming I Allen MWF 9
+01101000 ISE  Engineering Design Exhibit II Jenkins TR 3
+10001100 TCO  Visual Communication Goode TR 10
+00111111 EGR  Electric Circuits Labatory Juang  6
+Fitness: 550
+00010010 BME  Introduction to Senior Design O'Brien  Independent Study
+Fitness: 550
+00010010 BME  Introduction to Senior Design O'Brien  Independent Study
+Fitness: 550
+00111110 EGR  Electric Circuits Labatory Barnet TR 6
+00000010 CSC  Programming I Allen MWF 9
+10000011 TCO  Introduction to Professional Brewer TR 3
+10001111 TCO  Independent Study: DOT Lab Goode  Independent Study
+Fitness: 550
+01100101 ISE  Intro to Senior Design O'Brien  Independent Study
+Fitness: 550
+01100101 ISE  Intro to Senior Design O'Brien  Independent Study
+Fitness: 550
+00100011 ECE  Intro Sr Design:Computer Spclztn O'Brien  Independent Study
+Fitness: 550
+01001111 EVE  Engineering Hydraulics MacCarthy TR 1
+01000111 EGR  Engineering Economy Biswas TR 1
+00100110 ECE  Egr Design Exhibit II: Elec Splz Jenkins TR 3
+01110000 MAE  Mechanical Engineering laboratory Marek  3
+01010111 EVE  Gray Water Research II McCreanor  Independent Study
+Fitness: 550
+01010101 EVE  Engineering Design Exhibit II Jenkins TR 3
+01001001 EGR  Engineering Economy Schultz TR 10
+01100101 ISE  Intro to Senior Design O'Brien  Independent Study
+00010000 BME  Dynamics of Biological Fluids Hyun TR 10
+01011100 IDM  Senior Design Exhibit I Mines TR 3
+10001110 TCO  Independent Study: Usability Lab Brewer  Independent Study
+Fitness: 550
+01000001 EGR  Electric Circuits Labatory Barnett  12
+01110111 MAE  Heat Transfer Sumner MWF 2
+01011101 IDM  Senior Design Exhibit II Jenkins TR 3
+01110001 MAE  Mechanical Engineering laboratory Marek  3
+Fitness: 550
+00101110 EGR  Programming for Engineers Choi TR 3
+01001110 EGR  Entrepreneurship in Egr Design Radharamanan  Independent Study
+Fitness: 550
+00010111 ECE  Electronics I Barnett  Independent Study
