@@ -15,8 +15,8 @@ namespace Genetic_Sceduler
         List<Chromosome> chromosomes = new List<Chromosome>();
 
         int unitLength = 0;
-        int chromosomeCount = 500;
-        int numberIterations = 1000;
+        int chromosomeCount = 50;
+        int numberIterations = 30;
 
         public void main()
         {
@@ -26,7 +26,7 @@ namespace Genetic_Sceduler
 
             unitLength = Convert.ToString(classes.Count, 2).Length;
 
-            generateChromosomes(500);
+            generateChromosomes(chromosomeCount);
             fitChromosomes();
 
             displayChromosomes();
@@ -50,8 +50,10 @@ namespace Genetic_Sceduler
                 reproduceList();
                 fitChromosomes();
 
-                displayChromosomes();
+                //displayChromosomes();
             }
+
+            displayChromosomes();
         }
         
         public void splitList()
@@ -63,7 +65,7 @@ namespace Genetic_Sceduler
             {
                 newlist.Add(chromosomes[i]);
             }
-
+            chromosomes.Clear();
             chromosomes = newlist;
         }
 
@@ -80,7 +82,7 @@ namespace Genetic_Sceduler
                 temp.Add(createChromosome(temp[i], temp[i + 1], false));
                 temp.Add(createChromosome(temp[i], temp[i + 1], true));
             }
-
+            chromosomes.Clear();
             chromosomes = temp;
         }
 
@@ -135,9 +137,11 @@ namespace Genetic_Sceduler
         #region Fitting
         private void fitChromosomes()
         {
+            Evaluator evaluator = new Evaluator();
+
             foreach (Chromosome c in chromosomes)
             {
-                Evaluator evaluator = new Evaluator();
+                evaluator = new Evaluator();
 
                 c.fitness = evaluator.evaluate(c);
             }
