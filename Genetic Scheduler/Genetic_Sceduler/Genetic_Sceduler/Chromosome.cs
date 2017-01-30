@@ -8,7 +8,6 @@ namespace Genetic_Sceduler
 {
     class Chromosome
     {
-        public string chromSet = "";
         public List<Class> classes;
         public int unitSize = 0;
         public double fitness = 0;
@@ -36,6 +35,18 @@ namespace Genetic_Sceduler
             return classes.Count();
         }
 
+        public void recycle()
+        {
+            classes = null;
+            unitSize = 0;
+            fitness = 0;
+        }
 
+        public void recycle(List<Class> newclasses, int newunitsize, double newfitness)
+        {
+            this.classes = newclasses;
+            this.unitSize = newunitsize;
+            this.fitness = newfitness;
+        }
     }
 }

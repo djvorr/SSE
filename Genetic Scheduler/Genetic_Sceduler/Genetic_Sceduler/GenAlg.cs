@@ -11,25 +11,29 @@ namespace Genetic_Sceduler
         bool debug = true;
 
         List<string> lines = new List<string>();
-        List<Class> classes = new List<Class>();
-        List<Chromosome> chromosomes = new List<Chromosome>();
+        public List<Class> classes = new List<Class>();
+        //List<Chromosome> chromosomes = new List<Chromosome>();
+        List<string> chromosomeKeys = new List<string>();
+
+        float mutatePercentage = 0.10f;
 
         int unitLength = 0;
-        int chromosomeCount = 50;
-        int numberIterations = 30;
+        int chromosomeCount = 1000;
+        int numberIterations = 500;
+        int cap = 0;
 
         public void main()
         {
             readFile();
             parseData();
+
+            //displayCourses();
+
             indexClasses();
 
             unitLength = Convert.ToString(classes.Count, 2).Length;
 
             generateChromosomes(chromosomeCount);
-            fitChromosomes();
-
-            displayChromosomes();
 
             runAlgorithm(numberIterations);
 
@@ -42,143 +46,289 @@ namespace Genetic_Sceduler
 
         public void runAlgorithm(int count)
         {
-            for (int i=0; i<count; i++)
+            for (int i = 0; i < count; i++)
             {
                 Console.WriteLine("Iteration: " + i);
 
-                splitList();
-                reproduceList();
-                fitChromosomes();
-
-                //displayChromosomes();
+                FitAndPurge();
+                fillList();
+                mutate();
             }
 
-            displayChromosomes();
+            grabUnique();
+            //displayChromosomes();
         }
-        
-        public void splitList()
+
+        #region Display Output
+        public void grabUnique()
         {
-            int split = chromosomeCount / 3;
-            List<Chromosome> newlist = new List<Chromosome>();
-            
-            for(int i = 0; i <= split; i++)
+            IEnumerable<string> unique = chromosomeKeys.Distinct();
+
+            foreach (string s in unique)
             {
-                newlist.Add(chromosomes[i]);
+                showChromosomeDetails(s);
             }
-            chromosomes.Clear();
-            chromosomes = newlist;
         }
 
-
-        #region Reproduce
-        public void reproduceList()
+        public void showChromosomeDetails(string chromosome)
         {
-            List<Chromosome> temp = chromosomes;
-            int count = chromosomes.Count;
-            if (temp.Count % 2 != 0)
-                count -= 1;
-            for (int i=0; i<temp.Count-1; i+=2)
+            Console.WriteLine("Occurances:" + count(chromosome));
+
+            for (int i=0; i<chromosome.Length; i += unitLength)
             {
-                temp.Add(createChromosome(temp[i], temp[i + 1], false));
-                temp.Add(createChromosome(temp[i], temp[i + 1], true));
+                string course = chromosome.Substring(i, unitLength);
+                Class c = getCourse(course);
+                c.printDetails();
             }
-            chromosomes.Clear();
-            chromosomes = temp;
         }
 
-        public Chromosome createChromosome(Chromosome c1, Chromosome c2, bool flip)
+        public int count(string value)
         {
-            int midpointA = 0;
-            int midpointB = 0;
-
-            if (c1.classes.Count % 2 != 0)
-                midpointA = (c1.classes.Count - 1) / 2;
-            else
-                midpointA = c1.classes.Count / 2;
-
-            if (c2.classes.Count % 2 != 0)
-                midpointB = (c2.classes.Count - 1) / 2;
-            else
-                midpointB = c2.classes.Count / 2;
-
-            return new Chromosome(subList(c1, c2, midpointA, midpointB, flip), unitLength);
-        }
-
-        public List<Class> subList(Chromosome c1, Chromosome c2, int midpointA, int midpointB, bool flip)
-        {
-            List<Class> temp = new List<Class>();
-
-            try
+            int count = 0;
+            foreach (string s in chromosomeKeys)
             {
-                if (flip)
+                if (s == value)
+                    count += 1;
+            }
+
+            return count;
+        }
+        #endregion
+
+        #region Mutations
+        public void mutate()
+        {
+            for (int i=0; i < chromosomeKeys.Count; i++)
+                chromosomeKeys[i] = bitwise(chromosomeKeys[i], buildMask(chromosomeKeys[i].Length));
+        }
+
+        public string bitwise(string key, string mask)
+        {
+            string bitwise = "";
+            for (int i=0; i<key.Length; i++)
+            {
+                if (mask[i] == '1')
                 {
-                    for (int i = 0; i <= midpointA; i++)
-                        temp.Add(c1.classes[i]);
-
-                    for (int i = midpointB; i < c2.classes.Count; i++)
-                        temp.Add(c2.classes[i]);
+                    if (key[i] == '1')
+                        bitwise += 0;
+                    else
+                        bitwise += 1;
                 }
                 else
-                {
-                    for (int i = 0; i <= midpointB; i++)
-                        temp.Add(c2.classes[i]);
-
-                    for (int i = midpointA; i < c1.classes.Count; i++)
-                        temp.Add(c1.classes[i]);
-                }
+                    bitwise += key[i];
             }
-            catch (Exception e) { }
+
+            return doctor(bitwise);
+        }
+
+        public string doctor(string chromosome)
+        {
+            string temp = "";
+            string sub = "";
+
+            for (int i=0; i<chromosome.Length; i+=unitLength)
+            {
+                sub = chromosome.Substring(i, unitLength);
+                temp += examine(sub);
+            }
 
             return temp;
         }
-        #endregion
 
-
-        #region Fitting
-        private void fitChromosomes()
+        public string examine(string word)
         {
-            Evaluator evaluator = new Evaluator();
-
-            foreach (Chromosome c in chromosomes)
+            string bitset = word;
+            string temp = "";
+            bool MSO = false;
+            while(Convert.ToInt32(bitset, 2) > classes.Count - 1)
             {
-                evaluator = new Evaluator();
-
-                c.fitness = evaluator.evaluate(c);
+                temp = "";
+                MSO = false;
+                for (int i = 0; i < bitset.Length; i++)
+                {
+                    if (bitset[i] == '1' && !MSO)
+                    {
+                        temp += '0';
+                        MSO = true;
+                    }
+                    else
+                        temp += bitset[i];
+                }
+                bitset = temp;
             }
 
-            sortByFitness();
+            return bitset;
         }
 
-        private void sortByFitness()
+        public string buildMask(int size)
         {
-            chromosomes.Sort((Chromosome c1, Chromosome c2) => c1.fitness.CompareTo(c2.fitness));
-            chromosomes.Reverse();
+            string st = "";
+            Random rand = new Random();
+            for (int i = 0; i < size; i++)
+            {
+                int r = rand.Next(1, 1000);
+                if (r < 1000 * mutatePercentage)
+                    st += "1";
+                else
+                    st += "0";
+            }
+
+            return st;
         }
         #endregion
 
+        //working 3:39 P
+        #region Breaking Chromosomes, Matching Halves, and Filling Empty Space
+        private void fillList()
+        {
+            Random rand = new Random();
+            
+            while(chromosomeKeys.Count < chromosomeCount - cap)
+            {
+                string c1 = chromosomeKeys[rand.Next(chromosomeKeys.Count)];
+                System.Threading.Thread.Sleep(5);
+                string c2 = chromosomeKeys[rand.Next(chromosomeKeys.Count)];
+                System.Threading.Thread.Sleep(5);
 
+                chromosomeKeys.Add(getChromosome(c1, c2, false));
+                chromosomeKeys.Add(getChromosome(c1, c2, true));
+            }
+
+            //int count = chromosomeKeys.Count;
+            //if (count % 2 != 0)
+            //    count -= 1;
+            //for (int i = 0; i < count - 1; i += 1)
+            //{
+            //    chromosomeKeys.Add(getChromosome(chromosomeKeys[i], chromosomeKeys[i + 1], false));
+            //    chromosomeKeys.Add(getChromosome(chromosomeKeys[i], chromosomeKeys[i + 1], true));
+            //}
+
+            //if (chromosomeKeys.Count < chromosomeCount)
+            //{
+            //    generateChromosomes(chromosomeCount - chromosomeKeys.Count);
+            //}
+
+            //if (chromosomeKeys.Count > chromosomeCount)
+            //{
+            //    chromosomeKeys.RemoveRange(chromosomeCount, chromosomeKeys.Count - chromosomeCount);
+            //    System.Threading.Thread.Sleep(500);
+            //}
+
+            //while (chromosomeKeys.Count > chromosomeCount)
+            //chromosomeKeys.Remove(chromosomeKeys[chromosomeKeys.Count - 1]);
+
+            
+        }
+
+        private string getChromosome(string c1, string c2, bool flip)
+        {
+            string newChrom = "";
+            if (flip)
+            {
+                newChrom += breakChromosome(c2, false);
+                newChrom += breakChromosome(c1, true);
+            }
+            else
+            {
+                newChrom += breakChromosome(c1, false);
+                newChrom += breakChromosome(c2, true);
+            }
+
+            if (newChrom == "")
+                throw new Exception("Error concatenating new chromosome.");
+
+            return newChrom;
+        }
+
+        private string breakChromosome(string chromosome, bool back)
+        {
+            string half = "";
+
+            int numClasses = chromosome.Length / unitLength;
+            int midpoint = 0;
+
+            if (numClasses % 2 == 0)
+                midpoint = numClasses / 2;
+            else
+                midpoint = (numClasses - 1) / 2;
+
+            if (back)
+            {
+                for (int i = 0; i < midpoint * unitLength; i += unitLength)
+                    half += chromosome.Substring(i, unitLength);
+            }
+            else
+            {
+                for (int i = midpoint * unitLength; i < chromosome.Length; i += unitLength)
+                    half += chromosome.Substring(i, unitLength);
+            }
+
+            if (half == "")
+                throw new Exception("Parsing Error while breaking Chromosome into halves.");
+
+            return half;
+        }
+        #endregion
+
+        //working 2:41 P
+        #region Fitting and Purging
+        private void FitAndPurge()
+        {
+            Evaluator evaluator = new Evaluator(this, unitLength);
+
+            int threshold = getThreshold(evaluator);
+
+            for (int i=chromosomeKeys.Count-1; i>=0; i--)
+            {
+                if (evaluator.evaluate(chromosomeKeys[i]) < threshold)
+                    chromosomeKeys.Remove(chromosomeKeys[i]);
+            }
+        }
+
+        private int getThreshold(Evaluator evaluator)
+        {
+
+            List<double> vals = new List<double>();
+
+            foreach (string c in chromosomeKeys)
+                vals.Add(evaluator.evaluate(c));
+
+            vals.Sort();
+
+            int thresIndex = vals.Count / 3;
+
+            int threshold = (int)vals[vals.Count - thresIndex];
+
+            vals.Clear();
+
+            return threshold;
+        }
+        #endregion
+
+        //working 1:46 P
         #region Generating Chromosomes
         private void generateChromosomes(int count)
         {
-            for (int c=0; c<count; c++)
+            string chrom = "";
+            Random rand = new Random();
+            for (int c = 0; c < count; c++)
             {
-                Random rand = new Random();
+                chrom = "";
                 int y = rand.Next(1, 7);
-                List<Class> chromosomeSet = new List<Class>();
 
-                for (int x=0; x<y; x++)
+                for (int x = 0; x < y; x++)
                 {
                     int z = rand.Next(1, classes.Count - 1);
                     if (getCourse(getBitset(z)) != null)
-                        chromosomeSet.Add(getCourse(getBitset(z)));
+                        chrom += getCourse(getBitset(z)).bitset;
                     System.Threading.Thread.Sleep(5);
                 }
 
-                chromosomes.Add(new Chromosome(chromosomeSet, unitLength));
+                chromosomeKeys.Add(chrom);
             }
         }
 
-        private Class getCourse(string bitset)
+        public Class getCourse(string bitset)
         {
             foreach (Class c in classes)
             {
@@ -186,12 +336,12 @@ namespace Genetic_Sceduler
                     return c;
             }
 
-            return null;
+            throw new Exception("Null Course.");
         }
 
         #endregion
 
-
+        //working 1:46 P
         #region BitSet Generation
         private void indexClasses()
         {
@@ -221,7 +371,7 @@ namespace Genetic_Sceduler
 
         #endregion
 
-
+        //working 1:46 P
         #region Reading Data
         public void readFile()
         {
@@ -246,15 +396,16 @@ namespace Genetic_Sceduler
         }
         #endregion
 
-
+        //working 1:46 P
         #region Parsing Data
         public void parseData()
         {
+            Class course = new Class();
             foreach (string line in lines)
             {
                 if (line.Length > 1)
                 {
-                    Class course = new Class();
+                    course = new Class();
 
                     course.name = parseName(line);
                     course.days = parseDay(line);
@@ -266,6 +417,8 @@ namespace Genetic_Sceduler
                     classes.Add(course);
                 }
             }
+
+            lines.Clear();
         }
 
         private string parseName(string line)
@@ -364,18 +517,12 @@ namespace Genetic_Sceduler
 
         public void displayChromosomes()
         {
-            foreach (Chromosome c in chromosomes)
-                c.displayChromosome();
+            Console.WriteLine("\n\n----------------------------------------------------------------------\n\n");
+            foreach (string c in chromosomeKeys)
+                Console.WriteLine(c);
             Console.WriteLine("\n\n----------------------------------------------------------------------\n\n");
         }
 
-        public void displayChromosomeSets()
-        {
-            foreach (Chromosome c in chromosomes)
-            {
-                Console.WriteLine(c.chromSet);
-            }
-        }
         #endregion
     }
 }

@@ -36,7 +36,7 @@ namespace Genetic_Sceduler
                 val_Days = 3;
             else if (days == "MW")
                 val_Days = 2;
-            else if (days == "TH")
+            else if (days == "TR")
                 val_Days = 1;
             else
                 val_Days = 0;
@@ -90,5 +90,13 @@ namespace Genetic_Sceduler
             }
         }
         #endregion
+
+        public void printDetails()
+        {
+            if (time != "Distance Learning" && time != "Independent Study")
+                Console.WriteLine("\t" + bitset + " " + department + " " + name + " " + teacher + " " + days + " " + time);
+            else
+                Console.WriteLine("\t" + bitset + " " + department + " " + name + " " + teacher + " " + days);
+        }
     }
 }
