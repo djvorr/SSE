@@ -8,11 +8,10 @@ namespace Genetic_Sceduler
 {
     class GenAlg
     {
-        bool debug = true;
+        bool debug = false;
 
         List<string> lines = new List<string>();
         public List<Class> classes = new List<Class>();
-        //List<Chromosome> chromosomes = new List<Chromosome>();
         List<string> chromosomeKeys = new List<string>();
 
         float mutatePercentage = 0.10f;
@@ -24,24 +23,31 @@ namespace Genetic_Sceduler
 
         public void main()
         {
-            readFile();
-            parseData();
-
-            //displayCourses();
-
-            indexClasses();
-
-            unitLength = Convert.ToString(classes.Count, 2).Length;
-
-            generateChromosomes(chromosomeCount);
-
-            runAlgorithm(numberIterations);
+            setup();
 
             if (debug)
             {
                 Console.WriteLine("Done.");
                 Console.Read();
             }
+        }
+
+        private void setup()
+        {
+            readFile();
+            parseData();
+
+            indexClasses();
+            displayChromosomes();
+
+            unitLength = Convert.ToString(classes.Count, 2).Length;
+
+            generateChromosomes(chromosomeCount);
+
+            displayChromosomes();
+
+            grabUnique();
+            runAlgorithm(numberIterations);
         }
 
         public void runAlgorithm(int count)
@@ -56,7 +62,6 @@ namespace Genetic_Sceduler
             }
 
             grabUnique();
-            //displayChromosomes();
         }
 
         #region Display Output
@@ -72,7 +77,8 @@ namespace Genetic_Sceduler
 
         public void showChromosomeDetails(string chromosome)
         {
-            Console.WriteLine("Occurances:" + count(chromosome));
+            Evaluator evaluator = new Evaluator(this, unitLength);
+            Console.WriteLine("Occurances:" + count(chromosome) + "\tFitness: " + evaluator.evaluate(chromosome));
 
             for (int i=0; i<chromosome.Length; i += unitLength)
             {
@@ -121,6 +127,22 @@ namespace Genetic_Sceduler
             return doctor(bitwise);
         }
 
+        public string buildMask(int size)
+        {
+            string st = "";
+            Random rand = new Random();
+            for (int i = 0; i < size; i++)
+            {
+                int r = rand.Next(1, 1000);
+                if (r < 1000 * mutatePercentage)
+                    st += "1";
+                else
+                    st += "0";
+            }
+
+            return st;
+        }
+
         public string doctor(string chromosome)
         {
             string temp = "";
@@ -159,22 +181,6 @@ namespace Genetic_Sceduler
 
             return bitset;
         }
-
-        public string buildMask(int size)
-        {
-            string st = "";
-            Random rand = new Random();
-            for (int i = 0; i < size; i++)
-            {
-                int r = rand.Next(1, 1000);
-                if (r < 1000 * mutatePercentage)
-                    st += "1";
-                else
-                    st += "0";
-            }
-
-            return st;
-        }
         #endregion
 
         //working 3:39 P
@@ -192,32 +198,7 @@ namespace Genetic_Sceduler
 
                 chromosomeKeys.Add(getChromosome(c1, c2, false));
                 chromosomeKeys.Add(getChromosome(c1, c2, true));
-            }
-
-            //int count = chromosomeKeys.Count;
-            //if (count % 2 != 0)
-            //    count -= 1;
-            //for (int i = 0; i < count - 1; i += 1)
-            //{
-            //    chromosomeKeys.Add(getChromosome(chromosomeKeys[i], chromosomeKeys[i + 1], false));
-            //    chromosomeKeys.Add(getChromosome(chromosomeKeys[i], chromosomeKeys[i + 1], true));
-            //}
-
-            //if (chromosomeKeys.Count < chromosomeCount)
-            //{
-            //    generateChromosomes(chromosomeCount - chromosomeKeys.Count);
-            //}
-
-            //if (chromosomeKeys.Count > chromosomeCount)
-            //{
-            //    chromosomeKeys.RemoveRange(chromosomeCount, chromosomeKeys.Count - chromosomeCount);
-            //    System.Threading.Thread.Sleep(500);
-            //}
-
-            //while (chromosomeKeys.Count > chromosomeCount)
-            //chromosomeKeys.Remove(chromosomeKeys[chromosomeKeys.Count - 1]);
-
-            
+            }            
         }
 
         private string getChromosome(string c1, string c2, bool flip)
@@ -252,7 +233,7 @@ namespace Genetic_Sceduler
             else
                 midpoint = (numClasses - 1) / 2;
 
-            if (back)
+            if (!back)
             {
                 for (int i = 0; i < midpoint * unitLength; i += unitLength)
                     half += chromosome.Substring(i, unitLength);
@@ -275,7 +256,6 @@ namespace Genetic_Sceduler
         private void FitAndPurge()
         {
             Evaluator evaluator = new Evaluator(this, unitLength);
-
             int threshold = getThreshold(evaluator);
 
             for (int i=chromosomeKeys.Count-1; i>=0; i--)
@@ -289,18 +269,14 @@ namespace Genetic_Sceduler
         {
 
             List<double> vals = new List<double>();
-
             foreach (string c in chromosomeKeys)
                 vals.Add(evaluator.evaluate(c));
 
             vals.Sort();
-
             int thresIndex = vals.Count / 3;
-
             int threshold = (int)vals[vals.Count - thresIndex];
 
             vals.Clear();
-
             return threshold;
         }
         #endregion
@@ -385,14 +361,6 @@ namespace Genetic_Sceduler
             }
 
             file.Close();
-        }
-
-        public void printLines()
-        {
-            foreach (string st in lines)
-                Console.WriteLine(st);
-
-            Console.Read();
         }
         #endregion
 
@@ -515,11 +483,22 @@ namespace Genetic_Sceduler
             }
         }
 
+        public void printLines()
+        {
+            foreach (string st in lines)
+                Console.WriteLine(st);
+
+            Console.Read();
+        }
+
         public void displayChromosomes()
         {
             Console.WriteLine("\n\n----------------------------------------------------------------------\n\n");
+            //Evaluator evaluator = new Evaluator(this, unitLength);
+            //double threshold = getThreshold(evaluator);
             foreach (string c in chromosomeKeys)
                 Console.WriteLine(c);
+            //Console.WriteLine("Fitness: " + evaluator.evaluate(c) + " Threshold: " + threshold + " " + c);
             Console.WriteLine("\n\n----------------------------------------------------------------------\n\n");
         }
 

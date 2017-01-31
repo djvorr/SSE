@@ -24,29 +24,17 @@ namespace Genetic_Sceduler
             foreach (Class c in classes)
             {
                 if (c.time != "Distance Learning" && c.time != "Independent Study")
-                    Console.WriteLine(c.bitset + " " + c.department + " " + c.name + " " + c.teacher + " " + c.days + " " + c.time);
+                    Console.WriteLine(c.bitset + " " + c.department + " " + 
+                        c.name + " " + c.teacher + " " + c.days + " " + c.time);
                 else
-                    Console.WriteLine(c.bitset + " " + c.department + " " + c.name + " " + c.teacher + " " + c.days);
+                    Console.WriteLine(c.bitset + " " + c.department + " " + 
+                        c.name + " " + c.teacher + " " + c.days);
             }
         }
 
         public int getClassNumber()
         {
             return classes.Count();
-        }
-
-        public void recycle()
-        {
-            classes = null;
-            unitSize = 0;
-            fitness = 0;
-        }
-
-        public void recycle(List<Class> newclasses, int newunitsize, double newfitness)
-        {
-            this.classes = newclasses;
-            this.unitSize = newunitsize;
-            this.fitness = newfitness;
         }
     }
 }

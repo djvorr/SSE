@@ -75,9 +75,9 @@ namespace Genetic_Sceduler
                 if (timeInt < 10 && timeInt > 6)
                     val_Time = 0;
                 else if (timeInt == 11 || timeInt == 12 || timeInt == 1)
-                    val_Time = 2;
-                else if (timeInt == -1)
                     val_Time = 3;
+                else if (timeInt < 3)
+                    val_Time = 2;
                 else
                     val_Time = 1;
             }
