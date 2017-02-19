@@ -32,5 +32,56 @@ namespace FuzzyAlgorithm
 
             return 0.0f;
         }
+
+        public float CalculateSpikeProfile(float val, float lo, float high)
+        {
+            float point;
+            val -= lo;
+
+            if (lo < 0 && high < 0)
+                high = -(high - lo);
+            else if (lo < 0 && high > 0)
+                high -= lo;
+            else if (lo > 0 && high > 0)
+                high -= lo;
+
+            point = high / 2;
+            lo = 0;
+
+            if (val < point)
+                return val / point;
+            else if (val > point)
+                return (high - val) / point;
+
+            return 1.0f;
+        }
+
+        public float height_low(int L, int LL, int max, int y)
+        {
+            if (y < L)
+                return 0;
+            if (y > LL)
+                return 1;
+
+            return CalculatePlateauProfile(y, L, LL, max, max);
+        }
+
+        public float height_mid(int HH, int LL, int y)
+        {
+            if (y < HH || y > LL)
+                return 0;
+
+            return CalculateSpikeProfile(y, HH, LL);
+        }
+
+        public float height_high(int HH, int H, int min, int y)
+        {
+            if (y < HH)
+                return 1;
+            if (y > H)
+                return 0;
+
+            return CalculatePlateauProfile(y, min, min, HH, H);
+        }
     }
 }
