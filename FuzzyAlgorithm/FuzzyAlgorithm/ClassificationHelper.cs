@@ -12,6 +12,9 @@ namespace FuzzyAlgorithm
         public int _L = 1;
         public int _H = 2;
 
+        public static int VERT = 0;
+        public static int HORIZ = 1;
+
         Frame frame;
         Ship ship;
 
@@ -33,10 +36,10 @@ namespace FuzzyAlgorithm
             this.ship = ship;
         }
 
-        public int getThreshold_Mid(int type)
+        public int getThreshold_Mid(int type, int direction)
         {
-            int HH = getThreshold_HH();
-            int LL = getThreshold_LL();
+            int HH = getThreshold_HH(direction);
+            int LL = getThreshold_LL(direction);
 
             int dist = LL - HH;
 
@@ -55,7 +58,7 @@ namespace FuzzyAlgorithm
          * detected by finding a change from a 0 to a 1. Sometimes am object may be inline with the ship, 
          * but off to the side, so requiring a change from 0 to 1 should clear those false-positives.
          */
-        public int getThreshold_HH()
+        public int getThreshold_HH(int direction)
         {
             int start = ship.getXIndex() - ship.getRadarRange();
 
@@ -64,8 +67,8 @@ namespace FuzzyAlgorithm
 
             for(int i=start; i>1; i--)
             {
-                bottom = frame.getLine(i);
-                top = frame.getLine(i - 1);
+                bottom = frame.getLine(i, direction);
+                top = frame.getLine(i - 1, direction);
 
                 if (detectedObject(top, bottom))
                     return i;
@@ -77,7 +80,7 @@ namespace FuzzyAlgorithm
         /* Same functionality as getThreshold_HH. The difference is this one goes down, using the top line
          * as the 0 and the bottom as the 1 for detection.
          */
-        public int getThreshold_LL()
+        public int getThreshold_LL(int direction)
         {
             int start = ship.getXIndex() + ship.getRadarRange();
 
@@ -86,8 +89,8 @@ namespace FuzzyAlgorithm
 
             for (int i = start; i < frame.getCount()-1; i++)
             {
-                top = frame.getLine(i);
-                bottom = frame.getLine(i + 1);
+                top = frame.getLine(i, direction);
+                bottom = frame.getLine(i + 1, direction);
 
                 if (detectedObject(bottom, top))
                     return i;

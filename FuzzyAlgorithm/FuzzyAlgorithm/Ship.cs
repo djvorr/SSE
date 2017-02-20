@@ -33,5 +33,11 @@ namespace FuzzyAlgorithm
 
         public int getRadarRange()
         { return radarRange; }
+
+        public void adjustX(int x)
+        { this.x += x; }
+
+        public void adjustY(int y)
+        { this.y += y; }
     }
 }

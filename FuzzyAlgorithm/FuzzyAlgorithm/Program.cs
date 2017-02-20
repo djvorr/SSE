@@ -19,10 +19,14 @@ namespace FuzzyAlgorithm
 
             FuzzyAlgorithm fa;
 
+            int counter = 1;
+
             foreach (Frame f in frames)
             {
+                Console.WriteLine("Frame " + counter + ":");
                 fa = new FuzzyAlgorithm(f, ship);
-                fa.run();
+                ship = fa.run();
+                counter += 1;
             }
 
             Console.WriteLine("Done.");
